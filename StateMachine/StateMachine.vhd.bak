@@ -1,0 +1,23 @@
+-- StateMachine
+-- Mealy Machine
+
+library ieee;
+use ieee.std_logic_1164;
+use ieee.std_logic_unsigned;
+
+entity StateMachine is
+	port(
+		x: in std_logic;
+		clk: in std_logic;
+		y: out std_logic
+	);
+	
+end StateMachine;
+
+architecture comportamental of StateMachine is
+	TYPE estado is (s0,s1,s11,s110);
+	SIGNAL estado_atual: std_logic;
+	SIGNAL estado_anterior: std_logic;
+	begin
+	
+end comportamental;

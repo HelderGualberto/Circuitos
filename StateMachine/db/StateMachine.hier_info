@@ -1,0 +1,14 @@
+|StateMachine
+x => estado_atual.DATAB
+x => estado_atual.DATAA
+x => estado_anterior.OUTPUTSELECT
+x => estado_anterior.OUTPUTSELECT
+x => estado_anterior.OUTPUTSELECT
+x => estado_anterior.OUTPUTSELECT
+x => estado_atual.DATAB
+x => Selector0.IN1
+clk => estado_anterior~5.DATAIN
+clk => estado_atual~3.DATAIN
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

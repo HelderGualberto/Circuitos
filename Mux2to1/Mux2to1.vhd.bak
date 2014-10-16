@@ -1,0 +1,17 @@
+-- Multiplex 2 to 1 
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY Mux2to1 is
+	port(
+		a,b,s : in std_logic;
+		z : out std_logic
+	);
+end Mux2to1;
+
+architecture comport of Mux2to1 is
+	begin
+	z <= ((NOT(s) AND x)+(s AND y));
+end comport;

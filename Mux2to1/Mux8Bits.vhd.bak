@@ -1,0 +1,5 @@
+-- Multiplex 2 to 1, 8 bits;
+
+library ieee;
+use ieee.std_logic_1164.all;
+

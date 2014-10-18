@@ -1,0 +1,149 @@
+|Integracao
+OUT[0] <= FluxoDeDados:inst.OUT[0]
+OUT[1] <= FluxoDeDados:inst.OUT[1]
+OUT[2] <= FluxoDeDados:inst.OUT[2]
+OUT[3] <= FluxoDeDados:inst.OUT[3]
+N1 => UnidadedeControle:inst1.N1
+N2 => UnidadedeControle:inst1.N2
+M1 => UnidadedeControle:inst1.M1
+M2 => UnidadedeControle:inst1.M2
+RES => UnidadedeControle:inst1.RES
+CLK => UnidadedeControle:inst1.CLKUC
+IN[0] => FluxoDeDados:inst.IN[0]
+IN[1] => FluxoDeDados:inst.IN[1]
+IN[2] => FluxoDeDados:inst.IN[2]
+IN[3] => FluxoDeDados:inst.IN[3]
+
+
+|Integracao|FluxoDeDados:inst
+OUT[0] <= 74173:inst1.1Q
+OUT[1] <= 74173:inst1.2Q
+OUT[2] <= 74173:inst1.3Q
+OUT[3] <= 74173:inst1.4Q
+IN[0] => 74173:inst.1D
+IN[0] => 74173:inst2.1D
+IN[1] => 74173:inst.2D
+IN[1] => 74173:inst2.2D
+IN[2] => 74173:inst.3D
+IN[2] => 74173:inst2.3D
+IN[3] => 74173:inst.4D
+IN[3] => 74173:inst2.4D
+En1 => inst10.IN0
+Clr1 => 74173:inst.CLR
+CLK => 74173:inst.CLK
+CLK => 74173:inst2.CLK
+CLK => 74173:inst1.CLK
+En2 => inst9.IN0
+Clr2 => 74173:inst2.CLR
+SEL => 74157:inst3.SEL
+En3 => inst8.IN0
+Clr3 => 74173:inst1.CLR
+
+
+|Integracao|FluxoDeDados:inst|74173:inst1
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Integracao|FluxoDeDados:inst|74157:inst3
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|Integracao|FluxoDeDados:inst|74173:inst
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Integracao|FluxoDeDados:inst|74173:inst2
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Integracao|UnidadedeControle:inst1
+SEL <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+M1 => 7.IN0
+M1 => 10.IN0
+N1 => 13.IN0
+N1 => 5.IN0
+N2 => 11.IN0
+N2 => 6.IN0
+M2 => 12.IN0
+M2 => 14.IN0
+CLKUC => a.LATCH_ENABLE
+CLKUC => b.LATCH_ENABLE
+CLKUC => inst22.CLK
+CLKUC => c.LATCH_ENABLE
+CLKUC => d.LATCH_ENABLE
+RES => inst1.IN0
+RES => CLR1.DATAIN
+RES => CLR2.DATAIN
+RES => CLR3.DATAIN
+EN3 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+CLR1 <= RES.DB_MAX_OUTPUT_PORT_TYPE
+CLR2 <= RES.DB_MAX_OUTPUT_PORT_TYPE
+CLR3 <= RES.DB_MAX_OUTPUT_PORT_TYPE
+CLKout <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+EN1 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+EN2 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+
+

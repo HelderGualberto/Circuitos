@@ -1,0 +1,31 @@
+# do Projeto.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module teste
+# 
+# Top level modules:
+# 	teste
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module teste_vlg_sample_tst
+# -- Compiling module teste_vlg_check_tst
+# -- Compiling module teste_vlg_vec_tst
+# 
+# Top level modules:
+# 	teste_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver -c -voptargs=\"+acc\" -t 1ps -novopt work.teste_vlg_vec_tst 
+# Loading work.teste_vlg_vec_tst
+# Loading work.teste
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.teste_vlg_sample_tst
+# Loading work.teste_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port CLKFD :: @time = 2500000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           1 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform1.vwf.vt(150)
+#    Time: 100 us  Iteration: 0  Instance: /teste_vlg_vec_tst/tb_out

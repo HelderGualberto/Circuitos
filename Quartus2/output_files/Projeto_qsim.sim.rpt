@@ -1,0 +1,283 @@
+Simulator report for Projeto_qsim
+Fri Oct 03 10:45:32 2014
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 101 nodes    ;
+; Simulation Coverage         ;      47.00 % ;
+; Total Number of Transitions ; 237          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                      ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                    ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                 ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                       ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                        ;               ;
+; Vector input source                                                                        ; C:/Users/Geoinformacao.CAS419258A10520/Desktop/Circuitos/Quartus/output_files/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                         ; On            ;
+; Check outputs                                                                              ; Off                                                                                        ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                         ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                         ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                         ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                        ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                        ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                 ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                                                  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                                                  ; Transport     ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      47.00 % ;
+; Total nodes checked                                 ; 101          ;
+; Total output ports checked                          ; 100          ;
+; Total output ports with complete 1/0-value coverage ; 47           ;
+; Total output ports with no 1/0-value coverage       ; 13           ;
+; Total output ports with no 1-value coverage         ; 13           ;
+; Total output ports with no 0-value coverage         ; 53           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                    ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |Integracao|N1                               ; |Integracao|N1                               ; out              ;
+; |Integracao|N2                               ; |Integracao|N2                               ; out              ;
+; |Integracao|M1                               ; |Integracao|M1                               ; out              ;
+; |Integracao|M2                               ; |Integracao|M2                               ; out              ;
+; |Integracao|CLK                              ; |Integracao|CLK                              ; out              ;
+; |Integracao|IN[3]                            ; |Integracao|IN[3]                            ; out              ;
+; |Integracao|IN[2]                            ; |Integracao|IN[2]                            ; out              ;
+; |Integracao|IN[1]                            ; |Integracao|IN[1]                            ; out              ;
+; |Integracao|IN[0]                            ; |Integracao|IN[0]                            ; out              ;
+; |Integracao|UnidadedeControle:inst1|inst16   ; |Integracao|UnidadedeControle:inst1|inst16   ; out0             ;
+; |Integracao|UnidadedeControle:inst1|a        ; |Integracao|UnidadedeControle:inst1|a        ; out              ;
+; |Integracao|UnidadedeControle:inst1|e        ; |Integracao|UnidadedeControle:inst1|e        ; out0             ;
+; |Integracao|UnidadedeControle:inst1|7        ; |Integracao|UnidadedeControle:inst1|7        ; out0             ;
+; |Integracao|UnidadedeControle:inst1|14       ; |Integracao|UnidadedeControle:inst1|14       ; out0             ;
+; |Integracao|UnidadedeControle:inst1|inst18   ; |Integracao|UnidadedeControle:inst1|inst18   ; out0             ;
+; |Integracao|UnidadedeControle:inst1|b        ; |Integracao|UnidadedeControle:inst1|b        ; out              ;
+; |Integracao|UnidadedeControle:inst1|g        ; |Integracao|UnidadedeControle:inst1|g        ; out0             ;
+; |Integracao|UnidadedeControle:inst1|inst20   ; |Integracao|UnidadedeControle:inst1|inst20   ; out0             ;
+; |Integracao|UnidadedeControle:inst1|c        ; |Integracao|UnidadedeControle:inst1|c        ; out              ;
+; |Integracao|UnidadedeControle:inst1|5        ; |Integracao|UnidadedeControle:inst1|5        ; out0             ;
+; |Integracao|UnidadedeControle:inst1|inst21   ; |Integracao|UnidadedeControle:inst1|inst21   ; out0             ;
+; |Integracao|UnidadedeControle:inst1|d        ; |Integracao|UnidadedeControle:inst1|d        ; out              ;
+; |Integracao|UnidadedeControle:inst1|6        ; |Integracao|UnidadedeControle:inst1|6        ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|20 ; |Integracao|FluxoDeDados:inst|74173:inst2|20 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|12 ; |Integracao|FluxoDeDados:inst|74173:inst2|12 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|18 ; |Integracao|FluxoDeDados:inst|74173:inst2|18 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|16 ; |Integracao|FluxoDeDados:inst|74173:inst2|16 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|10 ; |Integracao|FluxoDeDados:inst|74173:inst2|10 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|14 ; |Integracao|FluxoDeDados:inst|74173:inst2|14 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|12  ; |Integracao|FluxoDeDados:inst|74173:inst|12  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|18  ; |Integracao|FluxoDeDados:inst|74173:inst|18  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|10  ; |Integracao|FluxoDeDados:inst|74173:inst|10  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|14  ; |Integracao|FluxoDeDados:inst|74173:inst|14  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|20 ; |Integracao|FluxoDeDados:inst|74157:inst3|20 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|21 ; |Integracao|FluxoDeDados:inst|74157:inst3|21 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|24 ; |Integracao|FluxoDeDados:inst|74157:inst3|24 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|19 ; |Integracao|FluxoDeDados:inst|74157:inst3|19 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|16 ; |Integracao|FluxoDeDados:inst|74157:inst3|16 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|17 ; |Integracao|FluxoDeDados:inst|74157:inst3|17 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|22 ; |Integracao|FluxoDeDados:inst|74157:inst3|22 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|15 ; |Integracao|FluxoDeDados:inst|74157:inst3|15 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|20 ; |Integracao|FluxoDeDados:inst|74173:inst1|20 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|19 ; |Integracao|FluxoDeDados:inst|74173:inst1|19 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|18 ; |Integracao|FluxoDeDados:inst|74173:inst1|18 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|16 ; |Integracao|FluxoDeDados:inst|74173:inst1|16 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|15 ; |Integracao|FluxoDeDados:inst|74173:inst1|15 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|14 ; |Integracao|FluxoDeDados:inst|74173:inst1|14 ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |Integracao|RES                              ; |Integracao|RES                              ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst|42  ; |Integracao|FluxoDeDados:inst|74173:inst|42  ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst|9   ; |Integracao|FluxoDeDados:inst|74173:inst|9   ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst|13  ; |Integracao|FluxoDeDados:inst|74173:inst|13  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|21  ; |Integracao|FluxoDeDados:inst|74173:inst|21  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|20  ; |Integracao|FluxoDeDados:inst|74173:inst|20  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|44  ; |Integracao|FluxoDeDados:inst|74173:inst|44  ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst|7   ; |Integracao|FluxoDeDados:inst|74173:inst|7   ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst|11  ; |Integracao|FluxoDeDados:inst|74173:inst|11  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|17  ; |Integracao|FluxoDeDados:inst|74173:inst|17  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|16  ; |Integracao|FluxoDeDados:inst|74173:inst|16  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|18 ; |Integracao|FluxoDeDados:inst|74157:inst3|18 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|14 ; |Integracao|FluxoDeDados:inst|74157:inst3|14 ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |Integracao|OUT[3]                           ; |Integracao|OUT[3]                           ; pin_out          ;
+; |Integracao|OUT[2]                           ; |Integracao|OUT[2]                           ; pin_out          ;
+; |Integracao|OUT[1]                           ; |Integracao|OUT[1]                           ; pin_out          ;
+; |Integracao|OUT[0]                           ; |Integracao|OUT[0]                           ; pin_out          ;
+; |Integracao|RES                              ; |Integracao|RES                              ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|42 ; |Integracao|FluxoDeDados:inst|74173:inst2|42 ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|9  ; |Integracao|FluxoDeDados:inst|74173:inst2|9  ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|13 ; |Integracao|FluxoDeDados:inst|74173:inst2|13 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|21 ; |Integracao|FluxoDeDados:inst|74173:inst2|21 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|43 ; |Integracao|FluxoDeDados:inst|74173:inst2|43 ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|8  ; |Integracao|FluxoDeDados:inst|74173:inst2|8  ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|19 ; |Integracao|FluxoDeDados:inst|74173:inst2|19 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|44 ; |Integracao|FluxoDeDados:inst|74173:inst2|44 ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|7  ; |Integracao|FluxoDeDados:inst|74173:inst2|7  ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|11 ; |Integracao|FluxoDeDados:inst|74173:inst2|11 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|17 ; |Integracao|FluxoDeDados:inst|74173:inst2|17 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|45 ; |Integracao|FluxoDeDados:inst|74173:inst2|45 ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|6  ; |Integracao|FluxoDeDados:inst|74173:inst2|6  ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst2|15 ; |Integracao|FluxoDeDados:inst|74173:inst2|15 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|42  ; |Integracao|FluxoDeDados:inst|74173:inst|42  ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst|9   ; |Integracao|FluxoDeDados:inst|74173:inst|9   ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst|13  ; |Integracao|FluxoDeDados:inst|74173:inst|13  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|21  ; |Integracao|FluxoDeDados:inst|74173:inst|21  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|20  ; |Integracao|FluxoDeDados:inst|74173:inst|20  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|43  ; |Integracao|FluxoDeDados:inst|74173:inst|43  ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst|8   ; |Integracao|FluxoDeDados:inst|74173:inst|8   ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst|19  ; |Integracao|FluxoDeDados:inst|74173:inst|19  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|44  ; |Integracao|FluxoDeDados:inst|74173:inst|44  ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst|7   ; |Integracao|FluxoDeDados:inst|74173:inst|7   ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst|11  ; |Integracao|FluxoDeDados:inst|74173:inst|11  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|17  ; |Integracao|FluxoDeDados:inst|74173:inst|17  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|16  ; |Integracao|FluxoDeDados:inst|74173:inst|16  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst|45  ; |Integracao|FluxoDeDados:inst|74173:inst|45  ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst|6   ; |Integracao|FluxoDeDados:inst|74173:inst|6   ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst|15  ; |Integracao|FluxoDeDados:inst|74173:inst|15  ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|25 ; |Integracao|FluxoDeDados:inst|74157:inst3|25 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|18 ; |Integracao|FluxoDeDados:inst|74157:inst3|18 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|23 ; |Integracao|FluxoDeDados:inst|74157:inst3|23 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74157:inst3|14 ; |Integracao|FluxoDeDados:inst|74157:inst3|14 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|42 ; |Integracao|FluxoDeDados:inst|74173:inst1|42 ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|9  ; |Integracao|FluxoDeDados:inst|74173:inst1|9  ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|13 ; |Integracao|FluxoDeDados:inst|74173:inst1|13 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|21 ; |Integracao|FluxoDeDados:inst|74173:inst1|21 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|43 ; |Integracao|FluxoDeDados:inst|74173:inst1|43 ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|8  ; |Integracao|FluxoDeDados:inst|74173:inst1|8  ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|12 ; |Integracao|FluxoDeDados:inst|74173:inst1|12 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|44 ; |Integracao|FluxoDeDados:inst|74173:inst1|44 ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|7  ; |Integracao|FluxoDeDados:inst|74173:inst1|7  ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|11 ; |Integracao|FluxoDeDados:inst|74173:inst1|11 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|17 ; |Integracao|FluxoDeDados:inst|74173:inst1|17 ; out0             ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|45 ; |Integracao|FluxoDeDados:inst|74173:inst1|45 ; out              ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|6  ; |Integracao|FluxoDeDados:inst|74173:inst1|6  ; regout           ;
+; |Integracao|FluxoDeDados:inst|74173:inst1|10 ; |Integracao|FluxoDeDados:inst|74173:inst1|10 ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Oct 03 10:45:31 2014
+Info: Command: quartus_sim --simulation_results_format=VWF Projeto -c Projeto_qsim
+Info (324025): Using vector source file "C:/Users/Geoinformacao.CAS419258A10520/Desktop/Circuitos/Quartus/output_files/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 2.5 us on register "|Integracao|FluxoDeDados:inst|74173:inst2|8"
+Warning (324036): Found clock-sensitive change during active clock edge at time 2.5 us on register "|Integracao|FluxoDeDados:inst|74173:inst2|6"
+Warning (324036): Found clock-sensitive change during active clock edge at time 2.5 us on register "|Integracao|FluxoDeDados:inst|74173:inst|8"
+Warning (324036): Found clock-sensitive change during active clock edge at time 2.5 us on register "|Integracao|FluxoDeDados:inst|74173:inst|6"
+Warning (324036): Found clock-sensitive change during active clock edge at time 32.5 us on register "|Integracao|FluxoDeDados:inst|74173:inst2|9"
+Warning (324036): Found clock-sensitive change during active clock edge at time 32.5 us on register "|Integracao|FluxoDeDados:inst|74173:inst2|7"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      47.00 %
+Info (328052): Number of transitions in simulation is 237
+Info (324045): Vector file Projeto_qsim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 312 megabytes
+    Info: Processing ended: Fri Oct 03 10:45:32 2014
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,39 @@
+|Sistema1
+in1 => xor_component:xor1.a
+in2 => xor_component:xor1.b
+in3 => and_component:and1.a
+in4 => and_component:and1.b
+in5 => and_component:and2.b
+out1 <= not_component:inv1.b
+out2 <= and_component:and2.c
+
+
+|Sistema1|xor_component:xor1
+a => c.IN0
+b => c.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sistema1|and_component:and1
+a => c.IN0
+b => c.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sistema1|and_component:and2
+a => c.IN0
+b => c.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sistema1|and_component:and3
+a => c.IN0
+b => c.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sistema1|not_component:inv1
+a => b.DATAIN
+b <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+

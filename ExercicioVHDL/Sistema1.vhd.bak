@@ -1,0 +1,17 @@
+-- Arquivo Sistema1.vhd
+-- Sistema integrador dos componentes xor_component,and_component e not_component
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Sistema1 is 
+	port(
+		in1 : in bit;
+		in2 : in bit;
+		in3 : in bit;
+		in4 : in bit;
+		in5 : in bit;
+		out1 : out bit;
+		out2 : out bit
+	);
+end Sistema1;

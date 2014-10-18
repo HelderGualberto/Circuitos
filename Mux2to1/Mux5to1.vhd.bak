@@ -1,0 +1,7 @@
+-- Multiplex 5 to 1 of 3bits
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity 

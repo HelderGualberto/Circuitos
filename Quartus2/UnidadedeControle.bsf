@@ -1,0 +1,127 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 200 256)
+	(text "UnidadedeControle" (rect 5 0 112 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "N1" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "N1" (rect 21 27 36 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "N2" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "N2" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "M1" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "M1" (rect 21 59 37 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "M2" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "M2" (rect 21 75 37 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "RES" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "RES" (rect 21 91 44 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "CLKUC" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "CLKUC" (rect 21 107 61 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "SEL" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "SEL" (rect 93 27 115 41)(font "Arial" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(port
+		(pt 136 80)
+		(output)
+		(text "EN3" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "EN3" (rect 93 75 115 89)(font "Arial" (font_size 8)))
+		(line (pt 136 80)(pt 120 80))
+	)
+	(port
+		(pt 136 48)
+		(output)
+		(text "EN1" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "EN1" (rect 93 43 115 57)(font "Arial" (font_size 8)))
+		(line (pt 136 48)(pt 120 48))
+	)
+	(port
+		(pt 136 64)
+		(output)
+		(text "EN2" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "EN2" (rect 93 59 115 73)(font "Arial" (font_size 8)))
+		(line (pt 136 64)(pt 120 64))
+	)
+	(port
+		(pt 136 96)
+		(output)
+		(text "CLR1" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "CLR1" (rect 85 91 115 105)(font "Arial" (font_size 8)))
+		(line (pt 136 96)(pt 120 96))
+	)
+	(port
+		(pt 136 112)
+		(output)
+		(text "CLR2" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "CLR2" (rect 85 107 115 121)(font "Arial" (font_size 8)))
+		(line (pt 136 112)(pt 120 112))
+	)
+	(port
+		(pt 136 128)
+		(output)
+		(text "CLR3" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "CLR3" (rect 85 123 115 137)(font "Arial" (font_size 8)))
+		(line (pt 136 128)(pt 120 128))
+	)
+	(port
+		(pt 136 144)
+		(output)
+		(text "CLKout" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLKout" (rect 74 139 115 153)(font "Arial" (font_size 8)))
+		(line (pt 136 144)(pt 120 144))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 176))
+	)
+)

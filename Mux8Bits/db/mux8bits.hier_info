@@ -1,0 +1,35 @@
+|mux8bits
+x[7] => m.DATAB
+x[6] => m.DATAB
+x[5] => m.DATAB
+x[4] => m.DATAB
+x[3] => m.DATAB
+x[2] => m.DATAB
+x[1] => m.DATAB
+x[0] => m.DATAB
+y[7] => m.DATAA
+y[6] => m.DATAA
+y[5] => m.DATAA
+y[4] => m.DATAA
+y[3] => m.DATAA
+y[2] => m.DATAA
+y[1] => m.DATAA
+y[0] => m.DATAA
+s => m.OUTPUTSELECT
+s => m.OUTPUTSELECT
+s => m.OUTPUTSELECT
+s => m.OUTPUTSELECT
+s => m.OUTPUTSELECT
+s => m.OUTPUTSELECT
+s => m.OUTPUTSELECT
+s => m.OUTPUTSELECT
+m[7] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[6] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[5] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[4] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[3] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[2] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[1] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

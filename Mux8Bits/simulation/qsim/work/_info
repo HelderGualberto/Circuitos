@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\gitHub\Circuitos\Mux8Bits\simulation\qsim
+vmux8bits
+Z1 I[<JDhMm[U9I`]mC_1gQ:[3
+Z2 V4@49NzQbiTY2VYhk4Jnj90
+Z3 dD:\gitHub\Circuitos\Mux8Bits\simulation\qsim
+Z4 w1413668550
+Z5 8mux8bits.vo
+Z6 Fmux8bits.vo
+L0 32
+Z7 OV;L;10.1e;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 =10THD_hfj^[PN2Clg;]53
+!s85 0
+Z10 !s108 1413668552.300000
+Z11 !s107 mux8bits.vo|
+Z12 !s90 -work|work|mux8bits.vo|
+!s101 -O0
+vmux8bits_vlg_check_tst
+!i10b 1
+!s100 6z=hIacA6nTLA8BE0D@8A1
+Ii3zmNf?cb0]ViH9ELR82@3
+VbWO71<o?S;>X9V5X2gY??2
+R3
+Z13 w1413668548
+Z14 8mux8bitsSimulation.vwf.vt
+Z15 Fmux8bitsSimulation.vwf.vt
+L0 62
+R7
+r1
+!s85 0
+31
+Z16 !s108 1413668552.587000
+Z17 !s107 mux8bitsSimulation.vwf.vt|
+Z18 !s90 -work|work|mux8bitsSimulation.vwf.vt|
+!s101 -O0
+R8
+vmux8bits_vlg_sample_tst
+!i10b 1
+!s100 SN3R1iDIPCP_Ba0c]fSfc0
+Ia`=MNHD7@J_?Sh[2JAEU;2
+V;@O5Y8dS1IWg0=^SG;dSH2
+R3
+R13
+R14
+R15
+L0 30
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vmux8bits_vlg_vec_tst
+!i10b 1
+!s100 DOg:YcOm_a>DfB=RYh^;C3
+IJn]K<JkVeh1S]JfJW4ZgD0
+ValJIdYZcJd6OOPUVg[dO_2
+R3
+R13
+R14
+R15
+L0 290
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

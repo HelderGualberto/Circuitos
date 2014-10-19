@@ -1,37 +1,39 @@
-|Mux5to1
-u[2] => m[2].DATAB
-u[1] => m[1].DATAB
-u[0] => m[0].DATAB
-v[2] => m[2].DATAB
-v[1] => m[1].DATAB
-v[0] => m[0].DATAB
-w[2] => m[2].DATAB
-w[1] => m[1].DATAB
-w[0] => m[0].DATAB
-x[2] => m[2].DATAA
-x[1] => m[1].DATAA
-x[0] => m[0].DATAA
-y[2] => m[2].DATAB
-y[1] => m[1].DATAB
-y[0] => m[0].DATAB
-s[0] => Equal0.IN2
-s[0] => Equal1.IN1
-s[0] => Equal2.IN2
-s[0] => Equal3.IN2
-s[1] => Equal0.IN1
-s[1] => Equal1.IN2
-s[1] => Equal2.IN1
-s[1] => Equal3.IN1
-s[2] => m[2].OUTPUTSELECT
-s[2] => m[1].OUTPUTSELECT
-s[2] => m[0].OUTPUTSELECT
-s[2] => m[0].IN1
-s[2] => Equal0.IN0
-s[2] => Equal1.IN0
-s[2] => Equal2.IN0
-s[2] => Equal3.IN0
-m[2] <= m[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-m[1] <= m[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-m[0] <= m[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+|Mux8Bits
+s => Mux2to1:mux0.s0
+s => Mux2to1:mux1.s0
+s => Mux2to1:mux2.s0
+inputX[2] => Mux2to1:mux2.x
+inputX[1] => Mux2to1:mux1.x
+inputX[0] => Mux2to1:mux0.x
+inputY[2] => Mux2to1:mux2.y
+inputY[1] => Mux2to1:mux1.y
+inputY[0] => Mux2to1:mux0.y
+output[2] <= Mux2to1:mux2.z
+output[1] <= Mux2to1:mux1.z
+output[0] <= Mux2to1:mux0.z
+
+
+|Mux8Bits|Mux2to1:mux0
+x => z.IN0
+y => z.IN0
+s0 => z.IN1
+s0 => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux8Bits|Mux2to1:mux1
+x => z.IN0
+y => z.IN0
+s0 => z.IN1
+s0 => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux8Bits|Mux2to1:mux2
+x => z.IN0
+y => z.IN0
+s0 => z.IN1
+s0 => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 

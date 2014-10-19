@@ -1,0 +1,48 @@
+# do mux8bits.do 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module mux8bits
+# 
+# Top level modules:
+# 	mux8bits
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module mux8bits_vlg_sample_tst
+# -- Compiling module mux8bits_vlg_check_tst
+# -- Compiling module mux8bits_vlg_vec_tst
+# 
+# Top level modules:
+# 	mux8bits_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver -c -voptargs=\"+acc\" -t 1ps -novopt work.mux8bits_vlg_vec_tst 
+# Loading work.mux8bits_vlg_vec_tst
+# Loading work.mux8bits
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading work.mux8bits_vlg_sample_tst
+# Loading work.mux8bits_vlg_check_tst
+# ERROR! Vector Mismatch for output port m[0] :: @time = 5000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10101000
+# ERROR! Vector Mismatch for output port m[2] :: @time = 5000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10101000
+# ERROR! Vector Mismatch for output port m[4] :: @time = 5000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10101000
+# ERROR! Vector Mismatch for output port m[1] :: @time = 10000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01000110
+# ERROR! Vector Mismatch for output port m[5] :: @time = 10000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01000110
+# ERROR! Vector Mismatch for output port m[6] :: @time = 10000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01000110
+# ERROR! Vector Mismatch for output port m[3] :: @time = 35000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11110000
+# ERROR! Vector Mismatch for output port m[7] :: @time = 40000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11011001
+#           8 mismatched vectors : Simulation failed !
+# ** Note: $finish    : mux8bitsSimulation.vwf.vt(286)
+#    Time: 100 us  Iteration: 0  Instance: /mux8bits_vlg_vec_tst/tb_out

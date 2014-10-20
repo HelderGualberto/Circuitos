@@ -1,0 +1,13 @@
+# do decoder5out.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module characterPattern
+# 
+# Top level modules:
+# 	characterPattern
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module characterPattern_vlg_sample_tst
+# ** Error: Waveform.vwf.vt(31): near ",": syntax error, unexpected ','
+# ** Error: d:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./decoder5out.do line 4

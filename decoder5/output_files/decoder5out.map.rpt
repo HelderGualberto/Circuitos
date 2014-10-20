@@ -1,5 +1,5 @@
 Analysis & Synthesis report for decoder5out
-Sat Oct 18 21:09:09 2014
+Mon Oct 20 16:49:05 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -13,17 +13,12 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "decoder5out:dec4"
- 12. Port Connectivity Checks: "decoder5out:dec3"
- 13. Port Connectivity Checks: "decoder5out:dec2"
- 14. Port Connectivity Checks: "decoder5out:dec1"
- 15. Port Connectivity Checks: "decoder5out:dec0"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "hello:h"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -50,16 +45,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 18 21:09:09 2014      ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 20 16:49:05 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; decoder5out                                ;
-; Top-level Entity Name              ; hello                                      ;
+; Top-level Entity Name              ; characterPattern                           ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 103                                        ;
-;     Total combinational functions  ; 103                                        ;
+; Total logic elements               ; 112                                        ;
+;     Total combinational functions  ; 112                                        ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 53                                         ;
+; Total pins                         ; 74                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -73,7 +68,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; hello              ; decoder5out        ;
+; Top-level entity name                                                      ; characterPattern   ; decoder5out        ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -171,16 +166,17 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                        ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
-; Mux5to1.vhd                      ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/Mux5to1.vhd     ;         ;
-; codec7s.vhd                      ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/codec7s.vhd     ;         ;
-; decoder5out.vhd                  ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/decoder5out.vhd ;         ;
-; hello.vhd                        ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/hello.vhd       ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+; Mux5to1.vhd                      ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/Mux5to1.vhd          ;         ;
+; codec7s.vhd                      ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/codec7s.vhd          ;         ;
+; decoder5out.vhd                  ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/decoder5out.vhd      ;         ;
+; hello.vhd                        ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/hello.vhd            ;         ;
+; characterPattern.vhd             ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/decoder5/characterPattern.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -188,74 +184,42 @@ agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 103        ;
+; Estimated Total logic elements              ; 112        ;
 ;                                             ;            ;
-; Total combinational functions               ; 103        ;
+; Total combinational functions               ; 112        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 53         ;
-;     -- 3 input functions                    ; 35         ;
-;     -- <=2 input functions                  ; 15         ;
+;     -- 4 input functions                    ; 68         ;
+;     -- 3 input functions                    ; 37         ;
+;     -- <=2 input functions                  ; 7          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 103        ;
+;     -- normal mode                          ; 112        ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 53         ;
+; I/O pins                                    ; 74         ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
-; Maximum fan-out node                        ; s[0]~input ;
-; Maximum fan-out                             ; 19         ;
-; Total fan-out                               ; 435        ;
-; Average fan-out                             ; 2.08       ;
+; Maximum fan-out node                        ; s[1]~input ;
+; Maximum fan-out                             ; 60         ;
+; Total fan-out                               ; 527        ;
+; Average fan-out                             ; 2.03       ;
 +---------------------------------------------+------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                          ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
-; |hello                     ; 103 (30)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 53   ; 0            ; |hello                               ; work         ;
-;    |decoder5out:dec0|      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec0              ; work         ;
-;       |Mux5to1:mux0|       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec0|Mux5to1:mux0 ; work         ;
-;       |codec7s:h0|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec0|codec7s:h0   ; work         ;
-;    |decoder5out:dec1|      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec1              ; work         ;
-;       |Mux5to1:mux0|       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec1|Mux5to1:mux0 ; work         ;
-;       |codec7s:h0|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec1|codec7s:h0   ; work         ;
-;    |decoder5out:dec2|      ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec2              ; work         ;
-;       |Mux5to1:mux0|       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec2|Mux5to1:mux0 ; work         ;
-;       |codec7s:h0|         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec2|codec7s:h0   ; work         ;
-;    |decoder5out:dec3|      ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec3              ; work         ;
-;       |Mux5to1:mux0|       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec3|Mux5to1:mux0 ; work         ;
-;       |codec7s:h0|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec3|codec7s:h0   ; work         ;
-;    |decoder5out:dec4|      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec4              ; work         ;
-;       |Mux5to1:mux0|       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec4|Mux5to1:mux0 ; work         ;
-;       |codec7s:h0|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|decoder5out:dec4|codec7s:h0   ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+; |characterPattern          ; 112 (111)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |characterPattern                                     ; work         ;
+;    |hello:h|               ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:h                             ; work         ;
+;       |decoder5out:dec4|   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:h|decoder5out:dec4            ; work         ;
+;          |codec7s:h0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:h|decoder5out:dec4|codec7s:h0 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; s4[2]                                               ; GND                 ; yes                    ;
-; s4[1]                                               ; GND                 ; yes                    ;
-; s3[2]                                               ; GND                 ; yes                    ;
-; s3[1]                                               ; GND                 ; yes                    ;
-; s2[2]                                               ; GND                 ; yes                    ;
-; s2[1]                                               ; GND                 ; yes                    ;
-; s1[2]                                               ; GND                 ; yes                    ;
-; s1[1]                                               ; GND                 ; yes                    ;
-; s0[2]                                               ; GND                 ; yes                    ;
-; s0[1]                                               ; GND                 ; yes                    ;
-; Number of user-specified and inferred latches = 10  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -273,69 +237,25 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec4|codec7s:h0|seg[0] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec3|codec7s:h0|seg[2] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec2|codec7s:h0|seg[2] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec1|codec7s:h0|seg[0] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec0|codec7s:h0|seg[2] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |hello|s2[2]                              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec4|Mux5to1:mux0|m[2] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec3|Mux5to1:mux0|m[0] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec2|Mux5to1:mux0|m[2] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec1|Mux5to1:mux0|m[0] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |hello|decoder5out:dec0|Mux5to1:mux0|m[0] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |hello|s1[1]                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:h|decoder5out:dec1|codec7s:h0|seg[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:h|decoder5out:dec3|codec7s:h0|seg[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:h|decoder5out:dec0|codec7s:h0|seg[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:h|decoder5out:dec4|codec7s:h0|seg[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
 
 
-+----------------------------------------------+
-; Port Connectivity Checks: "decoder5out:dec4" ;
-+------+-------+----------+--------------------+
-; Port ; Type  ; Severity ; Details            ;
-+------+-------+----------+--------------------+
-; s[0] ; Input ; Info     ; Stuck at GND       ;
-+------+-------+----------+--------------------+
-
-
-+----------------------------------------------+
-; Port Connectivity Checks: "decoder5out:dec3" ;
-+------+-------+----------+--------------------+
-; Port ; Type  ; Severity ; Details            ;
-+------+-------+----------+--------------------+
-; s[0] ; Input ; Info     ; Stuck at GND       ;
-+------+-------+----------+--------------------+
-
-
-+----------------------------------------------+
-; Port Connectivity Checks: "decoder5out:dec2" ;
-+------+-------+----------+--------------------+
-; Port ; Type  ; Severity ; Details            ;
-+------+-------+----------+--------------------+
-; s[0] ; Input ; Info     ; Stuck at GND       ;
-+------+-------+----------+--------------------+
-
-
-+----------------------------------------------+
-; Port Connectivity Checks: "decoder5out:dec1" ;
-+------+-------+----------+--------------------+
-; Port ; Type  ; Severity ; Details            ;
-+------+-------+----------+--------------------+
-; s[0] ; Input ; Info     ; Stuck at GND       ;
-+------+-------+----------+--------------------+
-
-
-+----------------------------------------------+
-; Port Connectivity Checks: "decoder5out:dec0" ;
-+------+-------+----------+--------------------+
-; Port ; Type  ; Severity ; Details            ;
-+------+-------+----------+--------------------+
-; s[0] ; Input ; Info     ; Stuck at GND       ;
-+------+-------+----------+--------------------+
++----------------------------------------+
+; Port Connectivity Checks: "hello:h"    ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; s    ; Input ; Info     ; Stuck at GND ;
++------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -343,15 +263,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 53                          ;
-; cycloneiii_lcell_comb ; 103                         ;
-;     normal            ; 103                         ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 35                          ;
-;         4 data inputs ; 53                          ;
+; boundary_port         ; 74                          ;
+; cycloneiii_lcell_comb ; 112                         ;
+;     normal            ; 112                         ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 37                          ;
+;         4 data inputs ; 68                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.42                        ;
+; Average LUT depth     ; 3.59                        ;
 +-----------------------+-----------------------------+
 
 
@@ -370,7 +290,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Sat Oct 18 21:09:07 2014
+    Info: Processing started: Mon Oct 20 16:49:02 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decoder5out -c decoder5out
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file mux5to1.vhd
@@ -385,41 +305,29 @@ Info (12021): Found 2 design units, including 1 entities, in source file decoder
 Info (12021): Found 2 design units, including 1 entities, in source file hello.vhd
     Info (12022): Found design unit 1: hello-comport
     Info (12023): Found entity 1: hello
-Info (12127): Elaborating entity "hello" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at hello.vhd(27): inferring latch(es) for signal or variable "s0", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at hello.vhd(27): inferring latch(es) for signal or variable "s1", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at hello.vhd(27): inferring latch(es) for signal or variable "s2", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at hello.vhd(27): inferring latch(es) for signal or variable "s3", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at hello.vhd(27): inferring latch(es) for signal or variable "s4", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "s4[2]" at hello.vhd(27)
-Info (10041): Inferred latch for "s4[1]" at hello.vhd(27)
-Info (10041): Inferred latch for "s4[0]" at hello.vhd(27)
-Info (10041): Inferred latch for "s3[2]" at hello.vhd(27)
-Info (10041): Inferred latch for "s3[1]" at hello.vhd(27)
-Info (10041): Inferred latch for "s3[0]" at hello.vhd(27)
-Info (10041): Inferred latch for "s2[2]" at hello.vhd(27)
-Info (10041): Inferred latch for "s2[1]" at hello.vhd(27)
-Info (10041): Inferred latch for "s2[0]" at hello.vhd(27)
-Info (10041): Inferred latch for "s1[2]" at hello.vhd(27)
-Info (10041): Inferred latch for "s1[1]" at hello.vhd(27)
-Info (10041): Inferred latch for "s1[0]" at hello.vhd(27)
-Info (10041): Inferred latch for "s0[2]" at hello.vhd(27)
-Info (10041): Inferred latch for "s0[1]" at hello.vhd(27)
-Info (10041): Inferred latch for "s0[0]" at hello.vhd(27)
-Info (12128): Elaborating entity "decoder5out" for hierarchy "decoder5out:dec0"
-Info (12128): Elaborating entity "Mux5to1" for hierarchy "decoder5out:dec0|Mux5to1:mux0"
-Info (12128): Elaborating entity "codec7s" for hierarchy "decoder5out:dec0|codec7s:h0"
+Info (12021): Found 2 design units, including 1 entities, in source file characterpattern.vhd
+    Info (12022): Found design unit 1: characterPattern-comport
+    Info (12023): Found entity 1: characterPattern
+Info (12127): Elaborating entity "characterPattern" for the top level hierarchy
+Info (12128): Elaborating entity "hello" for hierarchy "hello:h"
+Info (12128): Elaborating entity "decoder5out" for hierarchy "hello:h|decoder5out:dec0"
+Info (12128): Elaborating entity "Mux5to1" for hierarchy "hello:h|decoder5out:dec0|Mux5to1:mux0"
+Info (12128): Elaborating entity "codec7s" for hierarchy "hello:h|decoder5out:dec0|codec7s:h0"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 156 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "input[14]"
+    Warning (15610): No output dependent on input pin "input[13]"
+    Warning (15610): No output dependent on input pin "input[12]"
+Info (21057): Implemented 186 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 35 output pins
-    Info (21061): Implemented 103 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 590 megabytes
-    Info: Processing ended: Sat Oct 18 21:09:09 2014
-    Info: Elapsed time: 00:00:02
+    Info (21059): Implemented 56 output pins
+    Info (21061): Implemented 112 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 613 megabytes
+    Info: Processing ended: Mon Oct 20 16:49:05 2014
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

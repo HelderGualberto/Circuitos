@@ -1,4 +1,102 @@
-|hello
+|characterPattern
+input[14] => hello:h.sw[14]
+input[13] => hello:h.sw[13]
+input[12] => hello:h.sw[12]
+input[11] => hello:h.sw[11]
+input[10] => hello:h.sw[10]
+input[9] => hello:h.sw[9]
+input[8] => hello:h.sw[8]
+input[7] => hello:h.sw[7]
+input[6] => hello:h.sw[6]
+input[5] => hello:h.sw[5]
+input[4] => hello:h.sw[4]
+input[3] => hello:h.sw[3]
+input[2] => hello:h.sw[2]
+input[1] => hello:h.sw[1]
+input[0] => hello:h.sw[0]
+s[2] => Equal0.IN2
+s[2] => Equal1.IN0
+s[2] => Equal2.IN2
+s[2] => Equal3.IN1
+s[2] => Equal4.IN2
+s[2] => Equal5.IN1
+s[2] => Equal6.IN2
+s[2] => Equal7.IN2
+s[1] => Equal0.IN1
+s[1] => Equal1.IN2
+s[1] => Equal2.IN0
+s[1] => Equal3.IN0
+s[1] => Equal4.IN1
+s[1] => Equal5.IN2
+s[1] => Equal6.IN1
+s[1] => Equal7.IN1
+s[0] => Equal0.IN0
+s[0] => Equal1.IN1
+s[0] => Equal2.IN1
+s[0] => Equal3.IN2
+s[0] => Equal4.IN0
+s[0] => Equal5.IN0
+s[0] => Equal6.IN0
+s[0] => Equal7.IN0
+out0[6] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+out0[5] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+out0[4] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+out0[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+out1[6] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[0] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out2[6] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+out2[5] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+out2[4] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+out2[3] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+out2[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+out2[1] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+out2[0] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+out3[6] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+out3[5] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+out3[4] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+out3[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+out3[2] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+out3[1] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+out3[0] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+out4[6] <= out4.DB_MAX_OUTPUT_PORT_TYPE
+out4[5] <= out4.DB_MAX_OUTPUT_PORT_TYPE
+out4[4] <= out4.DB_MAX_OUTPUT_PORT_TYPE
+out4[3] <= out4.DB_MAX_OUTPUT_PORT_TYPE
+out4[2] <= out4.DB_MAX_OUTPUT_PORT_TYPE
+out4[1] <= out4.DB_MAX_OUTPUT_PORT_TYPE
+out4[0] <= out4.DB_MAX_OUTPUT_PORT_TYPE
+out5[6] <= out5.DB_MAX_OUTPUT_PORT_TYPE
+out5[5] <= out5.DB_MAX_OUTPUT_PORT_TYPE
+out5[4] <= out5.DB_MAX_OUTPUT_PORT_TYPE
+out5[3] <= out5.DB_MAX_OUTPUT_PORT_TYPE
+out5[2] <= out5.DB_MAX_OUTPUT_PORT_TYPE
+out5[1] <= out5.DB_MAX_OUTPUT_PORT_TYPE
+out5[0] <= out5.DB_MAX_OUTPUT_PORT_TYPE
+out6[6] <= out6.DB_MAX_OUTPUT_PORT_TYPE
+out6[5] <= out6.DB_MAX_OUTPUT_PORT_TYPE
+out6[4] <= out6.DB_MAX_OUTPUT_PORT_TYPE
+out6[3] <= out6.DB_MAX_OUTPUT_PORT_TYPE
+out6[2] <= out6.DB_MAX_OUTPUT_PORT_TYPE
+out6[1] <= out6.DB_MAX_OUTPUT_PORT_TYPE
+out6[0] <= out6.DB_MAX_OUTPUT_PORT_TYPE
+out7[6] <= out7.DB_MAX_OUTPUT_PORT_TYPE
+out7[5] <= out7.DB_MAX_OUTPUT_PORT_TYPE
+out7[4] <= out7.DB_MAX_OUTPUT_PORT_TYPE
+out7[3] <= out7.DB_MAX_OUTPUT_PORT_TYPE
+out7[2] <= out7.DB_MAX_OUTPUT_PORT_TYPE
+out7[1] <= out7.DB_MAX_OUTPUT_PORT_TYPE
+out7[0] <= out7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|characterPattern|hello:h
 sw[14] => decoder5out:dec0.inputs[14]
 sw[14] => decoder5out:dec1.inputs[14]
 sw[14] => decoder5out:dec2.inputs[14]
@@ -74,59 +172,119 @@ sw[0] => decoder5out:dec1.inputs[0]
 sw[0] => decoder5out:dec2.inputs[0]
 sw[0] => decoder5out:dec3.inputs[0]
 sw[0] => decoder5out:dec4.inputs[0]
-s[2] => Equal0.IN2
+s[2] => Equal0.IN1
 s[2] => Equal1.IN2
 s[2] => Equal2.IN1
 s[2] => Equal3.IN2
-s[2] => Equal4.IN1
-s[1] => Equal0.IN1
+s[2] => Equal4.IN2
+s[2] => Equal5.IN1
+s[2] => Equal6.IN2
+s[2] => Equal7.IN1
+s[2] => Equal8.IN2
+s[2] => Equal9.IN2
+s[2] => Equal10.IN2
+s[2] => Equal11.IN2
+s[2] => Equal12.IN1
+s[2] => Equal13.IN2
+s[2] => Equal14.IN1
+s[2] => Equal15.IN1
+s[2] => Equal16.IN2
+s[2] => Equal17.IN2
+s[2] => Equal18.IN1
+s[2] => Equal19.IN2
+s[2] => Equal20.IN1
+s[2] => Equal21.IN2
+s[2] => Equal22.IN1
+s[2] => Equal23.IN2
+s[2] => Equal24.IN2
+s[1] => Equal0.IN2
 s[1] => Equal1.IN1
-s[1] => Equal2.IN2
+s[1] => Equal2.IN0
 s[1] => Equal3.IN1
-s[1] => Equal4.IN0
+s[1] => Equal4.IN1
+s[1] => Equal5.IN2
+s[1] => Equal6.IN1
+s[1] => Equal7.IN0
+s[1] => Equal8.IN1
+s[1] => Equal9.IN1
+s[1] => Equal10.IN1
+s[1] => Equal11.IN1
+s[1] => Equal12.IN0
+s[1] => Equal13.IN1
+s[1] => Equal14.IN2
+s[1] => Equal15.IN0
+s[1] => Equal16.IN1
+s[1] => Equal17.IN1
+s[1] => Equal18.IN2
+s[1] => Equal19.IN1
+s[1] => Equal20.IN0
+s[1] => Equal21.IN1
+s[1] => Equal22.IN2
+s[1] => Equal23.IN1
+s[1] => Equal24.IN1
 s[0] => Equal0.IN0
 s[0] => Equal1.IN0
-s[0] => Equal2.IN0
+s[0] => Equal2.IN2
 s[0] => Equal3.IN0
-s[0] => Equal4.IN2
-dOut[34] << decoder5out:dec4.HEX0[6]
-dOut[33] << decoder5out:dec4.HEX0[5]
-dOut[32] << decoder5out:dec4.HEX0[4]
-dOut[31] << decoder5out:dec4.HEX0[3]
-dOut[30] << decoder5out:dec4.HEX0[2]
-dOut[29] << decoder5out:dec4.HEX0[1]
-dOut[28] << decoder5out:dec4.HEX0[0]
-dOut[27] << decoder5out:dec3.HEX0[6]
-dOut[26] << decoder5out:dec3.HEX0[5]
-dOut[25] << decoder5out:dec3.HEX0[4]
-dOut[24] << decoder5out:dec3.HEX0[3]
-dOut[23] << decoder5out:dec3.HEX0[2]
-dOut[22] << decoder5out:dec3.HEX0[1]
-dOut[21] << decoder5out:dec3.HEX0[0]
-dOut[20] << decoder5out:dec2.HEX0[6]
-dOut[19] << decoder5out:dec2.HEX0[5]
-dOut[18] << decoder5out:dec2.HEX0[4]
-dOut[17] << decoder5out:dec2.HEX0[3]
-dOut[16] << decoder5out:dec2.HEX0[2]
-dOut[15] << decoder5out:dec2.HEX0[1]
-dOut[14] << decoder5out:dec2.HEX0[0]
-dOut[13] << decoder5out:dec1.HEX0[6]
-dOut[12] << decoder5out:dec1.HEX0[5]
-dOut[11] << decoder5out:dec1.HEX0[4]
-dOut[10] << decoder5out:dec1.HEX0[3]
-dOut[9] << decoder5out:dec1.HEX0[2]
-dOut[8] << decoder5out:dec1.HEX0[1]
-dOut[7] << decoder5out:dec1.HEX0[0]
-dOut[6] << decoder5out:dec0.HEX0[6]
-dOut[5] << decoder5out:dec0.HEX0[5]
-dOut[4] << decoder5out:dec0.HEX0[4]
-dOut[3] << decoder5out:dec0.HEX0[3]
-dOut[2] << decoder5out:dec0.HEX0[2]
-dOut[1] << decoder5out:dec0.HEX0[1]
-dOut[0] << decoder5out:dec0.HEX0[0]
+s[0] => Equal4.IN0
+s[0] => Equal5.IN0
+s[0] => Equal6.IN0
+s[0] => Equal7.IN2
+s[0] => Equal8.IN0
+s[0] => Equal9.IN0
+s[0] => Equal10.IN0
+s[0] => Equal11.IN0
+s[0] => Equal12.IN2
+s[0] => Equal13.IN0
+s[0] => Equal14.IN0
+s[0] => Equal15.IN2
+s[0] => Equal16.IN0
+s[0] => Equal17.IN0
+s[0] => Equal18.IN0
+s[0] => Equal19.IN0
+s[0] => Equal20.IN2
+s[0] => Equal21.IN0
+s[0] => Equal22.IN0
+s[0] => Equal23.IN0
+s[0] => Equal24.IN0
+D0[6] <= decoder5out:dec0.HEX0[6]
+D0[5] <= decoder5out:dec0.HEX0[5]
+D0[4] <= decoder5out:dec0.HEX0[4]
+D0[3] <= decoder5out:dec0.HEX0[3]
+D0[2] <= decoder5out:dec0.HEX0[2]
+D0[1] <= decoder5out:dec0.HEX0[1]
+D0[0] <= decoder5out:dec0.HEX0[0]
+D1[6] <= decoder5out:dec1.HEX0[6]
+D1[5] <= decoder5out:dec1.HEX0[5]
+D1[4] <= decoder5out:dec1.HEX0[4]
+D1[3] <= decoder5out:dec1.HEX0[3]
+D1[2] <= decoder5out:dec1.HEX0[2]
+D1[1] <= decoder5out:dec1.HEX0[1]
+D1[0] <= decoder5out:dec1.HEX0[0]
+D2[6] <= decoder5out:dec2.HEX0[6]
+D2[5] <= decoder5out:dec2.HEX0[5]
+D2[4] <= decoder5out:dec2.HEX0[4]
+D2[3] <= decoder5out:dec2.HEX0[3]
+D2[2] <= decoder5out:dec2.HEX0[2]
+D2[1] <= decoder5out:dec2.HEX0[1]
+D2[0] <= decoder5out:dec2.HEX0[0]
+D3[6] <= decoder5out:dec3.HEX0[6]
+D3[5] <= decoder5out:dec3.HEX0[5]
+D3[4] <= decoder5out:dec3.HEX0[4]
+D3[3] <= decoder5out:dec3.HEX0[3]
+D3[2] <= decoder5out:dec3.HEX0[2]
+D3[1] <= decoder5out:dec3.HEX0[1]
+D3[0] <= decoder5out:dec3.HEX0[0]
+D4[6] <= decoder5out:dec4.HEX0[6]
+D4[5] <= decoder5out:dec4.HEX0[5]
+D4[4] <= decoder5out:dec4.HEX0[4]
+D4[3] <= decoder5out:dec4.HEX0[3]
+D4[2] <= decoder5out:dec4.HEX0[2]
+D4[1] <= decoder5out:dec4.HEX0[1]
+D4[0] <= decoder5out:dec4.HEX0[0]
 
 
-|hello|decoder5out:dec0
+|characterPattern|hello:h|decoder5out:dec0
 inputs[14] => Mux5to1:mux0.y[2]
 inputs[13] => Mux5to1:mux0.y[1]
 inputs[12] => Mux5to1:mux0.y[0]
@@ -154,7 +312,7 @@ HEX0[1] <= codec7s:h0.seg[1]
 HEX0[0] <= codec7s:h0.seg[0]
 
 
-|hello|decoder5out:dec0|Mux5to1:mux0
+|characterPattern|hello:h|decoder5out:dec0|Mux5to1:mux0
 u[2] => m.DATAB
 u[1] => m.DATAB
 u[0] => m.DATAB
@@ -187,7 +345,7 @@ m[1] <= m.DB_MAX_OUTPUT_PORT_TYPE
 m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec0|codec7s:h0
+|characterPattern|hello:h|decoder5out:dec0|codec7s:h0
 c[2] => Equal0.IN2
 c[2] => Equal1.IN1
 c[2] => Equal2.IN2
@@ -209,7 +367,7 @@ seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
 seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec1
+|characterPattern|hello:h|decoder5out:dec1
 inputs[14] => Mux5to1:mux0.y[2]
 inputs[13] => Mux5to1:mux0.y[1]
 inputs[12] => Mux5to1:mux0.y[0]
@@ -237,7 +395,7 @@ HEX0[1] <= codec7s:h0.seg[1]
 HEX0[0] <= codec7s:h0.seg[0]
 
 
-|hello|decoder5out:dec1|Mux5to1:mux0
+|characterPattern|hello:h|decoder5out:dec1|Mux5to1:mux0
 u[2] => m.DATAB
 u[1] => m.DATAB
 u[0] => m.DATAB
@@ -270,7 +428,7 @@ m[1] <= m.DB_MAX_OUTPUT_PORT_TYPE
 m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec1|codec7s:h0
+|characterPattern|hello:h|decoder5out:dec1|codec7s:h0
 c[2] => Equal0.IN2
 c[2] => Equal1.IN1
 c[2] => Equal2.IN2
@@ -292,7 +450,7 @@ seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
 seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec2
+|characterPattern|hello:h|decoder5out:dec2
 inputs[14] => Mux5to1:mux0.y[2]
 inputs[13] => Mux5to1:mux0.y[1]
 inputs[12] => Mux5to1:mux0.y[0]
@@ -320,7 +478,7 @@ HEX0[1] <= codec7s:h0.seg[1]
 HEX0[0] <= codec7s:h0.seg[0]
 
 
-|hello|decoder5out:dec2|Mux5to1:mux0
+|characterPattern|hello:h|decoder5out:dec2|Mux5to1:mux0
 u[2] => m.DATAB
 u[1] => m.DATAB
 u[0] => m.DATAB
@@ -353,7 +511,7 @@ m[1] <= m.DB_MAX_OUTPUT_PORT_TYPE
 m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec2|codec7s:h0
+|characterPattern|hello:h|decoder5out:dec2|codec7s:h0
 c[2] => Equal0.IN2
 c[2] => Equal1.IN1
 c[2] => Equal2.IN2
@@ -375,7 +533,7 @@ seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
 seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec3
+|characterPattern|hello:h|decoder5out:dec3
 inputs[14] => Mux5to1:mux0.y[2]
 inputs[13] => Mux5to1:mux0.y[1]
 inputs[12] => Mux5to1:mux0.y[0]
@@ -403,7 +561,7 @@ HEX0[1] <= codec7s:h0.seg[1]
 HEX0[0] <= codec7s:h0.seg[0]
 
 
-|hello|decoder5out:dec3|Mux5to1:mux0
+|characterPattern|hello:h|decoder5out:dec3|Mux5to1:mux0
 u[2] => m.DATAB
 u[1] => m.DATAB
 u[0] => m.DATAB
@@ -436,7 +594,7 @@ m[1] <= m.DB_MAX_OUTPUT_PORT_TYPE
 m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec3|codec7s:h0
+|characterPattern|hello:h|decoder5out:dec3|codec7s:h0
 c[2] => Equal0.IN2
 c[2] => Equal1.IN1
 c[2] => Equal2.IN2
@@ -458,7 +616,7 @@ seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
 seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec4
+|characterPattern|hello:h|decoder5out:dec4
 inputs[14] => Mux5to1:mux0.y[2]
 inputs[13] => Mux5to1:mux0.y[1]
 inputs[12] => Mux5to1:mux0.y[0]
@@ -486,7 +644,7 @@ HEX0[1] <= codec7s:h0.seg[1]
 HEX0[0] <= codec7s:h0.seg[0]
 
 
-|hello|decoder5out:dec4|Mux5to1:mux0
+|characterPattern|hello:h|decoder5out:dec4|Mux5to1:mux0
 u[2] => m.DATAB
 u[1] => m.DATAB
 u[0] => m.DATAB
@@ -519,7 +677,7 @@ m[1] <= m.DB_MAX_OUTPUT_PORT_TYPE
 m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hello|decoder5out:dec4|codec7s:h0
+|characterPattern|hello:h|decoder5out:dec4|codec7s:h0
 c[2] => Equal0.IN2
 c[2] => Equal1.IN1
 c[2] => Equal2.IN2

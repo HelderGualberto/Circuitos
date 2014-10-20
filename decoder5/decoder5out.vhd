@@ -31,7 +31,12 @@ architecture comport of decoder5out is
 	
 	begin
 	
-	mux0 : Mux5to1 port map(inputs(0 to 2),inputs(3 to 5),inputs(6 to 8),inputs(9 to 11),inputs(12 to 14),s,mOut);
+	mux0 : Mux5to1 port map(u => inputs(0 to 2),
+									v => inputs(3 to 5),
+									w => inputs(6 to 8),
+									x => inputs(9 to 11),
+									y => inputs(12 to 14),s => s,m => mOut);
+									
 	h0 : codec7s port map (mOut,HEX0);
 	
 	

@@ -7,7 +7,7 @@ ENTITY hello is
 	port(
 		sw : in bit_vector(0 to 14);
 		s : in bit_vector(0 to 2);
-		dOut : out bit_vector(0 to 34)
+		D0,D1,D2,D3,D4 : out bit_vector(0 to 6)
 	);
 end hello;
 
@@ -24,45 +24,45 @@ architecture comport of hello is
 	SIGNAL s0,s1,s2,s3,s4 : bit_vector(0 to 2);
 	
 	begin
-	process(s)
-		begin
-		if s = "000" then
-			s0 <= "000";
-			s1 <= "001";
-			s2 <= "010";
-			s3 <= "010";
-			s4 <= "011"; end if;
-		if s = "001" then
-			s0 <= "001";
-			s1 <= "010";
-			s2 <= "010";
-			s3 <= "011";
-			s4 <= "000"; end if;
-		if s = "010" then
-			s0 <= "010";
-			s1 <= "010";
-			s2 <= "011";
-			s3 <= "000";
-			s4 <= "001"; end if;
-		if s = "011" then
-			s0 <= "010";
-			s1 <= "011";
-			s2 <= "000";
-			s3 <= "001";
-			s4 <= "010"; end if;
-		if s = "100" then
-			s0 <= "011";
-			s1 <= "000";
-			s2 <= "001";
-			s3 <= "010";
-			s4 <= "010"; end if;
+		s0 <= "000" when s = "000" else
+			   "001" when s = "001" else
+				"011" when s = "100" else
+				"010" when s = "011" else
+				"010" when s = "010" else
+				"100";
+				
+		s1 <= "001" when s = "000" else
+				"011" when s = "011" else
+				"000" when s = "100" else
+				"010" when s = "001" else
+				"010" when s = "010" else
+				"100";
+				
+		s2 <= "011" when s = "010" else
+				"000" when s = "011" else
+				"001" when s = "100" else
+				"010" when s = "001" else
+				"010" when s = "000" else
+				"100";
+				
+		s3 <= "011" when s = "001" else
+				"000" when s = "010" else
+				"001" when s = "011" else
+				"010" when s = "000" else
+				"010" when s = "100" else
+				"100";
 		
-	end process;
+		s4 <= "011" when s = "000" else
+				"000" when s = "001" else
+				"001" when s = "010" else
+				"010" when s = "011" else
+				"010" when s = "100" else
+				"100";	
 	
-	dec0 : decoder5out port map(inputs => sw,s => s0,HEX0 => dOut(0 to 6));
-	dec1 : decoder5out port map(inputs => sw,s => s1,HEX0 => dOut(7 to 13));
-	dec2 : decoder5out port map(inputs => sw,s => s2,HEX0 => dOut(14 to 20));
-	dec3 : decoder5out port map(inputs => sw,s => s3,HEX0 => dOut(21 to 27));
-	dec4 : decoder5out port map(inputs => sw,s => s4,HEX0 => dOut(28 to 34));
+	dec0 : decoder5out port map(inputs => sw,s => s0,HEX0 => D0);
+	dec1 : decoder5out port map(inputs => sw,s => s1,HEX0 => D1);
+	dec2 : decoder5out port map(inputs => sw,s => s2,HEX0 => D2);
+	dec3 : decoder5out port map(inputs => sw,s => s3,HEX0 => D3);
+	dec4 : decoder5out port map(inputs => sw,s => s4,HEX0 => D4);
 	
 end comport;

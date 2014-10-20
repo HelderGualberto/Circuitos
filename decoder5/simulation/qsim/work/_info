@@ -5,21 +5,21 @@ cModel Technology
 Z0 dD:\gitHub\Circuitos\decoder5\simulation\qsim
 vcharacterPattern
 !i10b 1
-Z1 !s100 gSgE7F8_C2?2gVf33[:g[1
-Z2 IzBSEi=lAl8lalEOlgU2OC2
-Z3 VaPDcab>aVZ72ZNjS2`PiM0
-dC:\Users\Helder\Documents\GitHub\Circuitos\decoder5\simulation\qsim
-w1413835644
-Z4 8decoder5out.vo
-Z5 Fdecoder5out.vo
+!s100 an?D^e?;5Ja]n[D[Fo0Kd1
+I7leD]YoZD0S<dCBdd:cK?3
+Z1 VaPDcab>aVZ72ZNjS2`PiM0
+Z2 dC:\Users\Helder\Documents\GitHub\Circuitos\decoder5\simulation\qsim
+w1413838068
+Z3 8decoder5out.vo
+Z4 Fdecoder5out.vo
 L0 32
-Z6 OV;L;10.1e;51
+Z5 OV;L;10.1e;51
 r1
 !s85 0
 31
-!s108 1413835650.086000
+!s108 1413838070.257000
 !s107 decoder5out.vo|
-Z7 !s90 -work|work|decoder5out.vo|
+Z6 !s90 -work|work|decoder5out.vo|
 !s101 -O0
-Z8 o-work work -O0
-Z9 ncharacter@pattern
+Z7 o-work work -O0
+Z8 ncharacter@pattern

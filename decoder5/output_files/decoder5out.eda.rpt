@@ -1,5 +1,5 @@
 EDA Netlist Writer report for decoder5out
-Mon Oct 20 18:11:25 2014
+Mon Oct 20 18:47:48 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Oct 20 18:11:25 2014 ;
+; EDA Netlist Writer Status ; Successful - Mon Oct 20 18:47:48 2014 ;
 ; Revision Name             ; decoder5out                           ;
 ; Top-level Entity Name     ; characterPattern                      ;
 ; Family                    ; Cyclone IV E                          ;
@@ -81,13 +81,27 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Mon Oct 20 18:11:20 2014
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off decoder5out -c decoder5out
+    Info: Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus II License Agreement,
+    Info: the Altera MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Altera and sold by Altera or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Oct 20 18:47:47 2014
+Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Helder/Documents/GitHub/Circuitos/decoder5/simulation/qsim/ decoder5out -c decoder5out
 Info (204019): Generated file decoder5out.vo in folder "C:/Users/Helder/Documents/GitHub/Circuitos/decoder5/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 480 megabytes
-    Info: Processing ended: Mon Oct 20 18:11:25 2014
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 469 megabytes
+    Info: Processing ended: Mon Oct 20 18:47:48 2014
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

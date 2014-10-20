@@ -57,7 +57,7 @@ set_global_assignment -name VHDL_FILE codec7s.vhd
 set_global_assignment -name VHDL_FILE decoder5out.vhd
 set_global_assignment -name VHDL_FILE hello.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE helloSimulation.vwf
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "D:/gitHub/Circuitos/decoder5/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/Helder/Documents/GitHub/Circuitos/decoder5/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_WAVEFORM_FILE 7segmentsSimulation.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Mux5to1Simulation.vwf

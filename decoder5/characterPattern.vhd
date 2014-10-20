@@ -32,11 +32,7 @@ architecture comport of characterPattern is
 	
 	
 	
-	h : hello port map(sw => input,s => "000",D0 => h0,
-															D1 => h1,
-															D2 => h2,
-															D3 => h3,
-															D4 => h4);
+	inst : hello port map (input,"000",h0,h1,h2,h3,h4);
 	
 	out0 <= h0 when s = "011" else
 			h1 when s = "100" else

@@ -1,5 +1,5 @@
 Flow report for decoder5out
-Mon Oct 20 16:51:36 2014
+Mon Oct 20 18:11:25 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 20 16:51:36 2014      ;
+; Flow Status                        ; Successful - Mon Oct 20 18:11:25 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; decoder5out                                ;
 ; Top-level Entity Name              ; characterPattern                           ;
@@ -65,33 +65,33 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/20/2014 16:49:03 ;
+; Start date & time ; 10/20/2014 18:08:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; decoder5out         ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                        ;
-+-------------------------------------+-----------------------------------------------+---------------+------------------+----------------+
-; Assignment Name                     ; Value                                         ; Default Value ; Entity Name      ; Section Id     ;
-+-------------------------------------+-----------------------------------------------+---------------+------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 163683362855491.141383094304576               ; --            ; --               ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                            ; --            ; --               ; eda_simulation ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR       ; D:/gitHub/Circuitos/decoder5/simulation/qsim/ ; --            ; --               ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                   ; --            ; --               ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                     ; <None>        ; --               ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                            ; --            ; --               ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                             ; --            ; --               ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                          ; --            ; --               ; --             ;
-; PARTITION_COLOR                     ; 16764057                                      ; --            ; characterPattern ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                         ; --            ; characterPattern ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                        ; --            ; characterPattern ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                           ; --            ; --               ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW         ; --            ; --               ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                  ; --            ; --               ; --             ;
-; TOP_LEVEL_ENTITY                    ; characterPattern                              ; decoder5out   ; --               ; --             ;
-+-------------------------------------+-----------------------------------------------+---------------+------------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                               ;
++-------------------------------------+----------------------------------------------------------------------+---------------+------------------+----------------+
+; Assignment Name                     ; Value                                                                ; Default Value ; Entity Name      ; Section Id     ;
++-------------------------------------+----------------------------------------------------------------------+---------------+------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 172269393249806.141383573502104                                      ; --            ; --               ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                   ; --            ; --               ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/Helder/Documents/GitHub/Circuitos/decoder5/simulation/qsim/ ; --            ; --               ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                          ; --            ; --               ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                            ; <None>        ; --               ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                   ; --            ; --               ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                    ; --            ; --               ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                 ; --            ; --               ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                             ; --            ; characterPattern ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                ; --            ; characterPattern ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                               ; --            ; characterPattern ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                  ; --            ; --               ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                ; --            ; --               ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                         ; --            ; --               ; --             ;
+; TOP_LEVEL_ENTITY                    ; characterPattern                                                     ; decoder5out   ; --               ; --             ;
++-------------------------------------+----------------------------------------------------------------------+---------------+------------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -99,14 +99,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 613 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:15     ; 1.7                     ; 1489 MB             ; 00:00:22                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 498 MB              ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 647 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 449 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 450 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 450 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:37                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 592 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:22     ; 1.2                     ; 1158 MB             ; 00:00:26                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 521 MB              ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:13     ; 1.0                     ; 633 MB              ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 469 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:52     ; --                      ; --                  ; 00:00:45                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,13 +113,11 @@ agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Helder-PC        ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; Helder-PC        ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; Helder-PC        ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Helder-PC        ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; Helder-PC        ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; Helder-PC        ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; Helder-PC        ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; Hell             ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Hell             ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Hell             ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Hell             ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Hell             ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -133,8 +129,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off decoder5out -c 
 quartus_asm --read_settings_files=off --write_settings_files=off decoder5out -c decoder5out
 quartus_sta decoder5out -c decoder5out
 quartus_eda --read_settings_files=off --write_settings_files=off decoder5out -c decoder5out
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog decoder5out -c decoder5out --vector_source=D:/gitHub/Circuitos/decoder5/Waveform.vwf --testbench_file=D:/gitHub/Circuitos/decoder5/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/gitHub/Circuitos/decoder5/simulation/qsim/ decoder5out -c decoder5out
 
 
 

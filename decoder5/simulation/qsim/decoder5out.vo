@@ -17,7 +17,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 14.0.0 Build 200 06/17/2014 SJ Web Edition"
 
-// DATE "10/20/2014 16:51:36"
+// DATE "10/20/2014 18:11:24"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -228,7 +228,7 @@ wire \out0~20_combout ;
 wire \out0~22_combout ;
 wire \out0~18_combout ;
 wire \input[11]~input_o ;
-wire \h|dec4|h0|seg~0_combout ;
+wire \inst|dec4|h0|seg~0_combout ;
 wire \input[2]~input_o ;
 wire \out0~16_combout ;
 wire \out0~17_combout ;
@@ -1468,20 +1468,20 @@ defparam \input[11]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X35_Y71_N22
-cycloneive_lcell_comb \h|dec4|h0|seg~0 (
+cycloneive_lcell_comb \inst|dec4|h0|seg~0 (
 // Equation(s):
-// \h|dec4|h0|seg~0_combout  = (\input[9]~input_o ) # ((!\input[11]~input_o  & !\input[10]~input_o ))
+// \inst|dec4|h0|seg~0_combout  = (\input[9]~input_o ) # ((!\input[11]~input_o  & !\input[10]~input_o ))
 
 	.dataa(gnd),
 	.datab(\input[9]~input_o ),
 	.datac(\input[11]~input_o ),
 	.datad(\input[10]~input_o ),
 	.cin(gnd),
-	.combout(\h|dec4|h0|seg~0_combout ),
+	.combout(\inst|dec4|h0|seg~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \h|dec4|h0|seg~0 .lut_mask = 16'hCCCF;
-defparam \h|dec4|h0|seg~0 .sum_lutc_input = "datac";
+defparam \inst|dec4|h0|seg~0 .lut_mask = 16'hCCCF;
+defparam \inst|dec4|h0|seg~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: IOIBUF_X47_Y73_N1
@@ -1514,11 +1514,11 @@ defparam \out0~16 .sum_lutc_input = "datac";
 // Location: LCCOMB_X35_Y71_N18
 cycloneive_lcell_comb \out0~17 (
 // Equation(s):
-// \out0~17_combout  = (\s[0]~input_o  & (\h|dec4|h0|seg~0_combout )) # (!\s[0]~input_o  & ((\out0~16_combout )))
+// \out0~17_combout  = (\s[0]~input_o  & (\inst|dec4|h0|seg~0_combout )) # (!\s[0]~input_o  & ((\out0~16_combout )))
 
 	.dataa(gnd),
 	.datab(\s[0]~input_o ),
-	.datac(\h|dec4|h0|seg~0_combout ),
+	.datac(\inst|dec4|h0|seg~0_combout ),
 	.datad(\out0~16_combout ),
 	.cin(gnd),
 	.combout(\out0~17_combout ),
@@ -2517,11 +2517,11 @@ defparam \out4~3 .sum_lutc_input = "datac";
 // Location: LCCOMB_X35_Y71_N2
 cycloneive_lcell_comb \out0~54 (
 // Equation(s):
-// \out0~54_combout  = (\s[0]~input_o  & ((\out0~16_combout ))) # (!\s[0]~input_o  & (\h|dec4|h0|seg~0_combout ))
+// \out0~54_combout  = (\s[0]~input_o  & ((\out0~16_combout ))) # (!\s[0]~input_o  & (\inst|dec4|h0|seg~0_combout ))
 
 	.dataa(gnd),
 	.datab(\s[0]~input_o ),
-	.datac(\h|dec4|h0|seg~0_combout ),
+	.datac(\inst|dec4|h0|seg~0_combout ),
 	.datad(\out0~16_combout ),
 	.cin(gnd),
 	.combout(\out0~54_combout ),

@@ -29,8 +29,63 @@ architecture comport of characterPattern is
 	
 	begin	
 
+	inst : hello port map(input,"000",h0,h1,h2,h3,h4);
 	
-	--inst : hello port map (input,"000",out0,out1,out2,out3,out4);
+	out0 <= h0 when s = "011" else
+			h1 when s = "100" else
+			h2 when s = "101" else
+			h3 when s = "110" else
+			h4 when s = "111" else
+			"1111111";
+	
+	out1 <= h0 when s = "010" else
+			h1 when s = "011" else
+			h2 when s = "100" else
+			h3 when s = "101" else
+			h4 when s = "110" else
+			"1111111";
+	
+	out2 <= h0 when s = "001" else
+			h1 when s = "010" else
+			h2 when s = "011" else
+			h3 when s = "100" else
+			h4 when s = "101" else
+			"1111111";
+	
+	out3 <= h0 when s = "000" else
+			h1 when s = "001" else
+			h2 when s = "010" else
+			h3 when s = "011" else
+			h4 when s = "100" else
+			"1111111";
+			
+	out4 <= h0 when s = "111" else
+			h1 when s = "000" else
+			h2 when s = "001" else
+			h3 when s = "010" else
+			h4 when s = "011" else
+			"1111111";
+	
+	out5 <= h0 when s = "110" else
+			h1 when s = "111" else
+			h2 when s = "000" else
+			h3 when s = "001" else
+			h4 when s = "010" else
+			"1111111";
+			
+	out6 <= h0 when s = "101" else
+			h1 when s = "110" else
+			h2 when s = "111" else
+			h3 when s = "000" else
+			h4 when s = "001" else
+			"1111111";
+			
+	out7 <= h0 when s = "100" else
+			h1 when s = "101" else
+			h2 when s = "110" else
+			h3 when s = "111" else
+			h4 when s = "000" else
+			"1111111";
 	
 
 	

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for decoder5out
-Mon Oct 20 18:36:14 2014
+Fri Oct 24 08:33:28 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -45,13 +45,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 20 18:36:14 2014      ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 24 08:33:28 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; decoder5out                                ;
 ; Top-level Entity Name              ; characterPattern                           ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 16                                         ;
-;     Total combinational functions  ; 16                                         ;
+; Total logic elements               ; 112                                        ;
+;     Total combinational functions  ; 112                                        ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 74                                         ;
@@ -179,34 +179,34 @@ agreement for further details.
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 16             ;
-;                                             ;                ;
-; Total combinational functions               ; 16             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 0              ;
-;     -- 3 input functions                    ; 8              ;
-;     -- <=2 input functions                  ; 8              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 16             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 0              ;
-;     -- Dedicated logic registers            ; 0              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 74             ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-; Maximum fan-out node                        ; input[6]~input ;
-; Maximum fan-out                             ; 8              ;
-; Total fan-out                               ; 149            ;
-; Average fan-out                             ; 0.91           ;
-+---------------------------------------------+----------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 112        ;
+;                                             ;            ;
+; Total combinational functions               ; 112        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 68         ;
+;     -- 3 input functions                    ; 37         ;
+;     -- <=2 input functions                  ; 7          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 112        ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 74         ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+; Maximum fan-out node                        ; s[1]~input ;
+; Maximum fan-out                             ; 60         ;
+; Total fan-out                               ; 527        ;
+; Average fan-out                             ; 2.03       ;
++---------------------------------------------+------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -214,16 +214,10 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
-; |characterPattern          ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |characterPattern                                        ; work         ;
-;    |hello:inst|            ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst                             ; work         ;
-;       |decoder5out:dec0|   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec0            ; work         ;
-;          |codec7s:h0|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec0|codec7s:h0 ; work         ;
-;       |decoder5out:dec1|   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec1            ; work         ;
-;          |codec7s:h0|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec1|codec7s:h0 ; work         ;
-;       |decoder5out:dec2|   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec2            ; work         ;
-;          |codec7s:h0|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec2|codec7s:h0 ; work         ;
-;       |decoder5out:dec4|   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec4            ; work         ;
-;          |codec7s:h0|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec4|codec7s:h0 ; work         ;
+; |characterPattern          ; 112 (111)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |characterPattern                                        ; work         ;
+;    |hello:inst|            ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst                             ; work         ;
+;       |decoder5out:dec4|   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec4            ; work         ;
+;          |codec7s:h0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |characterPattern|hello:inst|decoder5out:dec4|codec7s:h0 ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -248,9 +242,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:inst|decoder5out:dec0|codec7s:h0|seg[2] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:inst|decoder5out:dec1|codec7s:h0|seg[2] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:inst|decoder5out:dec2|codec7s:h0|seg[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:inst|decoder5out:dec3|codec7s:h0|seg[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:inst|decoder5out:dec0|codec7s:h0|seg[2] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |characterPattern|hello:inst|decoder5out:dec4|codec7s:h0|seg[2] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 
@@ -270,14 +264,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 74                          ;
-; cycloneiii_lcell_comb ; 17                          ;
-;     normal            ; 17                          ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 8                           ;
+; cycloneiii_lcell_comb ; 112                         ;
+;     normal            ; 112                         ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 37                          ;
+;         4 data inputs ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.97                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.59                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,7 +290,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Mon Oct 20 18:36:10 2014
+    Info: Processing started: Fri Oct 24 08:33:25 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decoder5out -c decoder5out
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file mux5to1.vhd
@@ -315,53 +309,25 @@ Info (12021): Found 2 design units, including 1 entities, in source file charact
     Info (12022): Found design unit 1: characterPattern-comport
     Info (12023): Found entity 1: characterPattern
 Info (12127): Elaborating entity "characterPattern" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at characterPattern.vhd(11): used implicit default value for signal "out5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at characterPattern.vhd(11): used implicit default value for signal "out6" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at characterPattern.vhd(11): used implicit default value for signal "out7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "hello" for hierarchy "hello:inst"
 Info (12128): Elaborating entity "decoder5out" for hierarchy "hello:inst|decoder5out:dec0"
 Info (12128): Elaborating entity "Mux5to1" for hierarchy "hello:inst|decoder5out:dec0|Mux5to1:mux0"
 Info (12128): Elaborating entity "codec7s" for hierarchy "hello:inst|decoder5out:dec0|codec7s:h0"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "out5[6]" is stuck at GND
-    Warning (13410): Pin "out5[5]" is stuck at GND
-    Warning (13410): Pin "out5[4]" is stuck at GND
-    Warning (13410): Pin "out5[3]" is stuck at GND
-    Warning (13410): Pin "out5[2]" is stuck at GND
-    Warning (13410): Pin "out5[1]" is stuck at GND
-    Warning (13410): Pin "out5[0]" is stuck at GND
-    Warning (13410): Pin "out6[6]" is stuck at GND
-    Warning (13410): Pin "out6[5]" is stuck at GND
-    Warning (13410): Pin "out6[4]" is stuck at GND
-    Warning (13410): Pin "out6[3]" is stuck at GND
-    Warning (13410): Pin "out6[2]" is stuck at GND
-    Warning (13410): Pin "out6[1]" is stuck at GND
-    Warning (13410): Pin "out6[0]" is stuck at GND
-    Warning (13410): Pin "out7[6]" is stuck at GND
-    Warning (13410): Pin "out7[5]" is stuck at GND
-    Warning (13410): Pin "out7[4]" is stuck at GND
-    Warning (13410): Pin "out7[3]" is stuck at GND
-    Warning (13410): Pin "out7[2]" is stuck at GND
-    Warning (13410): Pin "out7[1]" is stuck at GND
-    Warning (13410): Pin "out7[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 6 input pin(s) that do not drive logic
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "input[14]"
     Warning (15610): No output dependent on input pin "input[13]"
     Warning (15610): No output dependent on input pin "input[12]"
-    Warning (15610): No output dependent on input pin "s[2]"
-    Warning (15610): No output dependent on input pin "s[1]"
-    Warning (15610): No output dependent on input pin "s[0]"
-Info (21057): Implemented 90 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 186 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 601 megabytes
-    Info: Processing ended: Mon Oct 20 18:36:14 2014
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info (21061): Implemented 112 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 576 megabytes
+    Info: Processing ended: Fri Oct 24 08:33:28 2014
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

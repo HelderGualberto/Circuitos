@@ -1,0 +1,19 @@
+-- helloOnDisplay
+
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY hello is
+	port(
+		sw : in bit_vector(0 to 6);
+		s : in bit_vector(0 to 2);
+		dOut : out bit_vector(0 to 6)
+	);
+end hello;
+
+architecture comport of hello is
+	
+	begin
+	
+	
+end hello;

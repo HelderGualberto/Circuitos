@@ -1,0 +1,25 @@
+-- Multiplex 5 to 1 of 3bits
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity Mux5to1 is
+	port(
+		u,v,w,x,y : in bit_vector(0 to 2);
+		s : in bit_vector(2 downto 0);
+		m : out bit_vector(0 to 2)
+	);
+end Mux5to1;
+
+architecture comport of Mux5to1 is
+	begin
+
+		m <= u when s = "000" else
+			  v when s = "001" else
+			  w when s = "010" else
+			  x when s = "011" else
+			  y;
+		
+end comport;
+	

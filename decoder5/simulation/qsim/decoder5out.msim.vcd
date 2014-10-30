@@ -1,0 +1,112 @@
+$comment
+	File created using the following command:
+		vcd file decoder5out.msim.vcd -direction
+$end
+$date
+	Fri Oct 24 10:26:13 2014
+$end
+$version
+	ModelSim Version 10.1e
+$end
+$timescale
+	1ps
+$end
+$scope module Mux5to1_vlg_vec_tst $end
+$var reg 3 ! s [2:0] $end
+$var reg 3 " u [0:2] $end
+$var reg 3 # v [0:2] $end
+$var reg 3 $ w [0:2] $end
+$var reg 3 % x [0:2] $end
+$var reg 3 & y [0:2] $end
+$var wire 1 ' m [0] $end
+$var wire 1 ( m [1] $end
+$var wire 1 ) m [2] $end
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 m[2]~output_o $end
+$var wire 1 1 m[1]~output_o $end
+$var wire 1 2 m[0]~output_o $end
+$var wire 1 3 y[2]~input_o $end
+$var wire 1 4 w[2]~input_o $end
+$var wire 1 5 x[2]~input_o $end
+$var wire 1 6 s[1]~input_o $end
+$var wire 1 7 u[2]~input_o $end
+$var wire 1 8 s[0]~input_o $end
+$var wire 1 9 v[2]~input_o $end
+$var wire 1 : m~0_combout $end
+$var wire 1 ; m~1_combout $end
+$var wire 1 < s[2]~input_o $end
+$var wire 1 = m~2_combout $end
+$var wire 1 > y[1]~input_o $end
+$var wire 1 ? v[1]~input_o $end
+$var wire 1 @ x[1]~input_o $end
+$var wire 1 A u[1]~input_o $end
+$var wire 1 B w[1]~input_o $end
+$var wire 1 C m~3_combout $end
+$var wire 1 D m~4_combout $end
+$var wire 1 E m~5_combout $end
+$var wire 1 F w[0]~input_o $end
+$var wire 1 G u[0]~input_o $end
+$var wire 1 H v[0]~input_o $end
+$var wire 1 I m~6_combout $end
+$var wire 1 J x[0]~input_o $end
+$var wire 1 K m~7_combout $end
+$var wire 1 L y[0]~input_o $end
+$var wire 1 M m~8_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx !
+bx "
+bx #
+bx $
+bx %
+bx &
+x)
+x(
+x'
+0*
+1+
+x,
+1-
+1.
+1/
+x0
+x1
+x2
+x3
+x4
+x5
+x6
+x7
+x8
+x9
+x:
+x;
+x<
+x=
+x>
+x?
+x@
+xA
+xB
+xC
+xD
+xE
+xF
+xG
+xH
+xI
+xJ
+xK
+xL
+xM
+$end
+#1000000

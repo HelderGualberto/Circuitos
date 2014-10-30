@@ -5,32 +5,32 @@
 		<AddressBits>64</AddressBits>
 		<ApplicationError>
 		<Bits>64</Bits>
-		<CommandLine>quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Mux2to1 -c Mux2to1 --vector_source=D:/gitHub/Circuitos/Mux2to1/Waveform.vwf --testbench_file=D:/gitHub/Circuitos/Mux2to1/simulation/modelsim/Waveform.vwf.vt</CommandLine>
+		<CommandLine>quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Mux2to1 -c Mux2to1 --vector_source=C:/Users/Helder/Documents/GitHub/Circuitos/Mux2to1/Waveform.vwf --testbench_file=C:/Users/Helder/Documents/GitHub/Circuitos/Mux2to1/simulation/qsim/Waveform.vwf.vt</CommandLine>
 		<ErrorMessage>bus_port-&gt;has_type()</ErrorMessage>
 		<Line>280</Line>
 		<Platform>windows</Platform>
 		<SourceFile>/quartus/neto/tbo/tbo_common_vec_writer.cpp</SourceFile>
 		<StackTrace>
-	0x7fedaf415fd: (?get_port_type@TBO_COMMON_VEC_WRITER@@IEAAPEAVHDB_TYPE@@PEAVHDB_INSTANCE_NAME@@@Z + 0x6d)
-	0x7fedaf64d5a: (?cache_ports_info@TBO_VLG_VEC_WRITER@@IEAAXXZ + 0x15a)
-	0x7fedaf6815c: (?write_module@TBO_VLG_VEC_SELFCHK_WRITER@@QEAAXXZ + 0x2c)
-	0x7fedaf6843c: (?write_file@TBO_VLG_VEC_SELFCHK_WRITER@@UEAA_NXZ + 0x23c)
-	0x7fedaf68bbe: (?write_file@TBO_WRITER@@QEAA_NPEBVVDB_DATA@@PEAVHDB_CMP_ACTION_PT_INSTANCE@@W4TBO_DATA_TYPE@@AEBVBIG_TIME@@@Z + 0x35e)
-	0x7fedaf691fb: (?write_testbench_file@TBO_BUILDER@@QEAA?AW4TBO_WRITE_STATUS@@XZ + 0x22b)
-	0x13f156473:
-	0x13f1569be:
-	0x13f170bc7:
-	0x7fee8a00e14: (?qexe_get_command_line@@YAPEBDXZ + 0x1874)
-	0x7fee8a035d9: (?qexe_process_cmdline_arguments@@YA_NPEAVQEXE_CMDLINE@@HPEAPEBD@Z + 0x599)
-	0x7fee8a036f1: (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0xa1)
-	0x13f16b4dd:
-	0x7feefaf9678: (?msg_exe_fini@@YAXXZ + 0x58)
-	0x7feefaf978c: (?msg_exe_fini@@YAXXZ + 0x16c)
-	0x7fef07412c4: (??1MEM_INITIALIZER@@QEAA@XZ + 0x184)
-	0x7feefafabe9: (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0x99)
-	0x13f176c5d: (Eda_bsd_Unload + 0x306d)
-	 0x776359ec: (BaseThreadInitThunk + 0xc)
-	 0x7786c540: (RtlUserThreadStart + 0x20)
+	0x7ffb5baf15fd: (?get_port_type@TBO_COMMON_VEC_WRITER@@IEAAPEAVHDB_TYPE@@PEAVHDB_INSTANCE_NAME@@@Z + 0x6d)
+	0x7ffb5bb14d5a: (?cache_ports_info@TBO_VLG_VEC_WRITER@@IEAAXXZ + 0x15a)
+	0x7ffb5bb1815c: (?write_module@TBO_VLG_VEC_SELFCHK_WRITER@@QEAAXXZ + 0x2c)
+	0x7ffb5bb1843c: (?write_file@TBO_VLG_VEC_SELFCHK_WRITER@@UEAA_NXZ + 0x23c)
+	0x7ffb5bb18bbe: (?write_file@TBO_WRITER@@QEAA_NPEBVVDB_DATA@@PEAVHDB_CMP_ACTION_PT_INSTANCE@@W4TBO_DATA_TYPE@@AEBVBIG_TIME@@@Z + 0x35e)
+	0x7ffb5bb191fb: (?write_testbench_file@TBO_BUILDER@@QEAA?AW4TBO_WRITE_STATUS@@XZ + 0x22b)
+	0x7ff67cf26473:
+	0x7ff67cf269be:
+	0x7ff67cf40bc7:
+	0x7ffb8c730e14: (?qexe_get_command_line@@YAPEBDXZ + 0x1874)
+	0x7ffb8c7335d9: (?qexe_process_cmdline_arguments@@YA_NPEAVQEXE_CMDLINE@@HPEAPEBD@Z + 0x599)
+	0x7ffb8c7336f1: (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0xa1)
+	0x7ff67cf3b4dd:
+	0x7ffb89009678: (?msg_exe_fini@@YAXXZ + 0x58)
+	0x7ffb8900978c: (?msg_exe_fini@@YAXXZ + 0x16c)
+	0x7ffb891e12c4: (??1MEM_INITIALIZER@@QEAA@XZ + 0x184)
+	0x7ffb8900abe9: (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0x99)
+	0x7ff67cf46c5d: (Eda_bsd_Unload + 0x306d)
+	0x7ffb944416ac: (BaseThreadInitThunk + 0xc)
+	0x7ffb94ac4628: (RtlUserThreadStart + 0x1c)
 		</StackTrace>
 		<Subsystem>TBO</Subsystem>
 	</ApplicationError>
@@ -40,9 +40,9 @@
 			<IncrementalCompilation>FULL_INCREMENTAL_COMPILATION</IncrementalCompilation>
 			<TopLevelEntityName>Mux8Bits</TopLevelEntityName>
 		</Compilation>
-		<DateInvoked>2014/10/18 18:28:10</DateInvoked>
+		<DateInvoked>2014/10/24 10:56:53</DateInvoked>
 		<ElapsedTime>1</ElapsedTime>
-		<IP>192.168.0.2</IP>
+		<IP>10.135.105.17</IP>
 		<IsInternal>false</IsInternal>
 		<IsQt>false</IsQt>
 		<License>
@@ -50,20 +50,29 @@
 			<LicenseHostID/>
 		</License>
 		<Machine>
-			<CPUCountLogical>6</CPUCountLogical>
+			<CPUCountLogical>4</CPUCountLogical>
 			<CPUCountPhysical>1</CPUCountPhysical>
-			<CPUSpeed>3516</CPUSpeed>
-			<Hostname>Helder-PC</Hostname>
+			<CPUSpeed>2394</CPUSpeed>
+			<Hostname>Hell</Hostname>
 			<NIC>
-				<Address>94de80b2da43</Address>
+				<Address>9cad97fd860e</Address>
+			</NIC>
+			<NIC>
+				<Address>1ead97fd860d</Address>
+			</NIC>
+			<NIC>
+				<Address>9cad97fd860d</Address>
+			</NIC>
+			<NIC>
+				<Address>ecf4bbf4ffb7</Address>
 			</NIC>
 			<OS>Windows 7</OS>
 			<OSAddressBits>64</OSAddressBits>
-			<OSVersion>6.1</OSVersion>
+			<OSVersion>6.2</OSVersion>
 			<Platform>windows</Platform>
 			<ScreenResolution>unknown</ScreenResolution>
-			<TotalPhysicalRAM>16348</TotalPhysicalRAM>
-			<TotalVirtualRAM>16346</TotalVirtualRAM>
+			<TotalPhysicalRAM>8072</TotalPhysicalRAM>
+			<TotalVirtualRAM>1920</TotalVirtualRAM>
 		</Machine>
 		<Name>quartus_eda</Name>
 		<PeakMemoryUsed>0</PeakMemoryUsed>
@@ -72,7 +81,7 @@
 			<Revision>Mux2to1</Revision>
 		</ProjectRevision>
 		<QuartusInstallation>
-			<InstallationID>163683362855491.14106398220541</InstallationID>
+			<InstallationID>172269393249806.14138311610333</InstallationID>
 			<Version>
 				<Build>200</Build>
 				<BuildSite>SJ</BuildSite>
@@ -89,7 +98,7 @@
 				<DateSet/>
 				<TalkbackOn>true</TalkbackOn>
 			</TalkbackStatus>
-			<UserID>163683362855491.141064078204264</UserID>
+			<UserID>172269393249806.141383120005264</UserID>
 			<UserName>Helder</UserName>
 		</QuartusUser>
 	</QuartusExecution>

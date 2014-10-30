@@ -1,0 +1,38 @@
+-- charactere pattern
+
+LIBRARY ieee;
+use iee.std_logic_1164.all;
+
+ENTITY characterParttern is 
+	port(
+		input : in bit_vector(0 to 14);
+		s : in bit_vector(0 to 2);
+		d0,d1,d2,d3,d4,d5,d6,d7 : out (0 to 6); -- displays output
+	);
+end characterParttern;
+
+
+architecture comport of characterParttern is
+	
+	SIGNAL h0,h1,h2,h3,h4;
+
+	component hello
+		port(
+			sw : in bit_vector(0 to 14);
+			s : in bit_vector(0 to 2);
+			D0,D1,D2,D3,D4 : out bit_vector(0 to 6)
+		);
+	end component;
+
+	begin;
+		
+		
+		
+	h : hello port map(sw => input,s => "000",D0 => h0,
+															D1 => h1,
+															D2 => h2,
+															D3 => h3,
+															D4 => h4);
+	
+	
+end comport;

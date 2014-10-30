@@ -1,0 +1,145 @@
+Flow report for Calculator
+Sun Oct 26 19:40:10 2014
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Sun Oct 26 19:40:10 2014      ;
+; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
+; Revision Name                      ; Calculator                                 ;
+; Top-level Entity Name              ; subtractor7b                               ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 13 / 14,400 ( < 1 % )                      ;
+;     Total combinational functions  ; 13 / 14,400 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 0 / 14,400 ( 0 % )                         ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 22 / 81 ( 27 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 552,960 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0 / 2 ( 0 % )                              ;
+; Total GXB Receiver Channel PMA     ; 0 / 2 ( 0 % )                              ;
+; Total GXB Transmitter Channel PCS  ; 0 / 2 ( 0 % )                              ;
+; Total GXB Transmitter Channel PMA  ; 0 / 2 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 3 ( 0 % )                              ;
+; Device                             ; EP4CGX15BF14C6                             ;
+; Timing Models                      ; Final                                      ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/26/2014 19:32:06 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Calculator          ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                    ;
++-------------------------------------+-----------------------------------------------+---------------+--------------+----------------+
+; Assignment Name                     ; Value                                         ; Default Value ; Entity Name  ; Section Id     ;
++-------------------------------------+-----------------------------------------------+---------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 163683362855491.141435912600032               ; --            ; --           ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                            ; --            ; --           ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; F:/gitHub/Circuitos/Projeto2/simulation/qsim/ ; --            ; --           ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                   ; --            ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                     ; <None>        ; --           ; --             ;
+; PARTITION_COLOR                     ; 16764057                                      ; --            ; subtractor7b ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                         ; --            ; subtractor7b ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                        ; --            ; subtractor7b ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                  ; --            ; --           ; --             ;
+; TOP_LEVEL_ENTITY                    ; subtractor7b                                  ; Calculator    ; --           ; --             ;
++-------------------------------------+-----------------------------------------------+---------------+--------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 664 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 1426 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 552 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 570 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 500 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 503 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 503 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 503 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 503 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:19                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Helder           ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Calculator -c Calculator
+quartus_fit --read_settings_files=off --write_settings_files=off Calculator -c Calculator
+quartus_asm --read_settings_files=off --write_settings_files=off Calculator -c Calculator
+quartus_sta Calculator -c Calculator
+quartus_eda --read_settings_files=off --write_settings_files=off Calculator -c Calculator
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Calculator -c Calculator --vector_source=F:/gitHub/Circuitos/Projeto2/subtractor7bSimulation.vwf --testbench_file=F:/gitHub/Circuitos/Projeto2/simulation/qsim/subtractor7bSimulation.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/gitHub/Circuitos/Projeto2/simulation/qsim/ Calculator -c Calculator
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Calculator -c Calculator --vector_source=F:/gitHub/Circuitos/Projeto2/subtractor7bSimulation.vwf --testbench_file=F:/gitHub/Circuitos/Projeto2/simulation/qsim/subtractor7bSimulation.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/gitHub/Circuitos/Projeto2/simulation/qsim/ Calculator -c Calculator
+
+
+

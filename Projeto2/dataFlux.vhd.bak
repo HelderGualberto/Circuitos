@@ -1,0 +1,34 @@
+-- dataFlux
+
+library ieee;
+
+use ieee.std_logic_1164.all;
+
+ENTITY dataFlux is
+	port(
+		data : in std_logic_vector(0 tp 6);
+		m0,m1,CLR,CLK : in std_logic;
+		A,B : out std_logic_vector(0 to 6)
+	);
+end dataFlux;
+
+architecture comport of dataFlux is
+
+	component register7b is
+		port(
+			D : in std_logic_vector(0 to 6);
+			CLR,CLK,EN : in std_logic;
+			Q : out std_logic_vector(0 to 6)
+		);
+	end component;
+	
+	begin
+	
+	if m0 = '1' then
+		reg0 : register7b port map(data,CLR,CLK,m0,A);
+	end if;
+	
+	
+	
+	
+end comport;

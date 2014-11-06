@@ -2,25 +2,45 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module subtractor7b
+# -- Compiling module dataFlux
 # 
 # Top level modules:
-# 	subtractor7b
+# 	dataFlux
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module subtractor7b_vlg_sample_tst
-# -- Compiling module subtractor7b_vlg_check_tst
-# -- Compiling module subtractor7b_vlg_vec_tst
+# -- Compiling module dataFlux_vlg_sample_tst
+# -- Compiling module dataFlux_vlg_check_tst
+# -- Compiling module dataFlux_vlg_vec_tst
 # 
 # Top level modules:
-# 	subtractor7b_vlg_vec_tst
-# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver -c -voptargs=\"+acc\" -t 1ps -novopt work.subtractor7b_vlg_vec_tst 
-# Loading work.subtractor7b_vlg_vec_tst
-# Loading work.subtractor7b
+# 	dataFlux_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver -c -voptargs=\"+acc\" -t 1ps -novopt work.dataFlux_vlg_vec_tst 
+# Loading work.dataFlux_vlg_vec_tst
+# Loading work.dataFlux
 # Loading cycloneiv_ver.cycloneiv_io_obuf
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
 # Loading cycloneiv_ver.cycloneiv_lcell_comb
-# Loading work.subtractor7b_vlg_sample_tst
-# Loading work.subtractor7b_vlg_check_tst
-# Simulation passed !
-# ** Note: $finish    : subtractor7bSimulation.vwf.vt(285)
-#    Time: 1 us  Iteration: 0  Instance: /subtractor7b_vlg_vec_tst/tb_out
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading altera_ver.dffeas
+# Loading work.dataFlux_vlg_sample_tst
+# Loading work.dataFlux_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port B[0] :: @time = 14080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1100111
+# ERROR! Vector Mismatch for output port B[1] :: @time = 14080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1100111
+# ERROR! Vector Mismatch for output port B[4] :: @time = 14080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1100111
+# ERROR! Vector Mismatch for output port B[5] :: @time = 14080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1100111
+# ERROR! Vector Mismatch for output port B[6] :: @time = 14080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1100111
+#           5 mismatched vectors : Simulation failed !
+# ** Note: $finish    : dataFluxSimulation.vwf.vt(412)
+#    Time: 100 us  Iteration: 0  Instance: /dataFlux_vlg_vec_tst/tb_out

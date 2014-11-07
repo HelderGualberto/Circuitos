@@ -1,0 +1,687 @@
+<<<<<<< HEAD
+|ULA
+A[6] => UFA:ufa1.A[6]
+A[5] => UFA:ufa1.A[5]
+A[4] => UFA:ufa1.A[4]
+A[3] => UFA:ufa1.A[3]
+A[2] => UFA:ufa1.A[2]
+A[1] => UFA:ufa1.A[1]
+A[0] => UFA:ufa1.A[0]
+B[6] => UFA:ufa1.B[6]
+B[5] => UFA:ufa1.B[5]
+B[4] => UFA:ufa1.B[4]
+B[3] => UFA:ufa1.B[3]
+B[2] => UFA:ufa1.B[2]
+B[1] => UFA:ufa1.B[1]
+B[0] => UFA:ufa1.B[0]
+result[7] <= register8b:reg1.Q[7]
+result[6] <= register8b:reg1.Q[6]
+result[5] <= register8b:reg1.Q[5]
+result[4] <= register8b:reg1.Q[4]
+result[3] <= register8b:reg1.Q[3]
+result[2] <= register8b:reg1.Q[2]
+result[1] <= register8b:reg1.Q[1]
+result[0] <= register8b:reg1.Q[0]
+CLK => ENufa.IN0
+CLK => FFT:FFT1.CLK
+EN => ENufa.IN1
+EN => register8b:reg1.EN
+teste <= FFT:FFT1.CLKout
+S[1] => UFA:ufa1.S[1]
+S[0] => UFA:ufa1.S[0]
+
+
+|ULA|UFA:ufa1
+A[6] => adder7b:adder.A[0]
+A[6] => subtractor7b:subtractor.A[0]
+A[6] => andFunction:and1.A[0]
+A[6] => orFunction:or1.A[0]
+A[5] => adder7b:adder.A[1]
+A[5] => subtractor7b:subtractor.A[1]
+A[5] => andFunction:and1.A[1]
+A[5] => orFunction:or1.A[1]
+A[4] => adder7b:adder.A[2]
+A[4] => subtractor7b:subtractor.A[2]
+A[4] => andFunction:and1.A[2]
+A[4] => orFunction:or1.A[2]
+A[3] => adder7b:adder.A[3]
+A[3] => subtractor7b:subtractor.A[3]
+A[3] => andFunction:and1.A[3]
+A[3] => orFunction:or1.A[3]
+A[2] => adder7b:adder.A[4]
+A[2] => subtractor7b:subtractor.A[4]
+A[2] => andFunction:and1.A[4]
+A[2] => orFunction:or1.A[4]
+A[1] => adder7b:adder.A[5]
+A[1] => subtractor7b:subtractor.A[5]
+A[1] => andFunction:and1.A[5]
+A[1] => orFunction:or1.A[5]
+A[0] => adder7b:adder.A[6]
+A[0] => subtractor7b:subtractor.A[6]
+A[0] => andFunction:and1.A[6]
+A[0] => orFunction:or1.A[6]
+B[6] => adder7b:adder.B[0]
+B[6] => subtractor7b:subtractor.B[0]
+B[6] => andFunction:and1.B[0]
+B[6] => orFunction:or1.B[0]
+B[5] => adder7b:adder.B[1]
+B[5] => subtractor7b:subtractor.B[1]
+B[5] => andFunction:and1.B[1]
+B[5] => orFunction:or1.B[1]
+B[4] => adder7b:adder.B[2]
+B[4] => subtractor7b:subtractor.B[2]
+B[4] => andFunction:and1.B[2]
+B[4] => orFunction:or1.B[2]
+B[3] => adder7b:adder.B[3]
+B[3] => subtractor7b:subtractor.B[3]
+B[3] => andFunction:and1.B[3]
+B[3] => orFunction:or1.B[3]
+B[2] => adder7b:adder.B[4]
+B[2] => subtractor7b:subtractor.B[4]
+B[2] => andFunction:and1.B[4]
+B[2] => orFunction:or1.B[4]
+B[1] => adder7b:adder.B[5]
+B[1] => subtractor7b:subtractor.B[5]
+B[1] => andFunction:and1.B[5]
+B[1] => orFunction:or1.B[5]
+B[0] => adder7b:adder.B[6]
+B[0] => subtractor7b:subtractor.B[6]
+B[0] => andFunction:and1.B[6]
+B[0] => orFunction:or1.B[6]
+result[7] <= mux4to1:mux1.m[0]
+result[6] <= mux4to1:mux1.m[1]
+result[5] <= mux4to1:mux1.m[2]
+result[4] <= mux4to1:mux1.m[3]
+result[3] <= mux4to1:mux1.m[4]
+result[2] <= mux4to1:mux1.m[5]
+result[1] <= mux4to1:mux1.m[6]
+result[0] <= mux4to1:mux1.m[7]
+S[1] => mux4to1:mux1.s[1]
+S[1] => Mux0.IN5
+S[1] => Mux2.IN5
+S[1] => Mux3.IN5
+S[1] => Mux4.IN5
+S[1] => Mux5.IN5
+S[1] => Mux6.IN5
+S[1] => Mux7.IN5
+S[1] => Mux8.IN5
+S[0] => mux4to1:mux1.s[0]
+S[0] => Mux0.IN4
+S[0] => Mux2.IN4
+S[0] => Mux3.IN4
+S[0] => Mux4.IN4
+S[0] => Mux5.IN4
+S[0] => Mux6.IN4
+S[0] => Mux7.IN4
+S[0] => Mux8.IN4
+EN => ENor.ACLR
+EN => ENand.ACLR
+EN => ENsub.ACLR
+EN => ENsum.ACLR
+
+
+|ULA|UFA:ufa1|adder7b:adder
+=======
+|adder7b
+>>>>>>> origin/master
+A[0] => halfAdder:ha.A
+A[1] => fullAdder:fa0.A
+A[2] => fullAdder:fa1.A
+A[3] => fullAdder:fa2.A
+A[4] => fullAdder:fa3.A
+A[5] => fullAdder:fa4.A
+A[6] => fullAdder:fa5.A
+B[0] => halfAdder:ha.B
+B[1] => fullAdder:fa0.B
+B[2] => fullAdder:fa1.B
+B[3] => fullAdder:fa2.B
+B[4] => fullAdder:fa3.B
+B[5] => fullAdder:fa4.B
+B[6] => fullAdder:fa5.B
+<<<<<<< HEAD
+S[0] <= halfAdder:ha.S
+S[1] <= fullAdder:fa0.S
+S[2] <= fullAdder:fa1.S
+S[3] <= fullAdder:fa2.S
+S[4] <= fullAdder:fa3.S
+S[5] <= fullAdder:fa4.S
+S[6] <= fullAdder:fa5.S
+S[7] <= fullAdder:fa5.Co
+EN => halfAdder:ha.EN
+EN => fullAdder:fa0.EN
+EN => fullAdder:fa1.EN
+EN => fullAdder:fa2.EN
+EN => fullAdder:fa3.EN
+EN => fullAdder:fa4.EN
+EN => fullAdder:fa5.EN
+
+
+|ULA|UFA:ufa1|adder7b:adder|halfAdder:ha
+=======
+S[0] << halfAdder:ha.S
+S[1] << fullAdder:fa0.S
+S[2] << fullAdder:fa1.S
+S[3] << fullAdder:fa2.S
+S[4] << fullAdder:fa3.S
+S[5] << fullAdder:fa4.S
+S[6] << fullAdder:fa5.S
+S[7] << fullAdder:fa5.Co
+
+
+|adder7b|halfAdder:ha
+>>>>>>> origin/master
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.DATAB
+B => Co.DATAA
+B => S.DATAA
+<<<<<<< HEAD
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|adder7b:adder|fullAdder:fa0
+=======
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder7b|fullAdder:fa0
+>>>>>>> origin/master
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+<<<<<<< HEAD
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|adder7b:adder|fullAdder:fa1
+=======
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder7b|fullAdder:fa1
+>>>>>>> origin/master
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+<<<<<<< HEAD
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|adder7b:adder|fullAdder:fa2
+=======
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder7b|fullAdder:fa2
+>>>>>>> origin/master
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+<<<<<<< HEAD
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|adder7b:adder|fullAdder:fa3
+=======
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder7b|fullAdder:fa3
+>>>>>>> origin/master
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+<<<<<<< HEAD
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|adder7b:adder|fullAdder:fa4
+=======
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder7b|fullAdder:fa4
+>>>>>>> origin/master
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+<<<<<<< HEAD
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|adder7b:adder|fullAdder:fa5
+=======
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder7b|fullAdder:fa5
+>>>>>>> origin/master
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+<<<<<<< HEAD
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|subtractor7b:subtractor
+A[0] => halfSubtractor:hs.A
+A[1] => fullSubtractor:fs0.A
+A[2] => fullSubtractor:fs1.A
+A[3] => fullSubtractor:fs2.A
+A[4] => fullSubtractor:fs3.A
+A[5] => fullSubtractor:fs4.A
+A[6] => fullSubtractor:fs5.A
+B[0] => halfSubtractor:hs.B
+B[1] => fullSubtractor:fs0.B
+B[2] => fullSubtractor:fs1.B
+B[3] => fullSubtractor:fs2.B
+B[4] => fullSubtractor:fs3.B
+B[5] => fullSubtractor:fs4.B
+B[6] => fullSubtractor:fs5.B
+S[0] <= halfSubtractor:hs.S
+S[1] <= fullSubtractor:fs0.S
+S[2] <= fullSubtractor:fs1.S
+S[3] <= fullSubtractor:fs2.S
+S[4] <= fullSubtractor:fs3.S
+S[5] <= fullSubtractor:fs4.S
+S[6] <= fullSubtractor:fs5.S
+S[7] <= fullSubtractor:fs5.Te
+EN => halfSubtractor:hs.EN
+EN => fullSubtractor:fs0.EN
+EN => fullSubtractor:fs1.EN
+EN => fullSubtractor:fs2.EN
+EN => fullSubtractor:fs3.EN
+EN => fullSubtractor:fs4.EN
+EN => fullSubtractor:fs5.EN
+
+
+|ULA|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs
+A => S.IN0
+A => Te.IN0
+B => S.IN1
+B => Te.IN1
+EN => Te$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
+EN => Te$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
+EN => Te$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
+EN => Te$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
+EN => Te$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
+EN => Te$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
+EN => Te$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|UFA:ufa1|andFunction:and1
+A[0] => S.IN0
+A[1] => S.IN0
+A[2] => S.IN0
+A[3] => S.IN0
+A[4] => S.IN0
+A[5] => S.IN0
+A[6] => S.IN0
+B[0] => S.IN1
+B[1] => S.IN1
+B[2] => S.IN1
+B[3] => S.IN1
+B[4] => S.IN1
+B[5] => S.IN1
+B[6] => S.IN1
+S[0] <= S[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= <GND>
+EN => S[0]$latch.LATCH_ENABLE
+EN => S[1]$latch.LATCH_ENABLE
+EN => S[2]$latch.LATCH_ENABLE
+EN => S[3]$latch.LATCH_ENABLE
+EN => S[4]$latch.LATCH_ENABLE
+EN => S[5]$latch.LATCH_ENABLE
+EN => S[6]$latch.LATCH_ENABLE
+
+
+|ULA|UFA:ufa1|orFunction:or1
+A[0] => S.IN0
+A[1] => S.IN0
+A[2] => S.IN0
+A[3] => S.IN0
+A[4] => S.IN0
+A[5] => S.IN0
+A[6] => S.IN0
+B[0] => S.IN1
+B[1] => S.IN1
+B[2] => S.IN1
+B[3] => S.IN1
+B[4] => S.IN1
+B[5] => S.IN1
+B[6] => S.IN1
+S[0] <= S[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= <GND>
+EN => S[0]$latch.LATCH_ENABLE
+EN => S[1]$latch.LATCH_ENABLE
+EN => S[2]$latch.LATCH_ENABLE
+EN => S[3]$latch.LATCH_ENABLE
+EN => S[4]$latch.LATCH_ENABLE
+EN => S[5]$latch.LATCH_ENABLE
+EN => S[6]$latch.LATCH_ENABLE
+
+
+|ULA|UFA:ufa1|Mux4to1:mux1
+u[7] => m.DATAB
+u[6] => m.DATAB
+u[5] => m.DATAB
+u[4] => m.DATAB
+u[3] => m.DATAB
+u[2] => m.DATAB
+u[1] => m.DATAB
+u[0] => m.DATAB
+v[7] => m.DATAB
+v[6] => m.DATAB
+v[5] => m.DATAB
+v[4] => m.DATAB
+v[3] => m.DATAB
+v[2] => m.DATAB
+v[1] => m.DATAB
+v[0] => m.DATAB
+w[7] => m.DATAB
+w[6] => m.DATAB
+w[5] => m.DATAB
+w[4] => m.DATAB
+w[3] => m.DATAB
+w[2] => m.DATAB
+w[1] => m.DATAB
+w[0] => m.DATAB
+x[7] => m.DATAA
+x[6] => m.DATAA
+x[5] => m.DATAA
+x[4] => m.DATAA
+x[3] => m.DATAA
+x[2] => m.DATAA
+x[1] => m.DATAA
+x[0] => m.DATAA
+s[1] => Equal0.IN0
+s[1] => Equal1.IN1
+s[1] => Equal2.IN1
+s[0] => Equal0.IN1
+s[0] => Equal1.IN0
+s[0] => Equal2.IN0
+m[7] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[6] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[5] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[4] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[3] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[2] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[1] <= m.DB_MAX_OUTPUT_PORT_TYPE
+m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|FFT:FFT1
+T => CLKout_synthesized_var.ENA
+CLK => CLKout_synthesized_var.CLK
+CLKout <= CLKout_synthesized_var.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|register8b:reg1
+D[7] => FFD:ff7.D
+D[6] => FFD:ff6.D
+D[5] => FFD:ff5.D
+D[4] => FFD:ff4.D
+D[3] => FFD:ff3.D
+D[2] => FFD:ff2.D
+D[1] => FFD:ff1.D
+D[0] => FFD:ff0.D
+CLR => FFD:ff0.CLR
+CLR => FFD:ff1.CLR
+CLR => FFD:ff2.CLR
+CLR => FFD:ff3.CLR
+CLR => FFD:ff4.CLR
+CLR => FFD:ff5.CLR
+CLR => FFD:ff6.CLR
+CLR => FFD:ff7.CLR
+CLK => clkin.IN0
+EN => clkin.IN1
+Q[7] <= FFD:ff7.Q
+Q[6] <= FFD:ff6.Q
+Q[5] <= FFD:ff5.Q
+Q[4] <= FFD:ff4.Q
+Q[3] <= FFD:ff3.Q
+Q[2] <= FFD:ff2.Q
+Q[1] <= FFD:ff1.Q
+Q[0] <= FFD:ff0.Q
+
+
+|ULA|register8b:reg1|FFD:ff0
+CLR => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|register8b:reg1|FFD:ff1
+CLR => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|register8b:reg1|FFD:ff2
+CLR => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|register8b:reg1|FFD:ff3
+CLR => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|register8b:reg1|FFD:ff4
+CLR => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|register8b:reg1|FFD:ff5
+CLR => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|register8b:reg1|FFD:ff6
+CLR => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|register8b:reg1|FFD:ff7
+CLR => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> origin/master
+
+

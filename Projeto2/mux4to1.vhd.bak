@@ -1,0 +1,30 @@
+-- Multiplex 4 to 1 of 3bits
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- fs = in of sum function
+--	fsb = in of subtraction function
+-- fa = in of and function
+--	fo = in of or function
+
+entity Mux4to1 is
+	port(
+		fs,fsb,fa,fo: in bit_vector(0 to 6);
+		s : in bit_vector(0 to 1);
+		m : out bit_vector(0 to 6)
+	);
+end Mux4to1;
+
+architecture comport of Mux4to1 is
+
+	
+	begin
+	
+		m <= fs when s = "00" else
+			  fsb when s = "01" else
+			  fa when s = "10" else
+			  fo;
+		
+end comport;
+	

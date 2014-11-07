@@ -1,0 +1,12 @@
+<sld_project_info>
+  <project>
+<<<<<<< HEAD
+    <hash md5_digest_80b="abd316ee3f5abb2db33a"/>
+=======
+    <hash md5_digest_80b="1df58fbbdbdfe0008253"/>
+>>>>>>> origin/master
+  </project>
+  <file_info>
+    <file device="EP4CE115F29C7" path="Calculator.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+</sld_project_info>

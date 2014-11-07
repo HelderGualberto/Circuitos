@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'UFA:ufa1|ENsum'
+Slack : -0.942
+TNS   : -8.260
+
+Type  : Slow 1200mV 85C Model Setup 'UFA:ufa1|ENsub'
+Slack : -0.854
+TNS   : -7.756
+
+Type  : Slow 1200mV 85C Model Setup 'EN'
+Slack : -0.169
+TNS   : -0.366
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'EN'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'UFA:ufa1|ENsum'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'UFA:ufa1|ENsub'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'EN'
+Slack : -3.000
+TNS   : -11.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UFA:ufa1|ENor'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UFA:ufa1|ENand'
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UFA:ufa1|ENsub'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UFA:ufa1|ENsum'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'UFA:ufa1|ENsum'
+Slack : -0.736
+TNS   : -6.119
+
+Type  : Slow 1200mV 0C Model Setup 'UFA:ufa1|ENsub'
+Slack : -0.670
+TNS   : -5.722
+
+Type  : Slow 1200mV 0C Model Setup 'EN'
+Slack : -0.037
+TNS   : -0.037
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'EN'
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Slow 1200mV 0C Model Hold 'UFA:ufa1|ENsum'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'UFA:ufa1|ENsub'
+Slack : 0.487
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'EN'
+Slack : -3.000
+TNS   : -11.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UFA:ufa1|ENor'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UFA:ufa1|ENand'
+Slack : 0.413
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UFA:ufa1|ENsub'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UFA:ufa1|ENsum'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'UFA:ufa1|ENsum'
+Slack : -0.088
+TNS   : -0.231
+
+Type  : Fast 1200mV 0C Model Setup 'UFA:ufa1|ENsub'
+Slack : -0.065
+TNS   : -0.088
+
+Type  : Fast 1200mV 0C Model Setup 'EN'
+Slack : 0.021
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'UFA:ufa1|ENsum'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'EN'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'UFA:ufa1|ENsub'
+Slack : 0.287
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'EN'
+Slack : -3.000
+TNS   : -11.834
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.077
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UFA:ufa1|ENsub'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UFA:ufa1|ENsum'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UFA:ufa1|ENor'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UFA:ufa1|ENand'
+Slack : 0.484
+TNS   : 0.000
+
+------------------------------------------------------------

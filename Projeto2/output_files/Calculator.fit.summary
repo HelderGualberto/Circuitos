@@ -1,0 +1,31 @@
+<<<<<<< HEAD
+Fitter Status : Successful - Sun Nov 02 19:32:17 2014
+Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Web Edition
+Revision Name : Calculator
+Top-level Entity Name : ULA
+Family : Cyclone IV GX
+Device : EP4CGX15BF14C6
+Timing Models : Final
+Total logic elements : 111 / 14,400 ( < 1 % )
+    Total combinational functions : 108 / 14,400 ( < 1 % )
+    Dedicated logic registers : 9 / 14,400 ( < 1 % )
+Total registers : 9
+Total pins : 27 / 81 ( 33 % )
+=======
+Fitter Status : Successful - Fri Oct 31 09:59:09 2014
+Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Web Edition
+Revision Name : Calculator
+Top-level Entity Name : adder7b
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 14 / 114,480 ( < 1 % )
+    Total combinational functions : 14 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 22 / 529 ( 4 % )
+>>>>>>> origin/master
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

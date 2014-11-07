@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Calculator
-Fri Oct 31 09:59:26 2014
+Sun Oct 26 19:40:10 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -37,10 +37,10 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Oct 31 09:59:26 2014 ;
+; EDA Netlist Writer Status ; Successful - Sun Oct 26 19:40:10 2014 ;
 ; Revision Name             ; Calculator                            ;
-; Top-level Entity Name     ; adder7b                               ;
-; Family                    ; Cyclone IV E                          ;
+; Top-level Entity Name     ; subtractor7b                          ;
+; Family                    ; Cyclone IV GX                         ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
@@ -66,13 +66,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                         ;
-+------------------------------------------------------------------------------------+
-; Generated Files                                                                    ;
-+------------------------------------------------------------------------------------+
-; C:/Users/Helder/Documents/GitHub/Circuitos/Projeto2/simulation/qsim//Calculator.vo ;
-+------------------------------------------------------------------------------------+
++-------------------------------------------------------------+
+; Simulation Generated Files                                  ;
++-------------------------------------------------------------+
+; Generated Files                                             ;
++-------------------------------------------------------------+
+; F:/gitHub/Circuitos/Projeto2/simulation/qsim//Calculator.vo ;
++-------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,12 +81,26 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Fri Oct 31 09:59:25 2014
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Calculator -c Calculator
-Info (204019): Generated file Calculator.vo in folder "C:/Users/Helder/Documents/GitHub/Circuitos/Projeto2/simulation/qsim//" for EDA simulation tool
+    Info: Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus II License Agreement,
+    Info: the Altera MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Altera and sold by Altera or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Sun Oct 26 19:40:09 2014
+Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/gitHub/Circuitos/Projeto2/simulation/qsim/ Calculator -c Calculator
+Info (204019): Generated file Calculator.vo in folder "F:/gitHub/Circuitos/Projeto2/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 469 megabytes
-    Info: Processing ended: Fri Oct 31 09:59:26 2014
+    Info: Peak virtual memory: 503 megabytes
+    Info: Processing ended: Sun Oct 26 19:40:10 2014
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

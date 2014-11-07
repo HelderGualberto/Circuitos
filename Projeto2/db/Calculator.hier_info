@@ -1,137 +1,112 @@
-|adder7b
-A[0] => halfAdder:ha.A
-A[1] => fullAdder:fa0.A
-A[2] => fullAdder:fa1.A
-A[3] => fullAdder:fa2.A
-A[4] => fullAdder:fa3.A
-A[5] => fullAdder:fa4.A
-A[6] => fullAdder:fa5.A
-B[0] => halfAdder:ha.B
-B[1] => fullAdder:fa0.B
-B[2] => fullAdder:fa1.B
-B[3] => fullAdder:fa2.B
-B[4] => fullAdder:fa3.B
-B[5] => fullAdder:fa4.B
-B[6] => fullAdder:fa5.B
-S[0] << halfAdder:ha.S
-S[1] << fullAdder:fa0.S
-S[2] << fullAdder:fa1.S
-S[3] << fullAdder:fa2.S
-S[4] << fullAdder:fa3.S
-S[5] << fullAdder:fa4.S
-S[6] << fullAdder:fa5.S
-S[7] << fullAdder:fa5.Co
+|subtractor7b
+A[0] => halfSubtractor:hs.A
+A[1] => fullSubtractor:fs0.A
+A[2] => fullSubtractor:fs1.A
+A[3] => fullSubtractor:fs2.A
+A[4] => fullSubtractor:fs3.A
+A[5] => fullSubtractor:fs4.A
+A[6] => fullSubtractor:fs5.A
+B[0] => halfSubtractor:hs.B
+B[1] => fullSubtractor:fs0.B
+B[2] => fullSubtractor:fs1.B
+B[3] => fullSubtractor:fs2.B
+B[4] => fullSubtractor:fs3.B
+B[5] => fullSubtractor:fs4.B
+B[6] => fullSubtractor:fs5.B
+S[0] <= halfSubtractor:hs.S
+S[1] <= fullSubtractor:fs0.S
+S[2] <= fullSubtractor:fs1.S
+S[3] <= fullSubtractor:fs2.S
+S[4] <= fullSubtractor:fs3.S
+S[5] <= fullSubtractor:fs4.S
+S[6] <= fullSubtractor:fs5.S
+signalBit <= fullSubtractor:fs5.Te
 
 
-|adder7b|halfAdder:ha
-A => S.OUTPUTSELECT
-A => Co.OUTPUTSELECT
-B => S.DATAB
-B => Co.DATAA
-B => S.DATAA
+|subtractor7b|halfSubtractor:hs
+A => S.IN0
+A => Te.IN0
+B => S.IN1
+B => Te.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder7b|fullAdder:fa0
-A => S.OUTPUTSELECT
-A => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-Ci => S.DATAB
-Ci => Co.DATAA
-Ci => S.DATAA
-Ci => Co.DATAB
-Ci => S.DATAB
-Ci => S.DATAA
+|subtractor7b|fullSubtractor:fs0
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder7b|fullAdder:fa1
-A => S.OUTPUTSELECT
-A => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-Ci => S.DATAB
-Ci => Co.DATAA
-Ci => S.DATAA
-Ci => Co.DATAB
-Ci => S.DATAB
-Ci => S.DATAA
+|subtractor7b|fullSubtractor:fs1
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder7b|fullAdder:fa2
-A => S.OUTPUTSELECT
-A => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-Ci => S.DATAB
-Ci => Co.DATAA
-Ci => S.DATAA
-Ci => Co.DATAB
-Ci => S.DATAB
-Ci => S.DATAA
+|subtractor7b|fullSubtractor:fs2
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder7b|fullAdder:fa3
-A => S.OUTPUTSELECT
-A => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-Ci => S.DATAB
-Ci => Co.DATAA
-Ci => S.DATAA
-Ci => Co.DATAB
-Ci => S.DATAB
-Ci => S.DATAA
+|subtractor7b|fullSubtractor:fs3
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder7b|fullAdder:fa4
-A => S.OUTPUTSELECT
-A => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-Ci => S.DATAB
-Ci => Co.DATAA
-Ci => S.DATAA
-Ci => Co.DATAB
-Ci => S.DATAB
-Ci => S.DATAA
+|subtractor7b|fullSubtractor:fs4
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder7b|fullAdder:fa5
-A => S.OUTPUTSELECT
-A => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-B => S.OUTPUTSELECT
-B => Co.OUTPUTSELECT
-Ci => S.DATAB
-Ci => Co.DATAA
-Ci => S.DATAA
-Ci => Co.DATAB
-Ci => S.DATAB
-Ci => S.DATAA
+|subtractor7b|fullSubtractor:fs5
+A => S.IN1
+A => S.IN1
+B => S.IN0
+B => S.IN0
+B => Te.IN0
+Ta => S.IN1
+Ta => S.IN1
+Ta => Te.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+Te <= Te.DB_MAX_OUTPUT_PORT_TYPE
 
 

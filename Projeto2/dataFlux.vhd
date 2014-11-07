@@ -25,25 +25,25 @@ architecture comport of dataFlux is
 	
 	begin
 	
-	process(CLK)
-			begin
-				case(m1) is
-					when '1' => if m0 = '1' then
-					en0 <= '0';
-					en1 <= '0';
-					else
-					en0 <= '0';
-					en1 <= '1'; END IF;
-					
-					when '0' => if m0 = '0' then
-					en0 <= '0';
-					en1 <= '0';
-					else
-					en0 <= '1';
-					en1 <= '0'; end if;
-				end case;
-			end process;
-					
+	process(m0,m1)
+		begin
+			case(m1) is
+				when '1' => if m0 = '1' then
+				en0 <= '0';
+				en1 <= '0';
+				else
+				en0 <= '0';
+				en1 <= '1'; END IF;
+				
+				when '0' => if m0 = '0' then
+				en0 <= '0';
+				en1 <= '0';
+				else
+				en0 <= '1';
+				en1 <= '0'; end if;
+			end case;
+		end process;
+				
 			
 	reg0 : register7b port map(data,CLR,CLK,en0,A);
 	reg1 : register7b port map(data,CLR,CLK,en1,B);

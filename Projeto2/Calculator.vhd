@@ -10,25 +10,13 @@ ENTITY Calculator is
 		CLK,RES : in std_logic;
 		M0,M1,EN : in std_logic;
 		SEL : in std_logic_vector(0 to 1);
-		result : out std_logic_vector(0 to 7);
-		tA,tB : out std_logic_vector(0 to 6)
+		H1,H2,H3 : out std_logic_vector(0 to 6);
+		sign : out std_logic := '0'
 	);
 	
 end Calculator;
 
 ARCHITECTURE comport of Calculator is
-
-	constant n0 : std_logic_vector(0 to 6) := "0000001";
-	constant n1 : std_logic_vector(0 to 6) := "1001111";
-	constant n2 : std_logic_vector(0 to 6) := "0010011";
-	constant n3 : std_logic_vector(0 to 6) := "0000110";
-	constant n4 : std_logic_vector(0 to 6) := "1001100";
-	constant n5 : std_logic_vector(0 to 6) := "0100100";
-	constant n6 : std_logic_vector(0 to 6) := "0100000";
-	constant n7 : std_logic_vector(0 to 6) := "0001111";
-	constant n8 : std_logic_vector(0 to 6) := "0000000";
-	constant n9 : std_logic_vector(0 to 6) := "0000100";
-	
 	component dataFlux is
 		port(
 			data : in std_logic_vector(0 to 6);
@@ -43,18 +31,63 @@ ARCHITECTURE comport of Calculator is
 			A,B : in std_logic_vector(0 to 6);
 			result : out std_logic_vector(0 to 7);
 			CLK,EN : in std_logic;
-			S : in std_logic_vector(0 to 1)
+			S : in std_logic_vector(0 to 1);
+			sig : out std_logic
 		);
 	end component;
 	
+	component decoder is
+		port(
+			data : in std_logic_vector(0 to 7);
+			H1,H2,H3 : out std_logic_vector(0 to 6)
+		);
+	end component;
+	
+	component comp2 is
+		port(
+			data : in std_logic_vector(0 to 7);
+			result : out std_logic_vector(0 to 7)
+		);
+	end component;
+	
+	
 	SIGNAL A,B : std_logic_vector(0 to 6);
-	SIGNAL CLKout : std_logic;
+	SIGNAL CLKout,sig,temp : std_logic;
+	SIGNAL complement: std_logic_vector(0 to 7);
+	SIGNAL result : std_logic_vector(0 to 7);
+	SIGNAL saida : std_logic_vector(0 to 7);
 	
 	begin
+
 	
 	data_Flux : dataFlux port map(data,M0,M1,RES,CLK,A,B,CLKout);
-	unit_logic_arithmetic : ULA port map(A,B,result,CLKout,EN,SEL);
 	
-	tA <= A;
-	tB <= B;
+	unit_logic_arithmetic : ULA port map(A,B,result,CLKout,EN,SEL,sig);
+	
+	comp : comp2 port map(result,complement);
+	
+	process(sig,EN)
+		begin
+		if rising_edge(EN) then
+			if sig = '1' then
+			sign <= sig;
+			else
+			sign <= '0';
+			end if;
+		end if;
+	end process;
+	
+	
+	process(result,complement,sig)
+		begin
+		if sig = '1' then
+			saida <= complement;
+		end if;
+		if sig = '0' then
+			saida <= result;
+		end if;
+	end process;
+	
+	dec : decoder port map(result,H1,H2,H3);
+		
 end comport;

@@ -8,7 +8,8 @@ ENTITY ULA is
 		A,B : in std_logic_vector(0 to 6);
 		result : out std_logic_vector(0 to 7);
 		CLK,EN : in std_logic;
-		S : in std_logic_vector(0 to 1)
+		S : in std_logic_vector(0 to 1);
+		sig : out std_logic
 	);
 end ULA;
 
@@ -21,7 +22,8 @@ ARCHITECTURE comport of ULA is
 			A,B : in std_logic_vector(0 to 6);
 			result : out std_logic_vector(0 to 7);
 			S : in std_logic_vector(0 to 1);
-			EN : in std_logic
+			EN : in std_logic;
+			sig : out std_logic
 		);
 	end component;
 	
@@ -49,9 +51,8 @@ ARCHITECTURE comport of ULA is
 			ENufa <= CLK and EN;
 		end process;
 		
-		ufa1 : UFA port map(A,B,OUTufa,S,ENufa);
+		ufa1 : UFA port map(A,B,OUTufa,S,ENufa,sig);
 		FFT1: FFT port map('1',CLK,CLKreg);
-		reg1 : register8b port map(OUTufa,'0',CLKreg,EN,result);
-
+		reg1 : register8b port map(OUTufa,'0',CLKreg,EN,result);	
 		
 end comport;

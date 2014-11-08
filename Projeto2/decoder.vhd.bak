@@ -1,0 +1,33 @@
+-- decoder
+
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY decoder is
+	port(
+		data : in std_logic_vector(0 to 7);
+		H1,H2,H3 : out std_logic_vector(0 to 6)
+	)
+end decoder;
+
+
+ARCHITECTURE comport of decoder is
+	constant x : std_logic_vector(0 to 6):= "1111111";
+	constant n0 : std_logic_vector(0 to 6) := "0000001";
+	constant n1 : std_logic_vector(0 to 6) := "1001111";
+	constant n2 : std_logic_vector(0 to 6) := "0010011";
+	constant n3 : std_logic_vector(0 to 6) := "0000110";
+	constant n4 : std_logic_vector(0 to 6) := "1001100";
+	constant n5 : std_logic_vector(0 to 6) := "0100100";
+	constant n6 : std_logic_vector(0 to 6) := "0100000";
+	constant n7 : std_logic_vector(0 to 6) := "0001111";
+	constant n8 : std_logic_vector(0 to 6) := "0000000";
+	constant n9 : std_logic_vector(0 to 6) := "0000100";
+	
+	begin
+	
+	case(data) is
+		when => "00000000" H1 <= x;H2 <= x;H3 <= x;
+	
+	
+end comport;

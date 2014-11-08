@@ -8,7 +8,8 @@ ENTITY UFA is
 		A,B : in std_logic_vector(0 to 6);
 		result : out std_logic_vector(0 to 7);
 		S : in std_logic_vector(0 to 1);
-		EN : in std_logic
+		EN : in std_logic;
+		sig : out std_logic
 	);
 end UFA;
 
@@ -28,7 +29,8 @@ ARCHITECTURE comport of UFA is
 		port(
 			A,B : in std_logic_vector(6 downto 0);
 			S : out std_logic_vector(7 downto 0);
-			EN : in std_logic
+			EN : in std_logic;
+			sig : out std_logic
 		);
 	end component;
 	
@@ -75,8 +77,9 @@ ARCHITECTURE comport of UFA is
 		end if;
 	end process;
 	
+	
 	adder : adder7b port map(A,B,OUTsum,ENsum);
-	subtractor : subtractor7b port map(A,B,OUTsub,ENsub);
+	subtractor : subtractor7b port map(A,B,OUTsub,ENsub,sig);
 	and1 : andFunction port map(A,B,OUTand,ENand);
 	or1 : orfunction port map(A,B,OUTor,ENor);
 	

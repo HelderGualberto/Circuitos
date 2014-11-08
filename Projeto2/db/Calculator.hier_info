@@ -11,30 +11,31 @@ RES => dataFlux:data_Flux.CLR
 M0 => dataFlux:data_Flux.m0
 M1 => dataFlux:data_Flux.m1
 EN => ULA:unit_logic_arithmetic.EN
+EN => sign~reg0.CLK
 SEL[1] => ULA:unit_logic_arithmetic.S[1]
 SEL[0] => ULA:unit_logic_arithmetic.S[0]
-result[7] <= ULA:unit_logic_arithmetic.result[7]
-result[6] <= ULA:unit_logic_arithmetic.result[6]
-result[5] <= ULA:unit_logic_arithmetic.result[5]
-result[4] <= ULA:unit_logic_arithmetic.result[4]
-result[3] <= ULA:unit_logic_arithmetic.result[3]
-result[2] <= ULA:unit_logic_arithmetic.result[2]
-result[1] <= ULA:unit_logic_arithmetic.result[1]
-result[0] <= ULA:unit_logic_arithmetic.result[0]
-tA[6] <= dataFlux:data_Flux.A[6]
-tA[5] <= dataFlux:data_Flux.A[5]
-tA[4] <= dataFlux:data_Flux.A[4]
-tA[3] <= dataFlux:data_Flux.A[3]
-tA[2] <= dataFlux:data_Flux.A[2]
-tA[1] <= dataFlux:data_Flux.A[1]
-tA[0] <= dataFlux:data_Flux.A[0]
-tB[6] <= dataFlux:data_Flux.B[6]
-tB[5] <= dataFlux:data_Flux.B[5]
-tB[4] <= dataFlux:data_Flux.B[4]
-tB[3] <= dataFlux:data_Flux.B[3]
-tB[2] <= dataFlux:data_Flux.B[2]
-tB[1] <= dataFlux:data_Flux.B[1]
-tB[0] <= dataFlux:data_Flux.B[0]
+H1[6] <= decoder:dec.H1[6]
+H1[5] <= decoder:dec.H1[5]
+H1[4] <= decoder:dec.H1[4]
+H1[3] <= decoder:dec.H1[3]
+H1[2] <= decoder:dec.H1[2]
+H1[1] <= decoder:dec.H1[1]
+H1[0] <= decoder:dec.H1[0]
+H2[6] <= decoder:dec.H2[6]
+H2[5] <= decoder:dec.H2[5]
+H2[4] <= decoder:dec.H2[4]
+H2[3] <= decoder:dec.H2[3]
+H2[2] <= decoder:dec.H2[2]
+H2[1] <= decoder:dec.H2[1]
+H2[0] <= decoder:dec.H2[0]
+H3[6] <= decoder:dec.H3[6]
+H3[5] <= decoder:dec.H3[5]
+H3[4] <= decoder:dec.H3[4]
+H3[3] <= decoder:dec.H3[3]
+H3[2] <= decoder:dec.H3[2]
+H3[1] <= decoder:dec.H3[1]
+H3[0] <= decoder:dec.H3[0]
+sign <= sign~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Calculator|dataFlux:data_Flux
@@ -263,6 +264,7 @@ EN => ENufa.IN1
 EN => register8b:reg1.EN
 S[1] => UFA:ufa1.S[1]
 S[0] => UFA:ufa1.S[0]
+sig <= UFA:ufa1.sig
 
 
 |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1
@@ -352,6 +354,7 @@ EN => ENor.ACLR
 EN => ENand.ACLR
 EN => ENsub.ACLR
 EN => ENsum.ACLR
+sig <= subtractor7b:subtractor.sig
 
 
 |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder
@@ -534,7 +537,7 @@ S[3] <= fullSubtractor:fs2.S
 S[4] <= fullSubtractor:fs3.S
 S[5] <= fullSubtractor:fs4.S
 S[6] <= fullSubtractor:fs5.S
-S[7] <= fullSubtractor:fs5.Te
+S[7] <= <GND>
 EN => halfSubtractor:hs.EN
 EN => fullSubtractor:fs0.EN
 EN => fullSubtractor:fs1.EN
@@ -542,6 +545,7 @@ EN => fullSubtractor:fs2.EN
 EN => fullSubtractor:fs3.EN
 EN => fullSubtractor:fs4.EN
 EN => fullSubtractor:fs5.EN
+sig <= fullSubtractor:fs5.Te
 
 
 |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs
@@ -847,5 +851,338 @@ CLR => Q~reg0.ACLR
 D => Q~reg0.DATAIN
 CLK => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|comp2:comp
+data[7] => adder7b:adder.B[0]
+data[6] => adder7b:adder.B[1]
+data[5] => adder7b:adder.B[2]
+data[4] => adder7b:adder.B[3]
+data[3] => adder7b:adder.B[4]
+data[2] => adder7b:adder.B[5]
+data[1] => adder7b:adder.B[6]
+data[0] => ~NO_FANOUT~
+result[7] <= adder7b:adder.S[0]
+result[6] <= adder7b:adder.S[1]
+result[5] <= adder7b:adder.S[2]
+result[4] <= adder7b:adder.S[3]
+result[3] <= adder7b:adder.S[4]
+result[2] <= adder7b:adder.S[5]
+result[1] <= adder7b:adder.S[6]
+result[0] <= adder7b:adder.S[7]
+
+
+|Calculator|comp2:comp|adder7b:adder
+A[0] => halfAdder:ha.A
+A[1] => fullAdder:fa0.A
+A[2] => fullAdder:fa1.A
+A[3] => fullAdder:fa2.A
+A[4] => fullAdder:fa3.A
+A[5] => fullAdder:fa4.A
+A[6] => fullAdder:fa5.A
+B[0] => halfAdder:ha.B
+B[1] => fullAdder:fa0.B
+B[2] => fullAdder:fa1.B
+B[3] => fullAdder:fa2.B
+B[4] => fullAdder:fa3.B
+B[5] => fullAdder:fa4.B
+B[6] => fullAdder:fa5.B
+S[0] <= halfAdder:ha.S
+S[1] <= fullAdder:fa0.S
+S[2] <= fullAdder:fa1.S
+S[3] <= fullAdder:fa2.S
+S[4] <= fullAdder:fa3.S
+S[5] <= fullAdder:fa4.S
+S[6] <= fullAdder:fa5.S
+S[7] <= fullAdder:fa5.Co
+EN => halfAdder:ha.EN
+EN => fullAdder:fa0.EN
+EN => fullAdder:fa1.EN
+EN => fullAdder:fa2.EN
+EN => fullAdder:fa3.EN
+EN => fullAdder:fa4.EN
+EN => fullAdder:fa5.EN
+
+
+|Calculator|comp2:comp|adder7b:adder|halfAdder:ha
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.DATAB
+B => Co.DATAA
+B => S.DATAA
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|comp2:comp|adder7b:adder|fullAdder:fa0
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|comp2:comp|adder7b:adder|fullAdder:fa1
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|comp2:comp|adder7b:adder|fullAdder:fa2
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|comp2:comp|adder7b:adder|fullAdder:fa3
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|comp2:comp|adder7b:adder|fullAdder:fa4
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|comp2:comp|adder7b:adder|fullAdder:fa5
+A => S.OUTPUTSELECT
+A => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+B => S.OUTPUTSELECT
+B => Co.OUTPUTSELECT
+Ci => S.DATAB
+Ci => Co.DATAA
+Ci => S.DATAA
+Ci => Co.DATAB
+Ci => S.DATAB
+Ci => S.DATAA
+EN => Co$latch.LATCH_ENABLE
+EN => S$latch.LATCH_ENABLE
+S <= S$latch.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|decoder:dec
+data[7] => Mux0.IN263
+data[7] => Mux1.IN263
+data[7] => Mux2.IN263
+data[7] => Mux3.IN263
+data[7] => Mux4.IN263
+data[7] => Mux5.IN263
+data[7] => Mux6.IN263
+data[6] => Mux0.IN262
+data[6] => Mux1.IN262
+data[6] => Mux2.IN262
+data[6] => Mux3.IN262
+data[6] => Mux4.IN262
+data[6] => Mux5.IN262
+data[6] => Mux6.IN262
+data[6] => Mux7.IN134
+data[6] => Mux8.IN134
+data[6] => Mux9.IN134
+data[6] => Mux10.IN134
+data[6] => Mux11.IN134
+data[6] => Mux12.IN134
+data[6] => Mux13.IN134
+data[5] => Mux0.IN261
+data[5] => Mux1.IN261
+data[5] => Mux2.IN261
+data[5] => Mux3.IN261
+data[5] => Mux4.IN261
+data[5] => Mux5.IN261
+data[5] => Mux6.IN261
+data[5] => Mux7.IN133
+data[5] => Mux8.IN133
+data[5] => Mux9.IN133
+data[5] => Mux10.IN133
+data[5] => Mux11.IN133
+data[5] => Mux12.IN133
+data[5] => Mux13.IN133
+data[5] => Mux15.IN69
+data[5] => Mux16.IN69
+data[4] => Mux0.IN260
+data[4] => Mux1.IN260
+data[4] => Mux2.IN260
+data[4] => Mux3.IN260
+data[4] => Mux4.IN260
+data[4] => Mux5.IN260
+data[4] => Mux6.IN260
+data[4] => Mux7.IN132
+data[4] => Mux8.IN132
+data[4] => Mux9.IN132
+data[4] => Mux10.IN132
+data[4] => Mux11.IN132
+data[4] => Mux12.IN132
+data[4] => Mux13.IN132
+data[4] => Mux14.IN36
+data[4] => Mux15.IN68
+data[4] => Mux16.IN68
+data[4] => Mux17.IN36
+data[4] => Mux18.IN36
+data[3] => Mux0.IN259
+data[3] => Mux1.IN259
+data[3] => Mux2.IN259
+data[3] => Mux3.IN259
+data[3] => Mux4.IN259
+data[3] => Mux5.IN259
+data[3] => Mux6.IN259
+data[3] => Mux7.IN131
+data[3] => Mux8.IN131
+data[3] => Mux9.IN131
+data[3] => Mux10.IN131
+data[3] => Mux11.IN131
+data[3] => Mux12.IN131
+data[3] => Mux13.IN131
+data[3] => Mux14.IN35
+data[3] => Mux15.IN67
+data[3] => Mux16.IN67
+data[3] => Mux17.IN35
+data[3] => Mux18.IN35
+data[2] => Mux0.IN258
+data[2] => Mux1.IN258
+data[2] => Mux2.IN258
+data[2] => Mux3.IN258
+data[2] => Mux4.IN258
+data[2] => Mux5.IN258
+data[2] => Mux6.IN258
+data[2] => Mux7.IN130
+data[2] => Mux8.IN130
+data[2] => Mux9.IN130
+data[2] => Mux10.IN130
+data[2] => Mux11.IN130
+data[2] => Mux12.IN130
+data[2] => Mux13.IN130
+data[2] => Mux14.IN34
+data[2] => Mux15.IN66
+data[2] => Mux16.IN66
+data[2] => Mux17.IN34
+data[2] => Mux18.IN34
+data[1] => Mux0.IN257
+data[1] => Mux1.IN257
+data[1] => Mux2.IN257
+data[1] => Mux3.IN257
+data[1] => Mux4.IN257
+data[1] => Mux5.IN257
+data[1] => Mux6.IN257
+data[1] => Mux7.IN129
+data[1] => Mux8.IN129
+data[1] => Mux9.IN129
+data[1] => Mux10.IN129
+data[1] => Mux11.IN129
+data[1] => Mux12.IN129
+data[1] => Mux13.IN129
+data[1] => Mux14.IN33
+data[1] => Mux15.IN65
+data[1] => Mux16.IN65
+data[1] => Mux17.IN33
+data[1] => Mux18.IN33
+data[0] => Mux0.IN256
+data[0] => Mux1.IN256
+data[0] => Mux2.IN256
+data[0] => Mux3.IN256
+data[0] => Mux4.IN256
+data[0] => Mux5.IN256
+data[0] => Mux6.IN256
+data[0] => Mux7.IN128
+data[0] => Mux8.IN128
+data[0] => Mux9.IN128
+data[0] => Mux10.IN128
+data[0] => Mux11.IN128
+data[0] => Mux12.IN128
+data[0] => Mux13.IN128
+data[0] => Mux14.IN32
+data[0] => Mux15.IN64
+data[0] => Mux16.IN64
+data[0] => Mux17.IN32
+data[0] => Mux18.IN32
+H1[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+H1[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+H1[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+H1[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+H1[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+H1[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+H1[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+H2[6] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+H2[5] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+H2[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+H2[3] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+H2[2] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+H2[1] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+H2[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+H3[6] <= <VCC>
+H3[5] <= <VCC>
+H3[4] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+H3[3] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+H3[2] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+H3[1] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+H3[0] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -26,6 +26,72 @@
 # Loading work.Calculator_vlg_sample_tst
 # Loading work.Calculator_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# Simulation passed !
-# ** Note: $finish    : CalculatorSimulation.vwf.vt(286)
+# ERROR! Vector Mismatch for output port H1[6] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000001
+# ERROR! Vector Mismatch for output port H2[6] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000001
+# ERROR! Vector Mismatch for output port H3[0] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port H3[1] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port H3[2] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port H3[3] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port H3[4] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port H3[5] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port H3[6] :: @time = 250000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port sign :: @time = 11750000.000 ps
+#      Expected value = 0
+#      Real value = x
+# ERROR! Vector Mismatch for output port H1[0] :: @time = 12500000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001100
+# ERROR! Vector Mismatch for output port H1[3] :: @time = 12500000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001100
+# ERROR! Vector Mismatch for output port H1[4] :: @time = 12500000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001100
+# ERROR! Vector Mismatch for output port H2[3] :: @time = 12500000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001111
+# ERROR! Vector Mismatch for output port H2[4] :: @time = 12500000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001111
+# ERROR! Vector Mismatch for output port H2[5] :: @time = 12500000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001111
+# ERROR! Vector Mismatch for output port H1[1] :: @time = 27000000.000 ps
+#      Expected value = 0000000
+#      Real value = xxxxxxx
+# ERROR! Vector Mismatch for output port H1[2] :: @time = 27000000.000 ps
+#      Expected value = 0000000
+#      Real value = xxxxxxx
+# ERROR! Vector Mismatch for output port H1[5] :: @time = 27000000.000 ps
+#      Expected value = 0000000
+#      Real value = xxxxxxx
+# ERROR! Vector Mismatch for output port H2[0] :: @time = 27000000.000 ps
+#      Expected value = 0000000
+#      Real value = xxxxxxx
+# ERROR! Vector Mismatch for output port H2[1] :: @time = 27000000.000 ps
+#      Expected value = 0000000
+#      Real value = xxxxxxx
+# ERROR! Vector Mismatch for output port H2[2] :: @time = 27000000.000 ps
+#      Expected value = 0000000
+#      Real value = xxxxxxx
+#          22 mismatched vectors : Simulation failed !
+# ** Note: $finish    : CalculatorSimulation.vwf.vt(563)
 #    Time: 100 us  Iteration: 0  Instance: /Calculator_vlg_vec_tst/tb_out

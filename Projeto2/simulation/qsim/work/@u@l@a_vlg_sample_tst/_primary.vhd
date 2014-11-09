@@ -6,6 +6,7 @@ entity ULA_vlg_sample_tst is
         B               : in     vl_logic_vector(0 to 6);
         CLK             : in     vl_logic;
         EN              : in     vl_logic;
+        RES             : in     vl_logic;
         S               : in     vl_logic_vector(0 to 1);
         sampler_tx      : out    vl_logic
     );

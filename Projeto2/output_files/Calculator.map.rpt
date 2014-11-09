@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Calculator
-Sun Nov 09 14:37:44 2014
+Sun Nov 09 20:19:59 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -17,12 +17,11 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Port Connectivity Checks: "comp2:comp|adder7b:adder"
- 12. Port Connectivity Checks: "ULA:unit_logic_arithmetic|register8b:reg1"
- 13. Port Connectivity Checks: "ULA:unit_logic_arithmetic|FFT:FFT1"
- 14. Port Connectivity Checks: "dataFlux:data_Flux|FFT:clockBroke"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+ 12. Port Connectivity Checks: "ULA:unit_logic_arithmetic|FFT:FFT1"
+ 13. Port Connectivity Checks: "dataFlux:data_Flux|FFT:clockBroke"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -49,7 +48,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 09 14:37:44 2014      ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 09 20:19:59 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; Calculator                                 ;
 ; Top-level Entity Name              ; Calculator                                 ;
@@ -216,8 +215,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ; Maximum fan-out node                        ; saida[4]~5 ;
 ; Maximum fan-out                             ; 50         ;
-; Total fan-out                               ; 992        ;
-; Average fan-out                             ; 2.80       ;
+; Total fan-out                               ; 1000       ;
+; Average fan-out                             ; 2.82       ;
 +---------------------------------------------+------------+
 
 
@@ -349,7 +348,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Total registers                              ; 24    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 14    ;
+; Number of registers using Asynchronous Clear ; 22    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -374,15 +373,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; a[0]    ; Input ; Info     ; Stuck at VCC            ;
 ; en      ; Input ; Info     ; Stuck at VCC            ;
 +---------+-------+----------+-------------------------+
-
-
-+-----------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:unit_logic_arithmetic|register8b:reg1" ;
-+------+-------+----------+---------------------------------------------+
-; Port ; Type  ; Severity ; Details                                     ;
-+------+-------+----------+---------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                ;
-+------+-------+----------+---------------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -410,8 +400,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; boundary_port         ; 36                          ;
 ; cycloneiii_ff         ; 24                          ;
-;     CLR               ; 14                          ;
-;     plain             ; 10                          ;
+;     CLR               ; 22                          ;
+;     plain             ; 2                           ;
 ; cycloneiii_lcell_comb ; 259                         ;
 ;     normal            ; 259                         ;
 ;         0 data inputs ; 1                           ;
@@ -440,7 +430,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Sun Nov 09 14:37:39 2014
+    Info: Processing started: Sun Nov 09 20:19:55 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Calculator -c Calculator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
@@ -504,19 +494,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file comp2.v
     Info (12022): Found design unit 1: comp2-comport
     Info (12023): Found entity 1: comp2
 Info (12127): Elaborating entity "Calculator" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at Calculator.vhd(73): signal "SEL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Calculator.vhd(76): signal "SEL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10631): VHDL Process Statement warning at Calculator.vhd(70): inferring latch(es) for signal or variable "sig", which holds its previous value in one or more paths through the process
-Warning (10492): VHDL Process Statement warning at Calculator.vhd(90): signal "result" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at Calculator.vhd(84): inferring latch(es) for signal or variable "saida", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "saida[7]" at Calculator.vhd(84)
-Info (10041): Inferred latch for "saida[6]" at Calculator.vhd(84)
-Info (10041): Inferred latch for "saida[5]" at Calculator.vhd(84)
-Info (10041): Inferred latch for "saida[4]" at Calculator.vhd(84)
-Info (10041): Inferred latch for "saida[3]" at Calculator.vhd(84)
-Info (10041): Inferred latch for "saida[2]" at Calculator.vhd(84)
-Info (10041): Inferred latch for "saida[1]" at Calculator.vhd(84)
-Info (10041): Inferred latch for "saida[0]" at Calculator.vhd(84)
 Info (10041): Inferred latch for "sig" at Calculator.vhd(70)
 Info (12128): Elaborating entity "dataFlux" for hierarchy "dataFlux:data_Flux"
 Info (12128): Elaborating entity "FFT" for hierarchy "dataFlux:data_Flux|FFT:clockBroke"
@@ -602,10 +580,10 @@ Info (21057): Implemented 308 device resources after synthesis - the final resou
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 22 output pins
     Info (21061): Implemented 272 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 574 megabytes
-    Info: Processing ended: Sun Nov 09 14:37:44 2014
-    Info: Elapsed time: 00:00:05
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 578 megabytes
+    Info: Processing ended: Sun Nov 09 20:19:59 2014
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 

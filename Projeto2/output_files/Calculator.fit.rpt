@@ -1,5 +1,5 @@
 Fitter report for Calculator
-Sun Nov 09 14:38:13 2014
+Sun Nov 09 20:20:29 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -70,14 +70,14 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Sun Nov 09 14:38:13 2014      ;
+; Fitter Status                      ; Successful - Sun Nov 09 20:20:29 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; Calculator                                 ;
 ; Top-level Entity Name              ; Calculator                                 ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 262 / 114,480 ( < 1 % )                    ;
+; Total logic elements               ; 270 / 114,480 ( < 1 % )                    ;
 ;     Total combinational functions  ; 258 / 114,480 ( < 1 % )                    ;
 ;     Dedicated logic registers      ; 24 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 24                                         ;
@@ -266,16 +266,16 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 262 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 238                     ;
-;     -- Register only                        ; 4                       ;
-;     -- Combinational with a register        ; 20                      ;
+; Total logic elements                        ; 270 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 246                     ;
+;     -- Register only                        ; 12                      ;
+;     -- Combinational with a register        ; 12                      ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
 ;     -- 4 input functions                    ; 128                     ;
 ;     -- 3 input functions                    ; 104                     ;
 ;     -- <=2 input functions                  ; 26                      ;
-;     -- Register only                        ; 4                       ;
+;     -- Register only                        ; 12                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
 ;     -- normal mode                          ; 258                     ;
@@ -285,7 +285,7 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ;     -- Dedicated logic registers            ; 24 / 114,480 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 21 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 29 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 36 / 529 ( 7 % )        ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )          ;
@@ -303,11 +303,11 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%      ;
-; Peak interconnect usage (total/H/V)         ; 2.9% / 2.7% / 3.2%      ;
+; Peak interconnect usage (total/H/V)         ; 3.5% / 2.9% / 4.3%      ;
 ; Maximum fan-out                             ; 50                      ;
 ; Highest non-global fan-out                  ; 50                      ;
-; Total fan-out                               ; 1007                    ;
-; Average fan-out                             ; 2.69                    ;
+; Total fan-out                               ; 1023                    ;
+; Average fan-out                             ; 2.68                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -320,16 +320,16 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 262 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 238                    ; 0                              ;
-;     -- Register only                        ; 4                      ; 0                              ;
-;     -- Combinational with a register        ; 20                     ; 0                              ;
+; Total logic elements                        ; 270 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 246                    ; 0                              ;
+;     -- Register only                        ; 12                     ; 0                              ;
+;     -- Combinational with a register        ; 12                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
 ;     -- 4 input functions                    ; 128                    ; 0                              ;
 ;     -- 3 input functions                    ; 104                    ; 0                              ;
 ;     -- <=2 input functions                  ; 26                     ; 0                              ;
-;     -- Register only                        ; 4                      ; 0                              ;
+;     -- Register only                        ; 12                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
 ;     -- normal mode                          ; 258                    ; 0                              ;
@@ -339,7 +339,7 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ;     -- Dedicated logic registers            ; 24 / 114480 ( < 1 % )  ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 21 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 29 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 36                     ; 0                              ;
@@ -355,7 +355,7 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 1002                   ; 5                              ;
+;     -- Total Connections                    ; 1018                   ; 5                              ;
 ;     -- Registered Connections               ; 135                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
@@ -392,7 +392,7 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; EN      ; Y23   ; 5        ; 115          ; 14           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; M0      ; AA22  ; 5        ; 115          ; 6            ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; M1      ; AA23  ; 5        ; 115          ; 10           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; RES     ; Y24   ; 5        ; 115          ; 13           ; 0            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; RES     ; Y24   ; 5        ; 115          ; 13           ; 0            ; 22                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SEL[0]  ; AA24  ; 5        ; 115          ; 9            ; 21           ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SEL[1]  ; AB23  ; 5        ; 115          ; 7            ; 14           ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; data[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
@@ -410,28 +410,28 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; H1[0] ; AD18  ; 4        ; 85           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H1[1] ; AF19  ; 4        ; 83           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H1[2] ; AF21  ; 4        ; 87           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H1[3] ; AA17  ; 4        ; 89           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H1[4] ; AC18  ; 4        ; 87           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H1[5] ; AE25  ; 4        ; 89           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H1[6] ; AE21  ; 4        ; 85           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H2[0] ; AF24  ; 4        ; 83           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H2[1] ; AE20  ; 4        ; 85           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H2[2] ; AG23  ; 4        ; 81           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H2[3] ; AF25  ; 4        ; 83           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H2[4] ; AF26  ; 4        ; 89           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H2[5] ; AB17  ; 4        ; 89           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H2[6] ; AE19  ; 4        ; 83           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H3[0] ; AE18  ; 4        ; 79           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H3[1] ; AH23  ; 4        ; 81           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H3[2] ; AF18  ; 4        ; 79           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H3[3] ; AG22  ; 4        ; 79           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H3[4] ; AH22  ; 4        ; 79           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H1[0] ; AC25  ; 5        ; 115          ; 4            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H1[1] ; AB22  ; 4        ; 107          ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H1[2] ; AD22  ; 4        ; 111          ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H1[3] ; AB24  ; 5        ; 115          ; 5            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H1[4] ; AA21  ; 4        ; 111          ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H1[5] ; AB21  ; 4        ; 109          ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H1[6] ; Y19   ; 4        ; 105          ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H2[0] ; AC24  ; 5        ; 115          ; 4            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H2[1] ; AE23  ; 4        ; 105          ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H2[2] ; AA19  ; 4        ; 107          ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H2[3] ; AD21  ; 4        ; 102          ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H2[4] ; AH26  ; 4        ; 113          ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H2[5] ; AC22  ; 4        ; 109          ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H2[6] ; AC21  ; 4        ; 102          ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H3[0] ; AE24  ; 4        ; 100          ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H3[1] ; AD24  ; 4        ; 105          ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H3[2] ; AF23  ; 4        ; 105          ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H3[3] ; AD25  ; 4        ; 100          ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H3[4] ; AB20  ; 4        ; 100          ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; H3[5] ; E10   ; 8        ; 18           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; H3[6] ; K22   ; 6        ; 115          ; 64           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; sign  ; AF20  ; 4        ; 85           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; H3[6] ; AH22  ; 4        ; 79           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; sign  ; AE26  ; 5        ; 115          ; 8            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -464,9 +464,9 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; 1        ; 4 / 56 ( 7 % )   ; 2.5V          ; --           ;
 ; 2        ; 0 / 63 ( 0 % )   ; 2.5V          ; --           ;
 ; 3        ; 0 / 73 ( 0 % )   ; 2.5V          ; --           ;
-; 4        ; 21 / 71 ( 30 % ) ; 2.5V          ; --           ;
-; 5        ; 13 / 65 ( 20 % ) ; 2.5V          ; --           ;
-; 6        ; 2 / 58 ( 3 % )   ; 2.5V          ; --           ;
+; 4        ; 18 / 71 ( 25 % ) ; 2.5V          ; --           ;
+; 5        ; 17 / 65 ( 26 % ) ; 2.5V          ; --           ;
+; 6        ; 1 / 58 ( 2 % )   ; 2.5V          ; --           ;
 ; 7        ; 0 / 72 ( 0 % )   ; 2.5V          ; --           ;
 ; 8        ; 1 / 71 ( 1 % )   ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
@@ -519,11 +519,11 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; AA14     ; 191        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA15     ; 213        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AA16     ; 211        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AA17     ; 241        ; 4        ; H1[3]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA17     ; 241        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA18     ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; AA19     ; 264        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AA19     ; 264        ; 4        ; H2[2]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA20     ;            ;          ; GNDA4                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AA21     ; 269        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AA21     ; 269        ; 4        ; H1[4]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA22     ; 275        ; 5        ; M0                                                        ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AA23     ; 280        ; 5        ; M1                                                        ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AA24     ; 279        ; 5        ; SEL[0]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -547,14 +547,14 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; AB14     ; 192        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB15     ; 214        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB16     ; 212        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AB17     ; 242        ; 4        ; H2[5]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB17     ; 242        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB18     ; 254        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB19     ; 253        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AB20     ; 257        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; AB21     ; 266        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AB22     ; 265        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AB20     ; 257        ; 4        ; H3[4]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB21     ; 266        ; 4        ; H1[5]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB22     ; 265        ; 4        ; H1[1]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB23     ; 276        ; 5        ; SEL[1]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; AB24     ; 274        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AB24     ; 274        ; 5        ; H1[3]                                                     ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AB25     ; 292        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AB26     ; 291        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AB27     ; 296        ; 5        ; data[4]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -576,14 +576,14 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; AC15     ; 203        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AC16     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AC17     ; 221        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AC18     ; 240        ; 4        ; H1[4]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC18     ; 240        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AC19     ; 247        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AC20     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AC21     ; 258        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AC22     ; 267        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AC21     ; 258        ; 4        ; H2[6]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC22     ; 267        ; 4        ; H2[5]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AC23     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AC24     ; 273        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AC25     ; 272        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AC24     ; 273        ; 5        ; H2[0]                                                     ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AC25     ; 272        ; 5        ; H1[0]                                                     ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AC26     ; 282        ; 5        ; data[5]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AC27     ; 290        ; 5        ; data[2]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AC28     ; 289        ; 5        ; data[1]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -604,14 +604,14 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; AD15     ; 204        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AD16     ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AD17     ; 222        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AD18     ; 237        ; 4        ; H1[0]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AD18     ; 237        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AD19     ; 248        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AD20     ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; AD21     ; 259        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AD22     ; 268        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AD21     ; 259        ; 4        ; H2[3]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AD22     ; 268        ; 4        ; H1[2]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AD23     ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; AD24     ; 260        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AD25     ; 255        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AD24     ; 260        ; 4        ; H3[1]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AD25     ; 255        ; 4        ; H3[3]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AD26     ; 281        ; 5        ; data[6]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AD27     ; 286        ; 5        ; data[3]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AD28     ; 285        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -632,15 +632,15 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; AE15     ; 205        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE16     ; 209        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE17     ; 215        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AE18     ; 225        ; 4        ; H3[0]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AE19     ; 231        ; 4        ; H2[6]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AE20     ; 235        ; 4        ; H2[1]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AE21     ; 238        ; 4        ; H1[6]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE18     ; 225        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AE19     ; 231        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AE20     ; 235        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AE21     ; 238        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE22     ; 251        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AE23     ; 261        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AE24     ; 256        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AE25     ; 243        ; 4        ; H1[5]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AE26     ; 278        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AE23     ; 261        ; 4        ; H2[1]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE24     ; 256        ; 4        ; H3[0]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE25     ; 243        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AE26     ; 278        ; 5        ; sign                                                      ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AE27     ; 284        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AE28     ; 283        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AF1      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -660,15 +660,15 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; AF15     ; 206        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF16     ; 210        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF17     ; 216        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AF18     ; 226        ; 4        ; H3[2]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AF19     ; 232        ; 4        ; H1[1]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AF20     ; 236        ; 4        ; sign                                                      ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AF21     ; 239        ; 4        ; H1[2]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF18     ; 226        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AF19     ; 232        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AF20     ; 236        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AF21     ; 239        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF22     ; 252        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AF23     ; 262        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AF24     ; 233        ; 4        ; H2[0]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AF25     ; 234        ; 4        ; H2[3]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AF26     ; 244        ; 4        ; H2[4]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF23     ; 262        ; 4        ; H3[2]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF24     ; 233        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AF25     ; 234        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AF26     ; 244        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF27     ; 277        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AF28     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AG1      ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -692,8 +692,8 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; AG19     ; 219        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG20     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AG21     ; 223        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AG22     ; 227        ; 4        ; H3[3]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AG23     ; 229        ; 4        ; H2[2]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AG22     ; 227        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AG23     ; 229        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG24     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AG25     ; 245        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG26     ; 270        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -719,11 +719,11 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; AH19     ; 220        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH20     ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AH21     ; 224        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AH22     ; 228        ; 4        ; H3[4]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; AH23     ; 230        ; 4        ; H3[1]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AH22     ; 228        ; 4        ; H3[6]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AH23     ; 230        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH24     ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AH25     ; 246        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AH26     ; 271        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AH26     ; 271        ; 4        ; H2[4]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AH27     ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; B1       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; B2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -970,7 +970,7 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; K19      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K21      ; 389        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; K22      ; 388        ; 6        ; H3[6]                                                     ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K22      ; 388        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K23      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K24      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K25      ; 371        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1247,7 +1247,7 @@ The pin-out file can be found in D:/gitHub/Circuitos/Projeto2/output_files/Calcu
 ; Y16      ; 250        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y17      ; 249        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y18      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; Y19      ; 263        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; Y19      ; 263        ; 4        ; H1[6]                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y20      ;            ;          ; VCCD_PLL4                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; Y21      ;            ; --       ; VCCA4                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; Y22      ; 320        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1266,60 +1266,60 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                       ; Library Name ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------+--------------+
-; |Calculator                        ; 262 (7)     ; 24 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 36   ; 0            ; 238 (7)      ; 4 (0)             ; 20 (4)           ; |Calculator                                                                               ; work         ;
-;    |ULA:unit_logic_arithmetic|     ; 115 (1)     ; 9 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 94 (1)       ; 2 (0)             ; 19 (0)           ; |Calculator|ULA:unit_logic_arithmetic                                                     ; work         ;
+; |Calculator                        ; 270 (11)    ; 24 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 36   ; 0            ; 246 (10)     ; 12 (0)            ; 12 (1)           ; |Calculator                                                                               ; work         ;
+;    |ULA:unit_logic_arithmetic|     ; 112 (1)     ; 9 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 97 (1)       ; 4 (0)             ; 11 (0)           ; |Calculator|ULA:unit_logic_arithmetic                                                     ; work         ;
 ;       |FFT:FFT1|                   ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|FFT:FFT1                                            ; work         ;
-;       |UFA:ufa1|                   ; 105 (8)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (7)       ; 0 (0)             ; 13 (1)           ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1                                            ; work         ;
+;       |UFA:ufa1|                   ; 105 (8)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 95 (8)       ; 0 (0)             ; 10 (0)           ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1                                            ; work         ;
 ;          |Mux4to1:mux1|            ; 15 (15)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1                               ; work         ;
-;          |adder7b:adder|           ; 27 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 24 (0)       ; 0 (0)             ; 3 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder                              ; work         ;
-;             |fullAdder:fa0|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa0                ; work         ;
-;             |fullAdder:fa1|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa1                ; work         ;
-;             |fullAdder:fa2|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa2                ; work         ;
-;             |fullAdder:fa3|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa3                ; work         ;
-;             |fullAdder:fa4|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa4                ; work         ;
-;             |fullAdder:fa5|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5                ; work         ;
-;             |halfAdder:ha|         ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|halfAdder:ha                 ; work         ;
-;          |andFunction:and1|        ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 4 (4)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1                           ; work         ;
-;          |orFunction:or1|          ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 2 (2)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1                             ; work         ;
-;          |subtractor7b:subtractor| ; 27 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 24 (0)       ; 0 (0)             ; 3 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor                    ; work         ;
-;             |fullSubtractor:fs0|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0 ; work         ;
+;          |adder7b:adder|           ; 27 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (0)       ; 0 (0)             ; 5 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder                              ; work         ;
+;             |fullAdder:fa0|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa0                ; work         ;
+;             |fullAdder:fa1|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa1                ; work         ;
+;             |fullAdder:fa2|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa2                ; work         ;
+;             |fullAdder:fa3|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa3                ; work         ;
+;             |fullAdder:fa4|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa4                ; work         ;
+;             |fullAdder:fa5|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 2 (2)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5                ; work         ;
+;             |halfAdder:ha|         ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|halfAdder:ha                 ; work         ;
+;          |andFunction:and1|        ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1                           ; work         ;
+;          |orFunction:or1|          ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1                             ; work         ;
+;          |subtractor7b:subtractor| ; 27 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 23 (0)       ; 0 (0)             ; 4 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor                    ; work         ;
+;             |fullSubtractor:fs0|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0 ; work         ;
 ;             |fullSubtractor:fs1|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1 ; work         ;
-;             |fullSubtractor:fs2|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2 ; work         ;
-;             |fullSubtractor:fs3|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3 ; work         ;
-;             |fullSubtractor:fs4|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4 ; work         ;
-;             |fullSubtractor:fs5|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5 ; work         ;
+;             |fullSubtractor:fs2|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2 ; work         ;
+;             |fullSubtractor:fs3|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3 ; work         ;
+;             |fullSubtractor:fs4|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 3 (3)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4 ; work         ;
+;             |fullSubtractor:fs5|   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5 ; work         ;
 ;             |halfSubtractor:hs|    ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs  ; work         ;
-;       |register8b:reg1|            ; 9 (1)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 2 (0)             ; 6 (0)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1                                     ; work         ;
-;          |FFD:ff0|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff0                             ; work         ;
-;          |FFD:ff1|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1                             ; work         ;
+;       |register8b:reg1|            ; 9 (1)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 4 (0)             ; 4 (0)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1                                     ; work         ;
+;          |FFD:ff0|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff0                             ; work         ;
+;          |FFD:ff1|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1                             ; work         ;
 ;          |FFD:ff2|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2                             ; work         ;
-;          |FFD:ff3|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3                             ; work         ;
-;          |FFD:ff4|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4                             ; work         ;
+;          |FFD:ff3|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3                             ; work         ;
+;          |FFD:ff4|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4                             ; work         ;
 ;          |FFD:ff5|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5                             ; work         ;
 ;          |FFD:ff6|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6                             ; work         ;
 ;          |FFD:ff7|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7                             ; work         ;
 ;    |comp2:comp|                    ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |Calculator|comp2:comp                                                                    ; work         ;
 ;       |adder7b:adder|              ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |Calculator|comp2:comp|adder7b:adder                                                      ; work         ;
 ;          |fullAdder:fa2|           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Calculator|comp2:comp|adder7b:adder|fullAdder:fa2                                        ; work         ;
-;    |dataFlux:data_Flux|            ; 18 (0)      ; 15 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 2 (0)             ; 13 (0)           ; |Calculator|dataFlux:data_Flux                                                            ; work         ;
-;       |FFT:clockBroke|             ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|FFT:clockBroke                                             ; work         ;
-;       |register7b:reg0|            ; 8 (1)       ; 7 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 2 (0)             ; 5 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg0                                            ; work         ;
+;    |dataFlux:data_Flux|            ; 18 (0)      ; 15 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 8 (0)             ; 7 (0)            ; |Calculator|dataFlux:data_Flux                                                            ; work         ;
+;       |FFT:clockBroke|             ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|FFT:clockBroke                                             ; work         ;
+;       |register7b:reg0|            ; 8 (1)       ; 7 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 3 (0)             ; 4 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg0                                            ; work         ;
 ;          |FFD:ff0|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff0                                    ; work         ;
 ;          |FFD:ff1|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff1                                    ; work         ;
 ;          |FFD:ff2|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff2                                    ; work         ;
 ;          |FFD:ff3|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff3                                    ; work         ;
-;          |FFD:ff4|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff4                                    ; work         ;
-;          |FFD:ff5|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff5                                    ; work         ;
-;          |FFD:ff6|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff6                                    ; work         ;
-;       |register7b:reg1|            ; 8 (1)       ; 7 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 7 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg1                                            ; work         ;
+;          |FFD:ff4|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff4                                    ; work         ;
+;          |FFD:ff5|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff5                                    ; work         ;
+;          |FFD:ff6|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff6                                    ; work         ;
+;       |register7b:reg1|            ; 8 (1)       ; 7 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 4 (0)             ; 3 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg1                                            ; work         ;
 ;          |FFD:ff0|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff0                                    ; work         ;
-;          |FFD:ff1|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff1                                    ; work         ;
+;          |FFD:ff1|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff1                                    ; work         ;
 ;          |FFD:ff2|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff2                                    ; work         ;
 ;          |FFD:ff3|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff3                                    ; work         ;
-;          |FFD:ff4|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff4                                    ; work         ;
-;          |FFD:ff5|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff5                                    ; work         ;
-;          |FFD:ff6|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff6                                    ; work         ;
-;    |decoder:dec|                   ; 135 (135)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (133)    ; 0 (0)             ; 2 (2)            ; |Calculator|decoder:dec                                                                   ; work         ;
+;          |FFD:ff4|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff4                                    ; work         ;
+;          |FFD:ff5|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff5                                    ; work         ;
+;          |FFD:ff6|                 ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff6                                    ; work         ;
+;    |decoder:dec|                   ; 135 (135)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 135 (135)    ; 0 (0)             ; 0 (0)            ; |Calculator|decoder:dec                                                                   ; work         ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1351,20 +1351,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; H3[1]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; H3[0]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; sign    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SEL[1]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SEL[0]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SEL[1]  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SEL[0]  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; RES     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; EN      ; Input    ; (6) 1314 ps   ; (0) 0 ps      ; --                    ; --  ; --   ;
 ; data[0] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; RES     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; data[6] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; data[6] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; data[5] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; data[3] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; data[4] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; data[3] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; data[4] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; data[1] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; data[2] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; data[2] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; CLK     ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; M1      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; M0      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; M1      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; M0      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 +---------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1374,40 +1374,63 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                            ; Pad To Core Index ; Setting ;
 +----------------------------------------------------------------+-------------------+---------+
 ; SEL[1]                                                         ;                   ;         ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[0]~0  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[7]~1  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[6]~3  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[4]~5  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[5]~7  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[5]~8  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[2]~9  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[3]~11 ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[3]~12 ; 0                 ; 6       ;
-;      - sig~0                                                   ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[1]~13 ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[1]~14 ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~0               ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux8~0               ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~1               ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~2               ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[0]~0  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[7]~1  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[6]~3  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[4]~5  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[5]~7  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[5]~8  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[2]~9  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[3]~11 ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[3]~12 ; 1                 ; 6       ;
+;      - sig~0                                                   ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[1]~13 ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[1]~14 ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~0               ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux8~0               ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~1               ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~2               ; 1                 ; 6       ;
 ; SEL[0]                                                         ;                   ;         ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[0]~0  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[7]~1  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[7]~2  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[6]~3  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[6]~4  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[4]~5  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[4]~6  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[5]~7  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[2]~9  ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[2]~10 ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[3]~11 ; 0                 ; 6       ;
-;      - sig~0                                                   ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[1]~13 ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~0               ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux8~0               ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~1               ; 0                 ; 6       ;
-;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~2               ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[0]~0  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[7]~1  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[7]~2  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[6]~3  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[6]~4  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[4]~5  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[4]~6  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[5]~7  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[2]~9  ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[2]~10 ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[3]~11 ; 1                 ; 6       ;
+;      - sig~0                                                   ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1|m[1]~13 ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~0               ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux8~0               ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~1               ; 1                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|UFA:ufa1|Mux4~2               ; 1                 ; 6       ;
+; RES                                                            ;                   ;         ;
+;      - ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff0|Q     ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q     ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q     ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q     ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q     ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q     ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q     ; 0                 ; 6       ;
+;      - ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q     ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff0|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff0|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff6|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff6|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff5|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff5|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff3|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff3|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff4|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff4|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff1|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff1|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff2|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff2|Q            ; 0                 ; 6       ;
 ; EN                                                             ;                   ;         ;
 ;      - ULA:unit_logic_arithmetic|register8b:reg1|clkin         ; 1                 ; 0       ;
 ;      - ULA:unit_logic_arithmetic|ENufa                         ; 0                 ; 6       ;
@@ -1415,81 +1438,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; data[0]                                                        ;                   ;         ;
 ;      - dataFlux:data_Flux|register7b:reg1|FFD:ff0|Q            ; 0                 ; 6       ;
 ;      - dataFlux:data_Flux|register7b:reg0|FFD:ff0|Q~feeder     ; 0                 ; 6       ;
-; RES                                                            ;                   ;         ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff0|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff1|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff2|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff3|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff4|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff5|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff6|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff0|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff1|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff2|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff3|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff4|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff5|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff6|Q            ; 0                 ; 6       ;
 ; data[6]                                                        ;                   ;         ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff6|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff6|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff6|Q~feeder     ; 1                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff6|Q~feeder     ; 1                 ; 6       ;
 ; data[5]                                                        ;                   ;         ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff5|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff5|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff5|Q~feeder     ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff5|Q~feeder     ; 0                 ; 6       ;
 ; data[3]                                                        ;                   ;         ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff3|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff3|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff3|Q            ; 1                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff3|Q            ; 1                 ; 6       ;
 ; data[4]                                                        ;                   ;         ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff4|Q            ; 1                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff4|Q~feeder     ; 1                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff4|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff4|Q            ; 0                 ; 6       ;
 ; data[1]                                                        ;                   ;         ;
 ;      - dataFlux:data_Flux|register7b:reg0|FFD:ff1|Q            ; 0                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff1|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff1|Q~feeder     ; 0                 ; 6       ;
 ; data[2]                                                        ;                   ;         ;
-;      - dataFlux:data_Flux|register7b:reg0|FFD:ff2|Q            ; 1                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg1|FFD:ff2|Q            ; 1                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|FFD:ff2|Q            ; 0                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg1|FFD:ff2|Q            ; 0                 ; 6       ;
 ; CLK                                                            ;                   ;         ;
 ; M1                                                             ;                   ;         ;
-;      - dataFlux:data_Flux|register7b:reg1|clkin                ; 1                 ; 6       ;
-;      - dataFlux:data_Flux|register7b:reg0|clkin                ; 1                 ; 6       ;
-; M0                                                             ;                   ;         ;
 ;      - dataFlux:data_Flux|register7b:reg1|clkin                ; 0                 ; 6       ;
 ;      - dataFlux:data_Flux|register7b:reg0|clkin                ; 0                 ; 6       ;
+; M0                                                             ;                   ;         ;
+;      - dataFlux:data_Flux|register7b:reg1|clkin                ; 1                 ; 6       ;
+;      - dataFlux:data_Flux|register7b:reg0|clkin                ; 1                 ; 6       ;
 +----------------------------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                      ;
-+----------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                     ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLK                                                      ; PIN_AG15          ; 3       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; EN                                                       ; PIN_Y23           ; 3       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; RES                                                      ; PIN_Y24           ; 14      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENand                 ; LCCOMB_X59_Y1_N20 ; 7       ; Latch enable ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENor                  ; LCCOMB_X59_Y1_N24 ; 7       ; Latch enable ; yes    ; Global Clock         ; GCLK18           ; --                        ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub                 ; LCCOMB_X1_Y36_N10 ; 14      ; Latch enable ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum                 ; LCCOMB_X56_Y69_N2 ; 14      ; Latch enable ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-; ULA:unit_logic_arithmetic|register8b:reg1|clkin          ; LCCOMB_X59_Y1_N28 ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK17           ; --                        ;
-; dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var ; FF_X59_Y1_N9      ; 3       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; dataFlux:data_Flux|register7b:reg0|clkin                 ; LCCOMB_X59_Y1_N30 ; 7       ; Clock        ; yes    ; Global Clock         ; GCLK15           ; --                        ;
-; dataFlux:data_Flux|register7b:reg1|clkin                 ; LCCOMB_X59_Y1_N26 ; 7       ; Clock        ; yes    ; Global Clock         ; GCLK16           ; --                        ;
-+----------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                        ;
++----------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                     ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLK                                                      ; PIN_AG15            ; 3       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; EN                                                       ; PIN_Y23             ; 3       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; RES                                                      ; PIN_Y24             ; 22      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENand                 ; LCCOMB_X114_Y37_N28 ; 7       ; Latch enable ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENor                  ; LCCOMB_X59_Y1_N28   ; 7       ; Latch enable ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub                 ; LCCOMB_X59_Y1_N24   ; 14      ; Latch enable ; yes    ; Global Clock         ; GCLK17           ; --                        ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum                 ; LCCOMB_X114_Y37_N22 ; 14      ; Latch enable ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; ULA:unit_logic_arithmetic|register8b:reg1|clkin          ; LCCOMB_X112_Y8_N6   ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var ; FF_X112_Y8_N25      ; 3       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; dataFlux:data_Flux|register7b:reg0|clkin                 ; LCCOMB_X114_Y14_N20 ; 7       ; Clock        ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; dataFlux:data_Flux|register7b:reg1|clkin                 ; LCCOMB_X114_Y14_N26 ; 7       ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
++----------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                                ;
-+-------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                            ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENand        ; LCCOMB_X59_Y1_N20 ; 7       ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENor         ; LCCOMB_X59_Y1_N24 ; 7       ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub        ; LCCOMB_X1_Y36_N10 ; 14      ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum        ; LCCOMB_X56_Y69_N2 ; 14      ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
-; ULA:unit_logic_arithmetic|register8b:reg1|clkin ; LCCOMB_X59_Y1_N28 ; 8       ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
-; dataFlux:data_Flux|register7b:reg0|clkin        ; LCCOMB_X59_Y1_N30 ; 7       ; 0                                    ; Global Clock         ; GCLK15           ; --                        ;
-; dataFlux:data_Flux|register7b:reg1|clkin        ; LCCOMB_X59_Y1_N26 ; 7       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
-+-------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                                  ;
++-------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                            ; Location            ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENand        ; LCCOMB_X114_Y37_N28 ; 7       ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENor         ; LCCOMB_X59_Y1_N28   ; 7       ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub        ; LCCOMB_X59_Y1_N24   ; 14      ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum        ; LCCOMB_X114_Y37_N22 ; 14      ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
+; ULA:unit_logic_arithmetic|register8b:reg1|clkin ; LCCOMB_X112_Y8_N6   ; 8       ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
+; dataFlux:data_Flux|register7b:reg0|clkin        ; LCCOMB_X114_Y14_N20 ; 7       ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
+; dataFlux:data_Flux|register7b:reg1|clkin        ; LCCOMB_X114_Y14_N26 ; 7       ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
++-------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -1505,10 +1513,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; saida[5]~6                                                                         ; 37      ;
 ; saida[1]~7                                                                         ; 34      ;
 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q                                ; 23      ;
+; RES~input                                                                          ; 22      ;
 ; SEL[0]~input                                                                       ; 17      ;
 ; SEL[1]~input                                                                       ; 16      ;
 ; sig                                                                                ; 16      ;
-; RES~input                                                                          ; 14      ;
 ; decoder:dec|Mux5~8                                                                 ; 10      ;
 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q                                ; 7       ;
 ; dataFlux:data_Flux|register7b:reg1|FFD:ff2|Q                                       ; 6       ;
@@ -1798,77 +1806,77 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 282 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 16 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 162 / 209,544 ( < 1 % ) ;
-; Direct links          ; 65 / 342,891 ( < 1 % )  ;
+; Block interconnects   ; 312 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 10 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 194 / 209,544 ( < 1 % ) ;
+; Direct links          ; 39 / 342,891 ( < 1 % )  ;
 ; Global clocks         ; 7 / 20 ( 35 % )         ;
-; Local interconnects   ; 192 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 44 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 120 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 185 / 119,088 ( < 1 % ) ;
+; R24 interconnects     ; 16 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 157 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Logic Elements                                                         ;
-+---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.48) ; Number of LABs  (Total = 21) ;
-+---------------------------------------------+------------------------------+
-; 1                                           ; 3                            ;
-; 2                                           ; 1                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 0                            ;
-; 6                                           ; 1                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 0                            ;
-; 15                                          ; 1                            ;
-; 16                                          ; 14                           ;
-+---------------------------------------------+------------------------------+
++---------------------------------------------------------------------------+
+; LAB Logic Elements                                                        ;
++--------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 9.31) ; Number of LABs  (Total = 29) ;
++--------------------------------------------+------------------------------+
+; 1                                          ; 1                            ;
+; 2                                          ; 4                            ;
+; 3                                          ; 6                            ;
+; 4                                          ; 0                            ;
+; 5                                          ; 2                            ;
+; 6                                          ; 1                            ;
+; 7                                          ; 0                            ;
+; 8                                          ; 0                            ;
+; 9                                          ; 0                            ;
+; 10                                         ; 1                            ;
+; 11                                         ; 0                            ;
+; 12                                         ; 0                            ;
+; 13                                         ; 1                            ;
+; 14                                         ; 2                            ;
+; 15                                         ; 0                            ;
+; 16                                         ; 11                           ;
++--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.67) ; Number of LABs  (Total = 21) ;
+; LAB-wide Signals  (Average = 0.66) ; Number of LABs  (Total = 29) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 6                            ;
-; 1 Clock                            ; 4                            ;
-; 2 Clocks                           ; 4                            ;
+; 1 Async. clear                     ; 9                            ;
+; 1 Clock                            ; 3                            ;
+; 2 Clocks                           ; 7                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.57) ; Number of LABs  (Total = 21) ;
+; Number of Signals Sourced  (Average = 10.10) ; Number of LABs  (Total = 29) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 3                            ;
-; 2                                            ; 1                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 0                            ;
+; 1                                            ; 1                            ;
+; 2                                            ; 4                            ;
+; 3                                            ; 4                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 2                            ;
+; 6                                            ; 1                            ;
 ; 7                                            ; 1                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 7                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 3                            ;
-; 19                                           ; 2                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 9                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 1                            ;
 ; 20                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
@@ -1876,52 +1884,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 5.19) ; Number of LABs  (Total = 21) ;
+; Number of Signals Sourced Out  (Average = 3.66) ; Number of LABs  (Total = 29) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 4                            ;
-; 2                                               ; 2                            ;
-; 3                                               ; 0                            ;
-; 4                                               ; 4                            ;
-; 5                                               ; 2                            ;
-; 6                                               ; 3                            ;
+; 1                                               ; 3                            ;
+; 2                                               ; 8                            ;
+; 3                                               ; 7                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 5                            ;
+; 6                                               ; 2                            ;
 ; 7                                               ; 1                            ;
-; 8                                               ; 3                            ;
+; 8                                               ; 1                            ;
 ; 9                                               ; 0                            ;
-; 10                                              ; 0                            ;
-; 11                                              ; 0                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 1                            ;
+; 10                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 10.00) ; Number of LABs  (Total = 21) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 3                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 1                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 4                            ;
-; 11                                           ; 3                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 2                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 1                            ;
-; 19                                           ; 1                            ;
-+----------------------------------------------+------------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++---------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 8.24) ; Number of LABs  (Total = 29) ;
++---------------------------------------------+------------------------------+
+; 0                                           ; 0                            ;
+; 1                                           ; 0                            ;
+; 2                                           ; 3                            ;
+; 3                                           ; 3                            ;
+; 4                                           ; 2                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 4                            ;
+; 7                                           ; 3                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 2                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 3                            ;
+; 12                                          ; 5                            ;
+; 13                                          ; 2                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 0                            ;
+; 17                                          ; 2                            ;
++---------------------------------------------+------------------------------+
 
 
 +------------------------------------------+
@@ -2009,9 +2011,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sign               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SEL[1]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SEL[0]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; RES                ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; EN                 ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; data[0]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; RES                ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; data[6]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; data[5]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; data[3]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2065,15 +2067,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+-------------------+
 ; Source Clock(s)                                                                                                                                                        ; Destination Clock(s) ; Delay Added in ns ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+-------------------+
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENor                                                                                                                                ; EN                   ; 8.3               ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub                                                                                                                               ; EN                   ; 8.0               ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENand                                                                                                                               ; EN                   ; 6.4               ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum,ULA:unit_logic_arithmetic|UFA:ufa1|ENsub,ULA:unit_logic_arithmetic|UFA:ufa1|ENor,ULA:unit_logic_arithmetic|UFA:ufa1|ENand,I/O ; EN                   ; 3.9               ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum                                                                                                                               ; EN                   ; 3.6               ;
-; I/O                                                                                                                                                                    ; EN                   ; 2.9               ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum,ULA:unit_logic_arithmetic|UFA:ufa1|ENsub,I/O                                                                                  ; EN                   ; 2.6               ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum,ULA:unit_logic_arithmetic|UFA:ufa1|ENand,I/O                                                                                  ; EN                   ; 1.5               ;
-; CLK                                                                                                                                                                    ; CLK                  ; 1.5               ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENor                                                                                                                                ; EN                   ; 10.6              ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENand                                                                                                                               ; EN                   ; 9.5               ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub                                                                                                                               ; EN                   ; 7.7               ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum                                                                                                                               ; EN                   ; 5.8               ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum,ULA:unit_logic_arithmetic|UFA:ufa1|ENsub,ULA:unit_logic_arithmetic|UFA:ufa1|ENor,ULA:unit_logic_arithmetic|UFA:ufa1|ENand,I/O ; EN                   ; 5.0               ;
+; I/O                                                                                                                                                                    ; EN                   ; 4.1               ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum,ULA:unit_logic_arithmetic|UFA:ufa1|ENsub,I/O                                                                                  ; EN                   ; 3.2               ;
+; CLK                                                                                                                                                                    ; CLK                  ; 3.1               ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum,ULA:unit_logic_arithmetic|UFA:ufa1|ENand,I/O                                                                                  ; EN                   ; 1.9               ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
@@ -2084,40 +2086,40 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------------------------------------------------------+----------------------------------------------------------+-------------------+
 ; Source Register                                                                  ; Destination Register                                     ; Delay Added in ns ;
 +----------------------------------------------------------------------------------+----------------------------------------------------------+-------------------+
-; EN                                                                               ; sig                                                      ; 2.928             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 2.506             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5|Te ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff0|Q      ; 2.460             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5|Co                ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff0|Q      ; 2.208             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q      ; 2.109             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q      ; 2.107             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[6]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 2.069             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[5]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q      ; 1.942             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[4]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q      ; 1.921             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[3]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q      ; 1.874             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[5]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q      ; 1.854             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[6]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 1.825             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[2]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q      ; 1.807             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 1.797             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[3]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q      ; 1.786             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[4]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q      ; 1.707             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q      ; 1.630             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa3|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q      ; 1.600             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa1|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q      ; 1.600             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[0]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q      ; 1.561             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[2]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q      ; 1.534             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q      ; 1.493             ;
-; dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var                         ; dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var ; 1.486             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[0]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q      ; 1.473             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa4|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q      ; 1.377             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[1]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q      ; 1.308             ;
-; SEL[1]                                                                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 1.281             ;
-; SEL[0]                                                                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 1.281             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[1]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q      ; 1.219             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs|S   ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q      ; 1.102             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q      ; 1.095             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa2|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q      ; 1.087             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa0|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q      ; 0.990             ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|halfAdder:ha|S                  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q      ; 0.990             ;
+; EN                                                                               ; sig                                                      ; 4.142             ;
+; dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var                         ; dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var ; 3.068             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[3]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q      ; 2.991             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[3]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q      ; 2.767             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[5]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q      ; 2.625             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 2.608             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa2|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q      ; 2.523             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[5]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q      ; 2.398             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[6]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 2.382             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[0]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q      ; 2.320             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 2.270             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[6]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 2.266             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[2]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q      ; 2.224             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa4|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q      ; 2.158             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5|Co                ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff0|Q      ; 2.149             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[1]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q      ; 2.125             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[0]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q      ; 2.094             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q      ; 2.068             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[4]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q      ; 2.065             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q      ; 2.040             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5|Te ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff0|Q      ; 2.037             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4|Q      ; 1.956             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[4]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q      ; 1.941             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2|Q      ; 1.934             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[1]                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q      ; 1.899             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|halfAdder:ha|S                  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q      ; 1.854             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[2]                         ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q      ; 1.841             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa1|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5|Q      ; 1.729             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa3|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3|Q      ; 1.702             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0|S  ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q      ; 1.648             ;
+; SEL[1]                                                                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 1.592             ;
+; SEL[0]                                                                           ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1|Q      ; 1.592             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs|S   ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q      ; 1.586             ;
+; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa0|S                 ; ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6|Q      ; 1.406             ;
 +----------------------------------------------------------------------------------+----------------------------------------------------------+-------------------+
 Note: This table only shows the top 34 path(s) that have the largest delay added for hold.
 
@@ -2226,7 +2228,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:05
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X81_Y0 to location X91_Y11
+    Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X104_Y0 to location X115_Y11
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
@@ -2239,8 +2241,8 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file D:/gitHub/Circuitos/Projeto2/output_files/Calculator.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 924 megabytes
-    Info: Processing ended: Sun Nov 09 14:38:13 2014
+    Info: Peak virtual memory: 926 megabytes
+    Info: Processing ended: Sun Nov 09 20:20:29 2014
     Info: Elapsed time: 00:00:28
     Info: Total CPU time (on all processors): 00:00:28
 

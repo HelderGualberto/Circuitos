@@ -7,7 +7,7 @@ ENTITY ULA is
 	port(
 		A,B : in std_logic_vector(0 to 6);
 		result : out std_logic_vector(0 to 7);
-		CLK,EN : in std_logic;
+		CLK,EN,RES : in std_logic;
 		S : in std_logic_vector(0 to 1)
 	);
 end ULA;
@@ -42,15 +42,6 @@ ARCHITECTURE comport of ULA is
 		);
 	end component;
 	
-	component FFD is
-		port(
-			CLR :  IN  STD_LOGIC;
-			D :  IN  STD_LOGIC;
-			CLK :  IN  STD_LOGIC;
-			Q :  OUT  STD_LOGIC
-		);
-	end component;
-	--SIGNAL teste,flag : std_logic := '0';
 	begin
 	
 		process(CLK,EN)
@@ -60,15 +51,7 @@ ARCHITECTURE comport of ULA is
 		
 		ufa1 : UFA port map(A,B,OUTufa,S,ENufa);
 		FFT1: FFT port map('1',CLK,CLKreg); 
-		reg1 : register8b port map(OUTufa,'0',CLKreg,EN,result);
+		reg1 : register8b port map(OUTufa,RES,CLKreg,EN,result);
 		
---		process(EN,teste)
-	----	begin
-	--		if rising_edge(CLKreg) then
-	--			flag <= teste;
-	--		end if;
-	--	end process;
-		
-		--signalRegister : ffd port map('0',flag,CLKreg and EN,sig);
 		
 end comport;

@@ -10,7 +10,7 @@ ENTITY Calculator is
 		CLK,RES : in std_logic;
 		M0,M1,EN : in std_logic;
 		SEL : in std_logic_vector(0 to 1);
-		H1,H2,H3 : out std_logic_vector(0 to 6);
+		H1,H2,H3 : out std_logic_vector(0 to 6) := "1111111";
 		sign : out std_logic := '0'
 	);
 	
@@ -30,7 +30,7 @@ ARCHITECTURE comport of Calculator is
 		port(
 			A,B : in std_logic_vector(0 to 6);
 			result : out std_logic_vector(0 to 7);
-			CLK,EN : in std_logic;
+			CLK,EN,RES : in std_logic;
 			S : in std_logic_vector(0 to 1)
 		);
 	end component;
@@ -63,17 +63,18 @@ ARCHITECTURE comport of Calculator is
 	
 	data_Flux : dataFlux port map(data,M0,M1,RES,CLK,A,B,CLKout);
 	
-	unit_logic_arithmetic : ULA port map(A,B,result,CLKout,EN,SEL);
+	unit_logic_arithmetic : ULA port map(A,B,result,CLKout,EN,RES,SEL);
 	
 	comp : comp2 port map(result,complement);
 	
-	process(EN,result)
+	process(EN,result,SEL)
 	begin
 		if En = '1' then
 			if SEL = "01" then
 				sig <= result(0);
-			end if;
-			if SEL /= "01" then
+			--end if;
+			else
+			--if SEL /= "01" then
 				sig <= '0';
 			end if;
 		end if;
@@ -81,12 +82,13 @@ ARCHITECTURE comport of Calculator is
 	
 	sign <= sig;
 	
-	process(sig,complement)
+	process(sig,complement,result)
 		begin
 		if sig = '1' then
 			saida <= complement;
-		end if;
-		if sig = '0' then
+		--end if;
+		else
+		--if sig = '0' then
 			saida <= result;
 		end if;
 	end process;

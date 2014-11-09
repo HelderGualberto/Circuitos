@@ -2,60 +2,60 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
-Slack : -4.450
-TNS   : -51.509
-
 Type  : Slow 1200mV 85C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : -4.308
-TNS   : -47.963
+Slack : -6.690
+TNS   : -88.352
 
-Type  : Slow 1200mV 85C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
-Slack : -4.119
-TNS   : -25.996
+Type  : Slow 1200mV 85C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
+Slack : -6.343
+TNS   : -85.100
 
 Type  : Slow 1200mV 85C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : -3.800
-TNS   : -24.464
+Slack : -6.239
+TNS   : -42.019
+
+Type  : Slow 1200mV 85C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
+Slack : -6.235
+TNS   : -42.837
 
 Type  : Slow 1200mV 85C Model Setup 'EN'
-Slack : -2.061
-TNS   : -2.277
+Slack : -2.335
+TNS   : -2.886
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -0.086
-TNS   : -0.086
+Slack : -0.056
+TNS   : -0.056
 
 Type  : Slow 1200mV 85C Model Setup 'dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var'
 Slack : 0.210
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'EN'
-Slack : -0.147
-TNS   : -0.494
+Slack : -0.208
+TNS   : -0.320
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.064
+Slack : 0.035
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var'
 Slack : 0.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
-Slack : 0.743
+Type  : Slow 1200mV 85C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
+Slack : 0.735
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : 0.854
+Type  : Slow 1200mV 85C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
+Slack : 0.742
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : 2.556
+Slack : 5.065
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
-Slack : 2.597
+Slack : 5.221
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
@@ -70,41 +70,41 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'dataFlux:data_Flux|FFT:clockB
 Slack : -1.285
 TNS   : -1.285
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : 0.427
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
+Slack : 0.428
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
 Slack : 0.442
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : 0.443
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
 Slack : 0.477
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
-Slack : -4.086
-TNS   : -47.173
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
+Slack : 0.487
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : -4.016
-TNS   : -43.887
+Slack : -6.133
+TNS   : -80.956
 
-Type  : Slow 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
-Slack : -3.795
-TNS   : -23.819
+Type  : Slow 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
+Slack : -5.829
+TNS   : -77.862
 
 Type  : Slow 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : -3.482
-TNS   : -22.340
+Slack : -5.736
+TNS   : -38.485
+
+Type  : Slow 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
+Slack : -5.722
+TNS   : -39.242
 
 Type  : Slow 1200mV 0C Model Setup 'EN'
-Slack : -2.062
-TNS   : -2.062
+Slack : -2.322
+TNS   : -2.381
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
 Slack : -0.008
@@ -115,11 +115,11 @@ Slack : 0.297
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'EN'
-Slack : -0.288
-TNS   : -1.468
+Slack : -0.387
+TNS   : -1.518
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.035
+Slack : 0.026
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var'
@@ -127,19 +127,19 @@ Slack : 0.398
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
-Slack : 0.676
+Slack : 0.683
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : 0.778
+Slack : 0.686
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : 2.455
+Slack : 4.748
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
-Slack : 2.493
+Slack : 4.891
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
@@ -154,44 +154,44 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'dataFlux:data_Flux|FFT:clockBr
 Slack : -1.285
 TNS   : -1.285
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : 0.384
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
+Slack : 0.390
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
-Slack : 0.406
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
+Slack : 0.400
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : 0.408
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
 Slack : 0.450
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
-Slack : -1.940
-TNS   : -21.149
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
+Slack : 0.463
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : -1.832
-TNS   : -19.285
+Slack : -3.178
+TNS   : -41.457
+
+Type  : Fast 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
+Slack : -2.982
+TNS   : -39.829
 
 Type  : Fast 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
-Slack : -1.751
-TNS   : -10.783
+Slack : -2.948
+TNS   : -20.098
 
 Type  : Fast 1200mV 0C Model Setup 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : -1.586
-TNS   : -9.997
+Slack : -2.940
+TNS   : -19.679
 
 Type  : Fast 1200mV 0C Model Setup 'EN'
-Slack : -0.201
-TNS   : -0.258
+Slack : -0.332
+TNS   : -0.410
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : 0.275
+Slack : 0.324
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var'
@@ -199,11 +199,11 @@ Slack : 0.626
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : -0.037
-TNS   : -0.037
+Slack : -0.091
+TNS   : -0.091
 
 Type  : Fast 1200mV 0C Model Hold 'EN'
-Slack : 0.162
+Slack : 0.178
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var'
@@ -211,47 +211,47 @@ Slack : 0.208
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
-Slack : 0.341
+Slack : 0.317
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : 0.383
+Slack : 0.317
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : 1.410
+Slack : 2.783
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
-Slack : 1.434
+Slack : 2.857
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -18.828
+TNS   : -18.281
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'EN'
 Slack : -3.000
-TNS   : -14.186
+TNS   : -14.099
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'dataFlux:data_Flux|FFT:clockBroke|CLKout_synthesized_var'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
-Slack : 0.422
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
+Slack : 0.430
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsub'
-Slack : 0.428
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENsum'
+Slack : 0.431
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENor'
-Slack : 0.436
+Slack : 0.433
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ULA:unit_logic_arithmetic|UFA:ufa1|ENand'
-Slack : 0.441
+Slack : 0.436
 TNS   : 0.000
 
 ------------------------------------------------------------

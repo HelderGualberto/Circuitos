@@ -8,6 +8,7 @@ data[1] => dataFlux:data_Flux.data[1]
 data[0] => dataFlux:data_Flux.data[0]
 CLK => dataFlux:data_Flux.CLK
 RES => dataFlux:data_Flux.CLR
+RES => ULA:unit_logic_arithmetic.RES
 M0 => dataFlux:data_Flux.m0
 M1 => dataFlux:data_Flux.m1
 EN => ULA:unit_logic_arithmetic.EN
@@ -264,6 +265,7 @@ CLK => ENufa.IN0
 CLK => FFT:FFT1.CLK
 EN => ENufa.IN1
 EN => register8b:reg1.EN
+RES => register8b:reg1.CLR
 S[1] => UFA:ufa1.S[1]
 S[0] => UFA:ufa1.S[0]
 

@@ -86,6 +86,12 @@
 # ERROR! Vector Mismatch for output port H1[1] :: @time = 26500000.000 ps
 #      Expected value = 0000000
 #      Real value = 0100100
-#          20 mismatched vectors : Simulation failed !
+# ERROR! Vector Mismatch for output port H2[0] :: @time = 77000000.000 ps
+#      Expected value = 0000000
+#      Real value = x00xx0x
+# ERROR! Vector Mismatch for output port H2[3] :: @time = 77000000.000 ps
+#      Expected value = 0000000
+#      Real value = x00xx0x
+#          22 mismatched vectors : Simulation failed !
 # ** Note: $finish    : CalculatorSimulation.vwf.vt(563)
 #    Time: 100 us  Iteration: 0  Instance: /Calculator_vlg_vec_tst/tb_out

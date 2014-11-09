@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/07/2014 09:11:10"
+// Generated on "11/09/2014 18:39:36"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    dataFlux
 // 
@@ -481,6 +481,8 @@ end
 initial
 begin
 	CLR = 1'b0;
+	CLR = #39680000 1'b1;
+	CLR = #15360000 1'b0;
 end 
 // data[ 6 ]
 initial
@@ -598,16 +600,22 @@ begin
 	m0 = #2560000 1'b0;
 	m0 = #12800000 1'b1;
 	m0 = #2560000 1'b0;
+	m0 = #11520000 1'b1;
+	m0 = #3840000 1'b0;
 end 
 
 // m1
 initial
 begin
 	m1 = 1'b0;
-	m1 = #6400000 1'b1;
-	m1 = #3840000 1'b0;
+	m1 = #7680000 1'b1;
+	m1 = #1280000 1'b0;
 	m1 = #10240000 1'b1;
 	m1 = #3840000 1'b0;
+	m1 = #6400000 1'b1;
+	m1 = #3840000 1'b0;
+	m1 = #11520000 1'b1;
+	m1 = #6400000 1'b0;
 end 
 
 dataFlux_vlg_sample_tst tb_sample (

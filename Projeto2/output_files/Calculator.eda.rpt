@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Calculator
-Sat Nov 08 19:27:55 2014
+Sun Nov 09 14:40:23 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Nov 08 19:27:55 2014 ;
+; EDA Netlist Writer Status ; Successful - Sun Nov 09 14:40:23 2014 ;
 ; Revision Name             ; Calculator                            ;
 ; Top-level Entity Name     ; Calculator                            ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,12 +95,12 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Sat Nov 08 19:27:54 2014
+    Info: Processing started: Sun Nov 09 14:40:23 2014
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/gitHub/Circuitos/Projeto2/simulation/qsim/ Calculator -c Calculator
 Info (204019): Generated file Calculator.vo in folder "D:/gitHub/Circuitos/Projeto2/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 454 megabytes
-    Info: Processing ended: Sat Nov 08 19:27:55 2014
+    Info: Processing ended: Sun Nov 09 14:40:24 2014
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

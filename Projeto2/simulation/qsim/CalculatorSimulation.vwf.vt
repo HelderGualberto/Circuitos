@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/08/2014 19:27:53"
+// Generated on "11/09/2014 14:40:22"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Calculator
 // 
@@ -712,6 +712,10 @@ begin
 	M0 = #2560000 1'b0;
 	M0 = #12800000 1'b1;
 	M0 = #2560000 1'b0;
+	M0 = #16640000 1'b1;
+	M0 = #2560000 1'b0;
+	M0 = #23040000 1'b1;
+	M0 = #2560000 1'b0;
 end 
 
 // M1
@@ -722,6 +726,10 @@ begin
 	M1 = #2560000 1'b0;
 	M1 = #12800000 1'b1;
 	M1 = #2560000 1'b0;
+	M1 = #6400000 1'b1;
+	M1 = #2560000 1'b0;
+	M1 = #33280000 1'b1;
+	M1 = #2560000 1'b0;
 end 
 
 // EN
@@ -729,8 +737,12 @@ initial
 begin
 	EN = 1'b0;
 	EN = #11520000 1'b1;
+	EN = #3840000 1'b0;
+	EN = #10240000 1'b1;
 	EN = #2560000 1'b0;
 	EN = #12800000 1'b1;
+	EN = #2560000 1'b0;
+	EN = #28160000 1'b1;
 	EN = #2560000 1'b0;
 end 
 // SEL[ 1 ]
@@ -738,6 +750,8 @@ initial
 begin
 	SEL[1] = 1'b0;
 	SEL[1] = #10240000 1'b1;
+	SEL[1] = #5120000 1'b0;
+	SEL[1] = #24320000 1'b1;
 	SEL[1] = #5120000 1'b0;
 end 
 // SEL[ 0 ]

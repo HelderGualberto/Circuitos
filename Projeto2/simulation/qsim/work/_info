@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\Helder\Documents\Projeto2\simulation\qsim
 vCalculator
-Z1 IRbTKAhElg1n1=k?Y8Jcc_2
+Z1 I:T7KI:]@[9ko=^2SJO`:g2
 Z2 V;TObZ8T_CXj@d?BS;TO5l0
 Z3 dD:\gitHub\Circuitos\Projeto2\simulation\qsim
-Z4 w1415482075
+Z4 w1415551223
 Z5 8Calculator.vo
 Z6 FCalculator.vo
 L0 32
@@ -18,9 +18,9 @@ Z8 !s90 -work|work|Calculator.vo|
 Z9 o-work work -O0
 Z10 n@calculator
 !i10b 1
-Z11 !s100 AiRUc9zhbDAg1mP^VUd2M2
+Z11 !s100 h?jjzkgHUJOVR_h;b5Fhi2
 !s85 0
-Z12 !s108 1415482076.557000
+Z12 !s108 1415551224.780000
 Z13 !s107 Calculator.vo|
 !s101 -O0
 vCalculator_vlg_check_tst
@@ -29,7 +29,7 @@ Z14 !s100 2k?_=K9CdkB2c_Jm7LdW01
 Z15 I1X`1k44>feQ3_=Am7]7mF0
 Z16 VaPTd;Z768lRiAJTd=L?Y]3
 R3
-Z17 w1415482073
+Z17 w1415551222
 Z18 8CalculatorSimulation.vwf.vt
 Z19 FCalculatorSimulation.vwf.vt
 L0 70
@@ -37,7 +37,7 @@ R7
 r1
 !s85 0
 31
-Z20 !s108 1415482076.813000
+Z20 !s108 1415551225.033000
 Z21 !s107 CalculatorSimulation.vwf.vt|
 Z22 !s90 -work|work|CalculatorSimulation.vwf.vt|
 !s101 -O0
@@ -65,8 +65,8 @@ R9
 Z27 n@calculator_vlg_sample_tst
 vCalculator_vlg_vec_tst
 !i10b 1
-Z28 !s100 cTfNVj0L@zTAo>]V?SARZ2
-Z29 IjP2m`=K^Pjn^TG^jP>==h1
+Z28 !s100 ]@GWjSo7T@OoGT[6ojT;m2
+Z29 IZ[VDhdoMW?O??1f8FlIMB0
 Z30 VEX]g`hofk3?aBk_]:IXSA2
 R3
 R17

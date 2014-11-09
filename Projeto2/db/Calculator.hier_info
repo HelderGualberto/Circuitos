@@ -11,9 +11,11 @@ RES => dataFlux:data_Flux.CLR
 M0 => dataFlux:data_Flux.m0
 M1 => dataFlux:data_Flux.m1
 EN => ULA:unit_logic_arithmetic.EN
-EN => sign~reg0.CLK
+EN => sig.LATCH_ENABLE
 SEL[1] => ULA:unit_logic_arithmetic.S[1]
+SEL[1] => Equal0.IN1
 SEL[0] => ULA:unit_logic_arithmetic.S[0]
+SEL[0] => Equal0.IN0
 H1[6] <= decoder:dec.H1[6]
 H1[5] <= decoder:dec.H1[5]
 H1[4] <= decoder:dec.H1[4]
@@ -35,7 +37,7 @@ H3[3] <= decoder:dec.H3[3]
 H3[2] <= decoder:dec.H3[2]
 H3[1] <= decoder:dec.H3[1]
 H3[0] <= decoder:dec.H3[0]
-sign <= sign~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sign <= sig.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Calculator|dataFlux:data_Flux
@@ -264,7 +266,6 @@ EN => ENufa.IN1
 EN => register8b:reg1.EN
 S[1] => UFA:ufa1.S[1]
 S[0] => UFA:ufa1.S[0]
-sig <= UFA:ufa1.sig
 
 
 |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1
@@ -354,7 +355,6 @@ EN => ENor.ACLR
 EN => ENand.ACLR
 EN => ENsub.ACLR
 EN => ENsum.ACLR
-sig <= subtractor7b:subtractor.sig
 
 
 |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder
@@ -537,7 +537,7 @@ S[3] <= fullSubtractor:fs2.S
 S[4] <= fullSubtractor:fs3.S
 S[5] <= fullSubtractor:fs4.S
 S[6] <= fullSubtractor:fs5.S
-S[7] <= <GND>
+S[7] <= fullSubtractor:fs5.Te
 EN => halfSubtractor:hs.EN
 EN => fullSubtractor:fs0.EN
 EN => fullSubtractor:fs1.EN
@@ -545,7 +545,6 @@ EN => fullSubtractor:fs2.EN
 EN => fullSubtractor:fs3.EN
 EN => fullSubtractor:fs4.EN
 EN => fullSubtractor:fs5.EN
-sig <= fullSubtractor:fs5.Te
 
 
 |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs

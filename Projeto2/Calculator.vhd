@@ -31,8 +31,7 @@ ARCHITECTURE comport of Calculator is
 			A,B : in std_logic_vector(0 to 6);
 			result : out std_logic_vector(0 to 7);
 			CLK,EN : in std_logic;
-			S : in std_logic_vector(0 to 1);
-			sig : out std_logic
+			S : in std_logic_vector(0 to 1)
 		);
 	end component;
 	
@@ -51,8 +50,10 @@ ARCHITECTURE comport of Calculator is
 	end component;
 	
 	
+	
+
 	SIGNAL A,B : std_logic_vector(0 to 6);
-	SIGNAL CLKout,sig,temp : std_logic;
+	SIGNAL CLKout,sig: std_logic;
 	SIGNAL complement: std_logic_vector(0 to 7);
 	SIGNAL result : std_logic_vector(0 to 7);
 	SIGNAL saida : std_logic_vector(0 to 7);
@@ -62,23 +63,25 @@ ARCHITECTURE comport of Calculator is
 	
 	data_Flux : dataFlux port map(data,M0,M1,RES,CLK,A,B,CLKout);
 	
-	unit_logic_arithmetic : ULA port map(A,B,result,CLKout,EN,SEL,sig);
+	unit_logic_arithmetic : ULA port map(A,B,result,CLKout,EN,SEL);
 	
 	comp : comp2 port map(result,complement);
 	
-	process(sig,EN)
-		begin
-		if rising_edge(EN) then
-			if sig = '1' then
-			sign <= sig;
-			else
-			sign <= '0';
+	process(EN,result)
+	begin
+		if En = '1' then
+			if SEL = "01" then
+				sig <= result(0);
+			end if;
+			if SEL /= "01" then
+				sig <= '0';
 			end if;
 		end if;
 	end process;
 	
+	sign <= sig;
 	
-	process(result,complement,sig)
+	process(sig,complement)
 		begin
 		if sig = '1' then
 			saida <= complement;
@@ -88,6 +91,6 @@ ARCHITECTURE comport of Calculator is
 		end if;
 	end process;
 	
-	dec : decoder port map(result,H1,H2,H3);
+	dec : decoder port map(saida,H1,H2,H3);
 		
 end comport;

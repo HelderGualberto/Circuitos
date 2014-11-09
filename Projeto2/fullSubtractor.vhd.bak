@@ -18,9 +18,6 @@ ARCHITECTURE comport  of fullSubtractor is
 		if EN = '1' then
 			S <= (not(A) and (b xor Ta)) or (A and (B xnor Ta));
 			Te <=(not(A) and (b xor Ta)) or (B and Ta);
-		--else
-		--	S <= '0';
-		--	Te <= '0';
 		end if;
 	end process;
 end comport;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Calculator
-Sun Nov 09 20:19:59 2014
+Sun Nov 09 20:45:28 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -16,12 +16,10 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   8. User-Specified and Inferred Latches
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "comp2:comp|adder7b:adder"
- 12. Port Connectivity Checks: "ULA:unit_logic_arithmetic|FFT:FFT1"
- 13. Port Connectivity Checks: "dataFlux:data_Flux|FFT:clockBroke"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "FFT:FFT1"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -48,16 +46,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 09 20:19:59 2014      ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 09 20:45:28 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; Calculator                                 ;
-; Top-level Entity Name              ; Calculator                                 ;
+; Top-level Entity Name              ; ULA                                        ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 272                                        ;
-;     Total combinational functions  ; 258                                        ;
-;     Dedicated logic registers      ; 24                                         ;
-; Total registers                    ; 24                                         ;
-; Total pins                         ; 36                                         ;
+; Total logic elements               ; 108                                        ;
+;     Total combinational functions  ; 108                                        ;
+;     Dedicated logic registers      ; 9                                          ;
+; Total registers                    ; 9                                          ;
+; Total pins                         ; 27                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -71,7 +69,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; Calculator         ; Calculator         ;
+; Top-level entity name                                                      ; ULA                ; Calculator         ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -172,7 +170,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; UFA.vhd                          ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/UFA.vhd            ;         ;
 ; subtractor7b.vhd                 ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/subtractor7b.vhd   ;         ;
 ; register8b.vhd                   ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/register8b.vhd     ;         ;
-; register7b.vhd                   ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/register7b.vhd     ;         ;
 ; orFunction.vhd                   ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/orFunction.vhd     ;         ;
 ; mux4to1.vhd                      ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/mux4to1.vhd        ;         ;
 ; halfSubtractor.vhd               ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/halfSubtractor.vhd ;         ;
@@ -181,12 +178,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; fullAdder.vhd                    ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/fullAdder.vhd      ;         ;
 ; FFT.vhd                          ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/FFT.vhd            ;         ;
 ; FFD.vhd                          ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/FFD.vhd            ;         ;
-; dataFlux.vhd                     ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/dataFlux.vhd       ;         ;
 ; andFunction.vhd                  ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/andFunction.vhd    ;         ;
 ; adder7b.vhd                      ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/adder7b.vhd        ;         ;
-; Calculator.vhd                   ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/Calculator.vhd     ;         ;
-; decoder.vhd                      ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/decoder.vhd        ;         ;
-; comp2.vhd                        ; yes             ; User VHDL File  ; D:/gitHub/Circuitos/Projeto2/comp2.vhd          ;         ;
 +----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
 
 
@@ -195,148 +188,124 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 272        ;
+; Estimated Total logic elements              ; 108        ;
 ;                                             ;            ;
-; Total combinational functions               ; 258        ;
+; Total combinational functions               ; 108        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 128        ;
-;     -- 3 input functions                    ; 104        ;
-;     -- <=2 input functions                  ; 26         ;
+;     -- 4 input functions                    ; 15         ;
+;     -- 3 input functions                    ; 70         ;
+;     -- <=2 input functions                  ; 23         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 258        ;
+;     -- normal mode                          ; 108        ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
-; Total registers                             ; 24         ;
-;     -- Dedicated logic registers            ; 24         ;
+; Total registers                             ; 9          ;
+;     -- Dedicated logic registers            ; 9          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 36         ;
+; I/O pins                                    ; 27         ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
-; Maximum fan-out node                        ; saida[4]~5 ;
-; Maximum fan-out                             ; 50         ;
-; Total fan-out                               ; 1000       ;
-; Average fan-out                             ; 2.82       ;
+; Maximum fan-out node                        ; S[0]~input ;
+; Maximum fan-out                             ; 16         ;
+; Total fan-out                               ; 376        ;
+; Average fan-out                             ; 2.20       ;
 +---------------------------------------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Library Name ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
-; |Calculator                        ; 258 (11)          ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |Calculator                                                                               ; work         ;
-;    |ULA:unit_logic_arithmetic|     ; 108 (1)           ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic                                                     ; work         ;
-;       |FFT:FFT1|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|FFT:FFT1                                            ; work         ;
-;       |UFA:ufa1|                   ; 105 (8)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1                                            ; work         ;
-;          |Mux4to1:mux1|            ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1                               ; work         ;
-;          |adder7b:adder|           ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder                              ; work         ;
-;             |fullAdder:fa0|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa0                ; work         ;
-;             |fullAdder:fa1|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa1                ; work         ;
-;             |fullAdder:fa2|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa2                ; work         ;
-;             |fullAdder:fa3|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa3                ; work         ;
-;             |fullAdder:fa4|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa4                ; work         ;
-;             |fullAdder:fa5|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5                ; work         ;
-;             |halfAdder:ha|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|halfAdder:ha                 ; work         ;
-;          |andFunction:and1|        ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1                           ; work         ;
-;          |orFunction:or1|          ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1                             ; work         ;
-;          |subtractor7b:subtractor| ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor                    ; work         ;
-;             |fullSubtractor:fs0|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0 ; work         ;
-;             |fullSubtractor:fs1|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1 ; work         ;
-;             |fullSubtractor:fs2|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2 ; work         ;
-;             |fullSubtractor:fs3|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3 ; work         ;
-;             |fullSubtractor:fs4|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4 ; work         ;
-;             |fullSubtractor:fs5|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5 ; work         ;
-;             |halfSubtractor:hs|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs  ; work         ;
-;       |register8b:reg1|            ; 1 (1)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1                                     ; work         ;
-;          |FFD:ff0|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff0                             ; work         ;
-;          |FFD:ff1|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff1                             ; work         ;
-;          |FFD:ff2|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff2                             ; work         ;
-;          |FFD:ff3|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff3                             ; work         ;
-;          |FFD:ff4|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff4                             ; work         ;
-;          |FFD:ff5|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff5                             ; work         ;
-;          |FFD:ff6|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff6                             ; work         ;
-;          |FFD:ff7|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7                             ; work         ;
-;    |comp2:comp|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|comp2:comp                                                                    ; work         ;
-;       |adder7b:adder|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|comp2:comp|adder7b:adder                                                      ; work         ;
-;          |fullAdder:fa2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|comp2:comp|adder7b:adder|fullAdder:fa2                                        ; work         ;
-;    |dataFlux:data_Flux|            ; 3 (0)             ; 15 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux                                                            ; work         ;
-;       |FFT:clockBroke|             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|FFT:clockBroke                                             ; work         ;
-;       |register7b:reg0|            ; 1 (1)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg0                                            ; work         ;
-;          |FFD:ff0|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff0                                    ; work         ;
-;          |FFD:ff1|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff1                                    ; work         ;
-;          |FFD:ff2|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff2                                    ; work         ;
-;          |FFD:ff3|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff3                                    ; work         ;
-;          |FFD:ff4|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff4                                    ; work         ;
-;          |FFD:ff5|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff5                                    ; work         ;
-;          |FFD:ff6|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg0|FFD:ff6                                    ; work         ;
-;       |register7b:reg1|            ; 1 (1)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg1                                            ; work         ;
-;          |FFD:ff0|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff0                                    ; work         ;
-;          |FFD:ff1|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff1                                    ; work         ;
-;          |FFD:ff2|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff2                                    ; work         ;
-;          |FFD:ff3|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff3                                    ; work         ;
-;          |FFD:ff4|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff4                                    ; work         ;
-;          |FFD:ff5|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff5                                    ; work         ;
-;          |FFD:ff6|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|dataFlux:data_Flux|register7b:reg1|FFD:ff6                                    ; work         ;
-;    |decoder:dec|                   ; 135 (135)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculator|decoder:dec                                                                   ; work         ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; |ULA                            ; 108 (1)           ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |ULA                                                     ; work         ;
+;    |FFT:FFT1|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|FFT:FFT1                                            ; work         ;
+;    |UFA:ufa1|                   ; 105 (8)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1                                            ; work         ;
+;       |Mux4to1:mux1|            ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|Mux4to1:mux1                               ; work         ;
+;       |adder7b:adder|           ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|adder7b:adder                              ; work         ;
+;          |fullAdder:fa0|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|adder7b:adder|fullAdder:fa0                ; work         ;
+;          |fullAdder:fa1|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|adder7b:adder|fullAdder:fa1                ; work         ;
+;          |fullAdder:fa2|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|adder7b:adder|fullAdder:fa2                ; work         ;
+;          |fullAdder:fa3|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|adder7b:adder|fullAdder:fa3                ; work         ;
+;          |fullAdder:fa4|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|adder7b:adder|fullAdder:fa4                ; work         ;
+;          |fullAdder:fa5|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|adder7b:adder|fullAdder:fa5                ; work         ;
+;          |halfAdder:ha|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|adder7b:adder|halfAdder:ha                 ; work         ;
+;       |andFunction:and1|        ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|andFunction:and1                           ; work         ;
+;       |orFunction:or1|          ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|orFunction:or1                             ; work         ;
+;       |subtractor7b:subtractor| ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|subtractor7b:subtractor                    ; work         ;
+;          |fullSubtractor:fs0|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0 ; work         ;
+;          |fullSubtractor:fs1|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1 ; work         ;
+;          |fullSubtractor:fs2|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2 ; work         ;
+;          |fullSubtractor:fs3|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3 ; work         ;
+;          |fullSubtractor:fs4|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4 ; work         ;
+;          |fullSubtractor:fs5|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5 ; work         ;
+;          |halfSubtractor:hs|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs  ; work         ;
+;    |register8b:reg1|            ; 1 (1)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1                                     ; work         ;
+;       |FFD:ff0|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1|FFD:ff0                             ; work         ;
+;       |FFD:ff1|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1|FFD:ff1                             ; work         ;
+;       |FFD:ff2|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1|FFD:ff2                             ; work         ;
+;       |FFD:ff3|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1|FFD:ff3                             ; work         ;
+;       |FFD:ff4|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1|FFD:ff4                             ; work         ;
+;       |FFD:ff5|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1|FFD:ff5                             ; work         ;
+;       |FFD:ff6|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1|FFD:ff6                             ; work         ;
+;       |FFD:ff7|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|register8b:reg1|FFD:ff7                             ; work         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                                                  ;
-+----------------------------------------------------------------------------------+------------------------------------------+------------------------+
-; Latch Name                                                                       ; Latch Enable Signal                      ; Free of Timing Hazards ;
-+----------------------------------------------------------------------------------+------------------------------------------+------------------------+
-; sig                                                                              ; EN                                       ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5|Co                ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5|Te ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5|S  ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[6]                         ; ULA:unit_logic_arithmetic|UFA:ufa1|ENand ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa5|S                 ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[6]                           ; ULA:unit_logic_arithmetic|UFA:ufa1|ENor  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[0]                         ; ULA:unit_logic_arithmetic|UFA:ufa1|ENand ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs|S   ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|halfAdder:ha|S                  ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[0]                           ; ULA:unit_logic_arithmetic|UFA:ufa1|ENor  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[5]                         ; ULA:unit_logic_arithmetic|UFA:ufa1|ENand ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4|S  ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa4|S                 ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[5]                           ; ULA:unit_logic_arithmetic|UFA:ufa1|ENor  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3|S  ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[4]                         ; ULA:unit_logic_arithmetic|UFA:ufa1|ENand ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa3|S                 ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[4]                           ; ULA:unit_logic_arithmetic|UFA:ufa1|ENor  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[3]                         ; ULA:unit_logic_arithmetic|UFA:ufa1|ENand ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2|S  ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa2|S                 ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[3]                           ; ULA:unit_logic_arithmetic|UFA:ufa1|ENor  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1|S  ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[2]                         ; ULA:unit_logic_arithmetic|UFA:ufa1|ENand ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa1|S                 ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[2]                           ; ULA:unit_logic_arithmetic|UFA:ufa1|ENor  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1|S[1]                         ; ULA:unit_logic_arithmetic|UFA:ufa1|ENand ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0|S  ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa0|S                 ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1|S[1]                           ; ULA:unit_logic_arithmetic|UFA:ufa1|ENor  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa4|Co                ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum                                         ; ULA:unit_logic_arithmetic|UFA:ufa1|Mux8  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4|Te ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub                                         ; ULA:unit_logic_arithmetic|UFA:ufa1|Mux4  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENand                                         ; ULA:unit_logic_arithmetic|UFA:ufa1|Mux4  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|ENor                                          ; ULA:unit_logic_arithmetic|UFA:ufa1|Mux4  ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3|Te ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa3|Co                ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2|Te ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa2|Co                ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1|Te ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa1|Co                ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0|Te ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa0|Co                ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs|Te  ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsub ; yes                    ;
-; ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|halfAdder:ha|Co                 ; ULA:unit_logic_arithmetic|UFA:ufa1|ENsum ; yes                    ;
-; Number of user-specified and inferred latches = 47                               ;                                          ;                        ;
-+----------------------------------------------------------------------------------+------------------------------------------+------------------------+
++-------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                   ;
++--------------------------------------------------------+---------------------+------------------------+
+; Latch Name                                             ; Latch Enable Signal ; Free of Timing Hazards ;
++--------------------------------------------------------+---------------------+------------------------+
+; UFA:ufa1|andFunction:and1|S[0]                         ; UFA:ufa1|ENand      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs|S   ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|halfAdder:ha|S                  ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|orFunction:or1|S[0]                           ; UFA:ufa1|ENor       ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0|S  ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|andFunction:and1|S[1]                         ; UFA:ufa1|ENand      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa0|S                 ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|orFunction:or1|S[1]                           ; UFA:ufa1|ENor       ; yes                    ;
+; UFA:ufa1|andFunction:and1|S[2]                         ; UFA:ufa1|ENand      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1|S  ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa1|S                 ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|orFunction:or1|S[2]                           ; UFA:ufa1|ENor       ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2|S  ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|andFunction:and1|S[3]                         ; UFA:ufa1|ENand      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa2|S                 ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|orFunction:or1|S[3]                           ; UFA:ufa1|ENor       ; yes                    ;
+; UFA:ufa1|andFunction:and1|S[4]                         ; UFA:ufa1|ENand      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3|S  ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa3|S                 ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|orFunction:or1|S[4]                           ; UFA:ufa1|ENor       ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4|S  ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|andFunction:and1|S[5]                         ; UFA:ufa1|ENand      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa4|S                 ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|orFunction:or1|S[5]                           ; UFA:ufa1|ENor       ; yes                    ;
+; UFA:ufa1|andFunction:and1|S[6]                         ; UFA:ufa1|ENand      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5|S  ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa5|S                 ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|orFunction:or1|S[6]                           ; UFA:ufa1|ENor       ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa5|Co                ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs5|Te ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|ENand                                         ; UFA:ufa1|Mux4       ; yes                    ;
+; UFA:ufa1|ENsub                                         ; UFA:ufa1|Mux4       ; yes                    ;
+; UFA:ufa1|ENsum                                         ; UFA:ufa1|Mux8       ; yes                    ;
+; UFA:ufa1|ENor                                          ; UFA:ufa1|Mux4       ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs|Te  ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|halfAdder:ha|Co                 ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0|Te ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa0|Co                ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs1|Te ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa1|Co                ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs2|Te ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa2|Co                ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs3|Te ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa3|Co                ; UFA:ufa1|ENsum      ; yes                    ;
+; UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs4|Te ; UFA:ufa1|ENsub      ; yes                    ;
+; UFA:ufa1|adder7b:adder|fullAdder:fa4|Co                ; UFA:ufa1|ENsum      ; yes                    ;
+; Number of user-specified and inferred latches = 46     ;                     ;                        ;
++--------------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -345,52 +314,32 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 24    ;
+; Total registers                              ; 9     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 22    ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |Calculator|ULA:unit_logic_arithmetic|register8b:reg1|FFD:ff7|Q ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |ULA|register8b:reg1|FFD:ff7|Q ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "comp2:comp|adder7b:adder" ;
-+---------+-------+----------+-------------------------+
-; Port    ; Type  ; Severity ; Details                 ;
-+---------+-------+----------+-------------------------+
-; a[6..1] ; Input ; Info     ; Stuck at GND            ;
-; a[0]    ; Input ; Info     ; Stuck at VCC            ;
-; en      ; Input ; Info     ; Stuck at VCC            ;
-+---------+-------+----------+-------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:unit_logic_arithmetic|FFT:FFT1" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; t    ; Input ; Info     ; Stuck at VCC                         ;
-+------+-------+----------+--------------------------------------+
-
-
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "dataFlux:data_Flux|FFT:clockBroke" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; t    ; Input ; Info     ; Stuck at VCC                        ;
-+------+-------+----------+-------------------------------------+
++----------------------------------------+
+; Port Connectivity Checks: "FFT:FFT1"   ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; t    ; Input ; Info     ; Stuck at VCC ;
++------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -398,20 +347,19 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 36                          ;
-; cycloneiii_ff         ; 24                          ;
-;     CLR               ; 22                          ;
-;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 259                         ;
-;     normal            ; 259                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 24                          ;
-;         3 data inputs ; 104                         ;
-;         4 data inputs ; 128                         ;
+; boundary_port         ; 27                          ;
+; cycloneiii_ff         ; 9                           ;
+;     CLR               ; 8                           ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 108                         ;
+;     normal            ; 108                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 70                          ;
+;         4 data inputs ; 15                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 3.90                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.77                        ;
 +-----------------------+-----------------------------+
 
 
@@ -420,7 +368,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -430,7 +378,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Sun Nov 09 20:19:55 2014
+    Info: Processing started: Sun Nov 09 20:45:25 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Calculator -c Calculator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
@@ -493,15 +441,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file decoder
 Info (12021): Found 2 design units, including 1 entities, in source file comp2.vhd
     Info (12022): Found design unit 1: comp2-comport
     Info (12023): Found entity 1: comp2
-Info (12127): Elaborating entity "Calculator" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at Calculator.vhd(70): inferring latch(es) for signal or variable "sig", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "sig" at Calculator.vhd(70)
-Info (12128): Elaborating entity "dataFlux" for hierarchy "dataFlux:data_Flux"
-Info (12128): Elaborating entity "FFT" for hierarchy "dataFlux:data_Flux|FFT:clockBroke"
-Info (12128): Elaborating entity "register7b" for hierarchy "dataFlux:data_Flux|register7b:reg0"
-Info (12128): Elaborating entity "FFD" for hierarchy "dataFlux:data_Flux|register7b:reg0|FFD:ff0"
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:unit_logic_arithmetic"
-Info (12128): Elaborating entity "UFA" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1"
+Info (12127): Elaborating entity "ULA" for the top level hierarchy
+Info (12128): Elaborating entity "UFA" for hierarchy "UFA:ufa1"
 Warning (10631): VHDL Process Statement warning at UFA.vhd(60): inferring latch(es) for signal or variable "ENsum", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at UFA.vhd(60): inferring latch(es) for signal or variable "ENsub", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at UFA.vhd(60): inferring latch(es) for signal or variable "ENand", which holds its previous value in one or more paths through the process
@@ -510,29 +451,29 @@ Info (10041): Inferred latch for "ENor" at UFA.vhd(60)
 Info (10041): Inferred latch for "ENand" at UFA.vhd(60)
 Info (10041): Inferred latch for "ENsub" at UFA.vhd(60)
 Info (10041): Inferred latch for "ENsum" at UFA.vhd(60)
-Info (12128): Elaborating entity "adder7b" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder"
-Info (12128): Elaborating entity "halfAdder" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|halfAdder:ha"
+Info (12128): Elaborating entity "adder7b" for hierarchy "UFA:ufa1|adder7b:adder"
+Info (12128): Elaborating entity "halfAdder" for hierarchy "UFA:ufa1|adder7b:adder|halfAdder:ha"
 Warning (10631): VHDL Process Statement warning at halfAdder.vhd(16): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at halfAdder.vhd(16): inferring latch(es) for signal or variable "Co", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "Co" at halfAdder.vhd(16)
 Info (10041): Inferred latch for "S" at halfAdder.vhd(16)
-Info (12128): Elaborating entity "fullAdder" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|adder7b:adder|fullAdder:fa0"
+Info (12128): Elaborating entity "fullAdder" for hierarchy "UFA:ufa1|adder7b:adder|fullAdder:fa0"
 Warning (10631): VHDL Process Statement warning at fullAdder.vhd(15): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at fullAdder.vhd(15): inferring latch(es) for signal or variable "Co", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "Co" at fullAdder.vhd(15)
 Info (10041): Inferred latch for "S" at fullAdder.vhd(15)
-Info (12128): Elaborating entity "subtractor7b" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor"
-Info (12128): Elaborating entity "halfSubtractor" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs"
+Info (12128): Elaborating entity "subtractor7b" for hierarchy "UFA:ufa1|subtractor7b:subtractor"
+Info (12128): Elaborating entity "halfSubtractor" for hierarchy "UFA:ufa1|subtractor7b:subtractor|halfSubtractor:hs"
 Warning (10631): VHDL Process Statement warning at halfSubtractor.vhd(15): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at halfSubtractor.vhd(15): inferring latch(es) for signal or variable "Te", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "Te" at halfSubtractor.vhd(15)
 Info (10041): Inferred latch for "S" at halfSubtractor.vhd(15)
-Info (12128): Elaborating entity "fullSubtractor" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0"
+Info (12128): Elaborating entity "fullSubtractor" for hierarchy "UFA:ufa1|subtractor7b:subtractor|fullSubtractor:fs0"
 Warning (10631): VHDL Process Statement warning at fullSubtractor.vhd(16): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at fullSubtractor.vhd(16): inferring latch(es) for signal or variable "Te", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "Te" at fullSubtractor.vhd(16)
 Info (10041): Inferred latch for "S" at fullSubtractor.vhd(16)
-Info (12128): Elaborating entity "andFunction" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|andFunction:and1"
+Info (12128): Elaborating entity "andFunction" for hierarchy "UFA:ufa1|andFunction:and1"
 Warning (10631): VHDL Process Statement warning at andFunction.vhd(17): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "S[0]" at andFunction.vhd(17)
 Info (10041): Inferred latch for "S[1]" at andFunction.vhd(17)
@@ -542,7 +483,7 @@ Info (10041): Inferred latch for "S[4]" at andFunction.vhd(17)
 Info (10041): Inferred latch for "S[5]" at andFunction.vhd(17)
 Info (10041): Inferred latch for "S[6]" at andFunction.vhd(17)
 Info (10041): Inferred latch for "S[7]" at andFunction.vhd(17)
-Info (12128): Elaborating entity "orFunction" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|orFunction:or1"
+Info (12128): Elaborating entity "orFunction" for hierarchy "UFA:ufa1|orFunction:or1"
 Warning (10631): VHDL Process Statement warning at orFunction.vhd(17): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "S[0]" at orFunction.vhd(17)
 Info (10041): Inferred latch for "S[1]" at orFunction.vhd(17)
@@ -552,38 +493,21 @@ Info (10041): Inferred latch for "S[4]" at orFunction.vhd(17)
 Info (10041): Inferred latch for "S[5]" at orFunction.vhd(17)
 Info (10041): Inferred latch for "S[6]" at orFunction.vhd(17)
 Info (10041): Inferred latch for "S[7]" at orFunction.vhd(17)
-Info (12128): Elaborating entity "Mux4to1" for hierarchy "ULA:unit_logic_arithmetic|UFA:ufa1|Mux4to1:mux1"
-Info (12128): Elaborating entity "register8b" for hierarchy "ULA:unit_logic_arithmetic|register8b:reg1"
-Info (12128): Elaborating entity "comp2" for hierarchy "comp2:comp"
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:dec"
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa5|S" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa5|Co" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa4|S" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa4|Co" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa3|S" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa3|Co" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa2|S" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa2|Co" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa1|S" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa1|Co" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa0|S" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|fullAdder:fa0|Co" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|halfAdder:ha|S" is permanently enabled
-Warning (14026): LATCH primitive "comp2:comp|adder7b:adder|halfAdder:ha|Co" is permanently enabled
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "H3[6]" is stuck at VCC
-    Warning (13410): Pin "H3[5]" is stuck at VCC
+Info (12128): Elaborating entity "Mux4to1" for hierarchy "UFA:ufa1|Mux4to1:mux1"
+Info (12128): Elaborating entity "FFT" for hierarchy "FFT:FFT1"
+Info (12128): Elaborating entity "register8b" for hierarchy "register8b:reg1"
+Info (12128): Elaborating entity "FFD" for hierarchy "register8b:reg1|FFD:ff0"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 308 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 272 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 578 megabytes
-    Info: Processing ended: Sun Nov 09 20:19:59 2014
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info (21057): Implemented 135 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 108 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 565 megabytes
+    Info: Processing ended: Sun Nov 09 20:45:28 2014
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

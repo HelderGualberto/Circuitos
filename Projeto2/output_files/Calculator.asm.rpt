@@ -1,5 +1,5 @@
 Assembler report for Calculator
-Sun Nov 09 20:20:37 2014
+Sun Nov 09 20:46:02 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -38,9 +38,9 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Nov 09 20:20:37 2014 ;
+; Assembler Status      ; Successful - Sun Nov 09 20:46:02 2014 ;
 ; Revision Name         ; Calculator                            ;
-; Top-level Entity Name ; Calculator                            ;
+; Top-level Entity Name ; ULA                                   ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                           ;
 +----------------+-------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                     ;
-; JTAG usercode  ; 0x0058BABB                                                        ;
-; Checksum       ; 0x0058BABB                                                        ;
+; JTAG usercode  ; 0x005752D8                                                        ;
+; Checksum       ; 0x005752D8                                                        ;
 +----------------+-------------------------------------------------------------------+
 
 
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Sun Nov 09 20:20:31 2014
+    Info: Processing started: Sun Nov 09 20:45:56 2014
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Calculator -c Calculator
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 498 megabytes
-    Info: Processing ended: Sun Nov 09 20:20:37 2014
+    Info: Peak virtual memory: 495 megabytes
+    Info: Processing ended: Sun Nov 09 20:46:02 2014
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
 

@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "syncData",
+					"strict" : false
+				},
+				{
+					"name" : "syncClock",
+					"strict" : false
+				},
+				{
+					"name" : "dataIn",
+					"strict" : false
+				},
+				{
+					"name" : "clockPLL",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

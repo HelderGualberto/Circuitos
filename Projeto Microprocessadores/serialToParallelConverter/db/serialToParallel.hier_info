@@ -1,0 +1,21 @@
+|clockRecovery
+clockPLL => edgeDetector:edge1.dataClock
+clockPLL => clkOut.CLK
+clockPLL => clockOutCounter[1].CLK
+clockPLL => clockOutCounter[0].CLK
+clockPLL => syncData~reg0.CLK
+clockPLL => counter[1].CLK
+clockPLL => counter[0].CLK
+dataIn => syncData.DATAB
+dataIn => edgeDetector:edge1.dataSignal
+syncData << syncData~reg0.DB_MAX_OUTPUT_PORT_TYPE
+syncClock << clkOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clockRecovery|edgeDetector:edge1
+dataClock => temp.CLK
+dataSignal => EDGES.IN1
+dataSignal => temp.DATAIN
+EDGES <= EDGES.DB_MAX_OUTPUT_PORT_TYPE
+
+

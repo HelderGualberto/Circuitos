@@ -1,0 +1,337 @@
+// Copyright (C) 2016  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition"
+
+// DATE "05/01/2017 19:02:45"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module clockRecovery (
+	clockPLL,
+	dataIn,
+	syncData,
+	syncClock);
+input 	clockPLL;
+input 	dataIn;
+output 	syncData;
+output 	syncClock;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \syncData~output_o ;
+wire \syncClock~output_o ;
+wire \clockPLL~input_o ;
+wire \dataIn~input_o ;
+wire \counter[1]~1_combout ;
+wire \edge1|temp~q ;
+wire \edge1|EDGES~combout ;
+wire \counter[0]~0_combout ;
+wire \syncData~0_combout ;
+wire \syncData~1_combout ;
+wire \syncData~reg0_q ;
+wire \clockOutCounter[1]~0_combout ;
+wire \clkOut~0_combout ;
+wire \clkOut~q ;
+wire [0:1] counter;
+wire [0:1] clockOutCounter;
+
+
+cycloneive_io_obuf \syncData~output (
+	.i(\syncData~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\syncData~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \syncData~output .bus_hold = "false";
+defparam \syncData~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \syncClock~output (
+	.i(!\clkOut~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\syncClock~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \syncClock~output .bus_hold = "false";
+defparam \syncClock~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \clockPLL~input (
+	.i(clockPLL),
+	.ibar(gnd),
+	.o(\clockPLL~input_o ));
+// synopsys translate_off
+defparam \clockPLL~input .bus_hold = "false";
+defparam \clockPLL~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \dataIn~input (
+	.i(dataIn),
+	.ibar(gnd),
+	.o(\dataIn~input_o ));
+// synopsys translate_off
+defparam \dataIn~input .bus_hold = "false";
+defparam \dataIn~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \counter[1]~1 (
+// Equation(s):
+// \counter[1]~1_combout  = !counter[1]
+
+	.dataa(counter[1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\counter[1]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \counter[1]~1 .lut_mask = 16'h5555;
+defparam \counter[1]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \edge1|temp (
+	.clk(\clockPLL~input_o ),
+	.d(\dataIn~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\edge1|temp~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \edge1|temp .is_wysiwyg = "true";
+defparam \edge1|temp .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \edge1|EDGES (
+// Equation(s):
+// \edge1|EDGES~combout  = \dataIn~input_o  $ (\edge1|temp~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\dataIn~input_o ),
+	.datad(\edge1|temp~q ),
+	.cin(gnd),
+	.combout(\edge1|EDGES~combout ),
+	.cout());
+// synopsys translate_off
+defparam \edge1|EDGES .lut_mask = 16'h0FF0;
+defparam \edge1|EDGES .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \counter[1] (
+	.clk(\clockPLL~input_o ),
+	.d(\counter[1]~1_combout ),
+	.asdata(vcc),
+	.clrn(!\edge1|EDGES~combout ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(counter[1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \counter[1] .is_wysiwyg = "true";
+defparam \counter[1] .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \counter[0]~0 (
+// Equation(s):
+// \counter[0]~0_combout  = counter[0] $ (counter[1])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(counter[0]),
+	.datad(counter[1]),
+	.cin(gnd),
+	.combout(\counter[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \counter[0]~0 .lut_mask = 16'h0FF0;
+defparam \counter[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \counter[0] (
+	.clk(\clockPLL~input_o ),
+	.d(\counter[0]~0_combout ),
+	.asdata(vcc),
+	.clrn(!\edge1|EDGES~combout ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(counter[0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \counter[0] .is_wysiwyg = "true";
+defparam \counter[0] .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \syncData~0 (
+// Equation(s):
+// \syncData~0_combout  = (counter[0] & (!counter[1] & (\dataIn~input_o  $ (!\edge1|temp~q ))))
+
+	.dataa(counter[0]),
+	.datab(\dataIn~input_o ),
+	.datac(\edge1|temp~q ),
+	.datad(counter[1]),
+	.cin(gnd),
+	.combout(\syncData~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \syncData~0 .lut_mask = 16'h0082;
+defparam \syncData~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \syncData~1 (
+// Equation(s):
+// \syncData~1_combout  = (\syncData~0_combout  & (\dataIn~input_o )) # (!\syncData~0_combout  & ((\syncData~reg0_q )))
+
+	.dataa(\dataIn~input_o ),
+	.datab(\syncData~reg0_q ),
+	.datac(gnd),
+	.datad(\syncData~0_combout ),
+	.cin(gnd),
+	.combout(\syncData~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \syncData~1 .lut_mask = 16'hAACC;
+defparam \syncData~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \syncData~reg0 (
+	.clk(\clockPLL~input_o ),
+	.d(\syncData~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\syncData~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \syncData~reg0 .is_wysiwyg = "true";
+defparam \syncData~reg0 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \clockOutCounter[1]~0 (
+// Equation(s):
+// \clockOutCounter[1]~0_combout  = !clockOutCounter[1]
+
+	.dataa(clockOutCounter[1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\clockOutCounter[1]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clockOutCounter[1]~0 .lut_mask = 16'h5555;
+defparam \clockOutCounter[1]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \clockOutCounter[1] (
+	.clk(\clockPLL~input_o ),
+	.d(\clockOutCounter[1]~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(clockOutCounter[1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \clockOutCounter[1] .is_wysiwyg = "true";
+defparam \clockOutCounter[1] .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \clkOut~0 (
+// Equation(s):
+// \clkOut~0_combout  = \clkOut~q  $ (!clockOutCounter[1])
+
+	.dataa(\clkOut~q ),
+	.datab(clockOutCounter[1]),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\clkOut~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clkOut~0 .lut_mask = 16'h9999;
+defparam \clkOut~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas clkOut(
+	.clk(\clockPLL~input_o ),
+	.d(\clkOut~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\clkOut~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam clkOut.is_wysiwyg = "true";
+defparam clkOut.power_up = "low";
+// synopsys translate_on
+
+assign syncData = \syncData~output_o ;
+
+assign syncClock = \syncClock~output_o ;
+
+endmodule

@@ -1,0 +1,24 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY clockRecovery IS 
+	PORT
+	(
+		clockBase : IN STD_LOGIC;
+		clockPLL : IN STD_LOGIC;
+		dataIn :  IN  STD_LOGIC;
+		syncData : OUT STD_LOGIC
+	);
+END clockRecovery;
+
+ARCHITECTURE behavior of clockRecovery is
+
+component edgeDetector is
+		port(
+			dataClock : IN STD_LOGIC;
+			dataSignal :  IN  STD_LOGIC;
+			EDGES :  OUT  STD_LOGIC
+		);
+	end component;

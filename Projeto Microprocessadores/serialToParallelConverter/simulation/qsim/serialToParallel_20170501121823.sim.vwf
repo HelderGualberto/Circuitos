@@ -1,0 +1,221 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 3000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("dataClock")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("dataSignal")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("EDGES")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("dataClock")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 62.112;
+			LEVEL 1 FOR 62.111;
+			LEVEL 0 FOR 18.648;
+		}
+	}
+}
+
+TRANSITION_LIST("dataSignal")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 125.0;
+			LEVEL 1 FOR 250.0;
+			LEVEL 0 FOR 125.0;
+			LEVEL 1 FOR 250.0;
+			LEVEL 0 FOR 500.0;
+			LEVEL 1 FOR 125.0;
+			LEVEL 0 FOR 125.0;
+			LEVEL 1 FOR 375.0;
+			LEVEL 0 FOR 125.0;
+			LEVEL 1 FOR 625.0;
+			LEVEL 0 FOR 125.0;
+			LEVEL 1 FOR 125.0;
+			LEVEL 0 FOR 125.0;
+		}
+	}
+}
+
+TRANSITION_LIST("EDGES")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 125.0;
+			LEVEL 1 FOR 61.335;
+			LEVEL 0 FOR 188.665;
+			LEVEL 1 FOR 59.781;
+			LEVEL 0 FOR 65.219;
+			LEVEL 1 FOR 59.004;
+			LEVEL 0 FOR 190.996;
+			LEVEL 1 FOR 57.45;
+			LEVEL 0 FOR 442.55;
+			LEVEL 1 FOR 54.342;
+			LEVEL 0 FOR 70.658;
+			LEVEL 1 FOR 53.565;
+			LEVEL 0 FOR 71.435;
+			LEVEL 1 FOR 52.788;
+			LEVEL 0 FOR 322.212;
+			LEVEL 1 FOR 50.457;
+			LEVEL 0 FOR 74.543;
+			LEVEL 1 FOR 49.68;
+			LEVEL 0 FOR 575.32;
+			LEVEL 1 FOR 45.795;
+			LEVEL 0 FOR 79.205;
+			LEVEL 1 FOR 45.018;
+			LEVEL 0 FOR 79.982;
+			LEVEL 1 FOR 44.241;
+			LEVEL 0 FOR 80.759;
+		}
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dataClock";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dataSignal";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "EDGES";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for serialToParallel
-Mon May 01 19:27:15 2017
+Mon May 15 11:57:17 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon May 01 19:27:15 2017 ;
+; EDA Netlist Writer Status ; Successful - Mon May 15 11:57:17 2017 ;
 ; Revision Name             ; serialToParallel                      ;
 ; Top-level Entity Name     ; clockRecovery                         ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,15 +95,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon May 01 19:27:15 2017
+    Info: Processing started: Mon May 15 11:57:16 2017
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/" serialToParallel -c serialToParallel
 Info (119006): Selected device EP4CE115F29C7 for design "serialToParallel"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file serialToParallel.vho in folder "D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 505 megabytes
-    Info: Processing ended: Mon May 01 19:27:15 2017
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 501 megabytes
+    Info: Processing ended: Mon May 15 11:57:17 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

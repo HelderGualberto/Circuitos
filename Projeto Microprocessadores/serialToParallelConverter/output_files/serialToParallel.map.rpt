@@ -1,5 +1,5 @@
 Analysis & Synthesis report for serialToParallel
-Mon May 01 19:25:59 2017
+Mon May 15 10:39:18 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 01 19:25:59 2017       ;
+; Analysis & Synthesis Status        ; Successful - Mon May 15 10:39:18 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; serialToParallel                            ;
 ; Top-level Entity Name              ; clockRecovery                               ;
@@ -279,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -289,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Mon May 01 19:25:44 2017
+    Info: Processing started: Mon May 15 10:38:47 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off serialToParallel -c serialToParallel
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -300,11 +300,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file edgedet
     Info (12022): Found design unit 1: edgeDetector-behavior File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd Line: 34
     Info (12023): Found entity 1: edgeDetector File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd Line: 25
 Info (12021): Found 2 design units, including 1 entities, in source file clockrecovery.vhd
-    Info (12022): Found design unit 1: clockRecovery-behavior File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd Line: 18
+    Info (12022): Found design unit 1: clockRecovery-behavior File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd Line: 19
     Info (12023): Found entity 1: clockRecovery File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file fifo.vhd
+    Info (12022): Found design unit 1: fifo-SYN File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/fifo.vhd Line: 58
+    Info (12023): Found entity 1: fifo File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/fifo.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file clockdivider8.vhd
+    Info (12022): Found design unit 1: clockDivider8-behavior File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd Line: 14
+    Info (12023): Found entity 1: clockDivider8 File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd Line: 6
 Info (12127): Elaborating entity "clockRecovery" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at clockRecovery.vhd(38): signal "edge" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd Line: 38
-Info (12128): Elaborating entity "edgeDetector" for hierarchy "edgeDetector:edge1" File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd Line: 60
+Warning (10492): VHDL Process Statement warning at clockRecovery.vhd(39): signal "edge" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd Line: 39
+Info (12128): Elaborating entity "edgeDetector" for hierarchy "edgeDetector:edge1" File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd Line: 61
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -314,9 +320,9 @@ Info (21057): Implemented 12 device resources after synthesis - the final resour
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 647 megabytes
-    Info: Processing ended: Mon May 01 19:25:59 2017
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 644 megabytes
+    Info: Processing ended: Mon May 15 10:39:18 2017
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:36
 
 

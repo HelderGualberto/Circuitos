@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+ENTITY clockDivider8 IS 
+   PORT
+   (
+      clockIn : IN STD_LOGIC;
+      clockOut :  OUT  STD_LOGIC		
+   );
+END clockDivider8;
+
+ARCHITECTURE bahavior of clockDivider8 IS
+
+
+END behavior

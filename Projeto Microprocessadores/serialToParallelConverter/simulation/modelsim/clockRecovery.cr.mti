@@ -1,0 +1,82 @@
+{D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity edgeDetector
+-- Compiling architecture behavior of edgeDetector
+
+} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clockRecovery
+-- Compiling architecture behavior of clockRecovery
+
+} {} {}} {{D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:38:26 on May 15,2017
+vcom -reportprogress 300 -work work -2002 -explicit D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity edgeDetector
+-- Compiling architecture behavior of edgeDetector
+End time: 11:38:26 on May 15,2017, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {{D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:38:26 on May 15,2017
+vcom -reportprogress 300 -work work -2002 -explicit D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clockRecovery
+-- Compiling architecture behavior of clockRecovery
+End time: 11:38:26 on May 15,2017, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package NUMERIC_STD
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package std_logic_textio
+-- Compiling entity clockRecovery_tb
+-- Compiling architecture arq of clockRecovery_tb
+** Warning: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {{D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd}} {0 {vcom -work work -2002 -explicit {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:38:26 on May 15,2017
+vcom -reportprogress 300 -work work -2002 -explicit D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package std_logic_textio
+-- Compiling entity clockRecovery_tb
+-- Compiling architecture arq of clockRecovery_tb
+** Warning: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Error: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(67): Illegal target for signal assignment.
+** Error: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(67): (vcom-1136) Unknown identifier "in1".
+** Error: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(68): (vcom-1136) Unknown identifier "clk".
+** Warning: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(68): Wait statement has no sensitivity list or time out clause.
+** Error: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd(74): VHDL Compiler exiting
+End time: 11:38:26 on May 15,2017, Elapsed time: 0:00:00
+Errors: 4, Warnings: 3
+
+} {16.0 19.0 20.0 21.0} {}}

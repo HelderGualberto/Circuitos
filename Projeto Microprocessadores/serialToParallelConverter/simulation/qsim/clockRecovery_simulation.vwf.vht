@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/01/2017 19:27:14"
+-- Generated on "05/15/2017 11:57:16"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          clockRecovery
 -- 
@@ -71,16 +71,30 @@ END PROCESS t_prcs_clockPLL;
 -- dataIn
 t_prcs_dataIn: PROCESS
 BEGIN
+	dataIn <= '1';
+	WAIT FOR 250000 ps;
 	dataIn <= '0';
 	WAIT FOR 250000 ps;
 	dataIn <= '1';
-	WAIT FOR 1125000 ps;
+	WAIT FOR 250000 ps;
+	dataIn <= '0';
+	WAIT FOR 125000 ps;
+	dataIn <= '1';
+	WAIT FOR 250000 ps;
+	dataIn <= '0';
+	WAIT FOR 125000 ps;
+	dataIn <= '1';
+	WAIT FOR 625000 ps;
 	dataIn <= '0';
 	WAIT FOR 250000 ps;
 	dataIn <= '1';
 	WAIT FOR 125000 ps;
 	dataIn <= '0';
-	WAIT FOR 250000 ps;
+	WAIT FOR 125000 ps;
+	dataIn <= '1';
+	WAIT FOR 375000 ps;
+	dataIn <= '0';
+	WAIT FOR 125000 ps;
 	dataIn <= '1';
 WAIT;
 END PROCESS t_prcs_dataIn;

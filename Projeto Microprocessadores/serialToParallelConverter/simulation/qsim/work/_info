@@ -8,221 +8,199 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Orion/Google Drive/SENAC/9 Semestre/Microprocessadores/FPGA/simulation/qsim
+Eclockdivider8
+Z1 w1494799355
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+Z10 dD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim
+Z11 8serialToParallel.vho
+Z12 FserialToParallel.vho
+l0
+L37
+V>AZfG2ED@<m9g0C_cFj_Q3
+!s100 YHOJG7T^;Ta<_ac]FoVT20
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1494799356
+!i10b 1
+Z15 !s108 1494799356.000000
+Z16 !s90 -work|work|serialToParallel.vho|
+Z17 !s107 serialToParallel.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 13 clockdivider8 0 22 >AZfG2ED@<m9g0C_cFj_Q3
+l65
+L44
+VQ6Y;W6LZ72EncU^_dahUk1
+!s100 Czdb=MCma1J2Xm15ee]PL3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Eclockdivider8_vhd_vec_tst
+Z20 w1494799354
+R7
+R8
+R10
+Z21 8clockDivider_sim.vwf.vht
+Z22 FclockDivider_sim.vwf.vht
+l0
+L32
+VBA19chXZO9Bge1a<3Y;T<3
+!s100 0:^ORBJAE@BN`JMHa`ZAf3
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|clockDivider_sim.vwf.vht|
+Z24 !s107 clockDivider_sim.vwf.vht|
+!i113 1
+R18
+R19
+Aclockdivider8_arch
+R7
+R8
+DEx4 work 25 clockdivider8_vhd_vec_tst 0 22 BA19chXZO9Bge1a<3Y;T<3
+l45
+L34
+ViLYNfLHc^cBienJIOjEmf1
+!s100 l7AbhoES9:H^bI:iZEfVP3
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19
 vclockRecovery
-Z1 !s110 1493676166
+Z25 !s110 1493676166
 !i10b 1
 !s100 GK3^07]X<f07<^=bNnZS:1
 I0S^]OZMfSTOBfD^Le[BMU2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z26 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1493676165
 8serialToParallel.vo
 FserialToParallel.vo
 L0 32
-Z3 OV;L;10.5b;63
+Z27 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1493676166.000000
+Z28 !s108 1493676166.000000
 !s107 serialToParallel.vo|
 !s90 -work|work|serialToParallel.vo|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+R18
+Z29 tCvgOpt 0
 nclock@recovery
 Eclockrecovery
-Z7 w1493677635
-Z8 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
-Z9 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
-Z10 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z11 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
-Z12 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z14 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z15 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
-Z16 dD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim
-Z17 8serialToParallel.vho
-Z18 FserialToParallel.vho
-l0
-L37
-VihoWMjOOWdWBF4R=EAQ_a3
-!s100 5ECnQbiETZ3:oUZmBGHDn2
-Z19 OV;C;10.5b;63
-32
-Z20 !s110 1493677636
-!i10b 1
-Z21 !s108 1493677636.000000
-Z22 !s90 -work|work|serialToParallel.vho|
-Z23 !s107 serialToParallel.vho|
-!i113 1
+Z30 w1494860237
+R2
+R3
+R4
 R5
-Z24 tExplicit 1 CvgOpt 0
-Astructure
+R6
+R7
 R8
 R9
 R10
 R11
 R12
+l0
+L37
+VihoWMjOOWdWBF4R=EAQ_a3
+!s100 5ECnQbiETZ3:oUZmBGHDn2
 R13
-R14
-R15
+32
+Z31 !s110 1494860238
+!i10b 1
+Z32 !s108 1494860238.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
 DEx4 work 13 clockrecovery 0 22 ihoWMjOOWdWBF4R=EAQ_a3
 l79
 L46
 V>Xzo:eWXAChU_AWN`Zz[Y1
 !s100 ZS8`ShC4C1^d3KYb9J>6A3
-R19
-32
-R20
-!i10b 1
-R21
-R22
-R23
-!i113 1
-R5
-R24
-Eclockrecovery_vhd_vec_tst
-Z25 w1493677634
 R13
-R14
+32
+R31
+!i10b 1
+R32
 R16
-Z26 8clockRecovery_simulation.vwf.vht
-Z27 FclockRecovery_simulation.vwf.vht
+R17
+!i113 1
+R18
+R19
+Eclockrecovery_vhd_vec_tst
+Z33 w1494860236
+R7
+R8
+R10
+Z34 8clockRecovery_simulation.vwf.vht
+Z35 FclockRecovery_simulation.vwf.vht
 l0
 L32
 V?n9DS4j]^:dQN=^HRHoNg0
 !s100 [nhGi=gGPOoaXR4i0f^zH2
-R19
-32
-R20
-!i10b 1
-R21
-Z28 !s90 -work|work|clockRecovery_simulation.vwf.vht|
-Z29 !s107 clockRecovery_simulation.vwf.vht|
-!i113 1
-R5
-R24
-Aclockrecovery_arch
 R13
-R14
-DEx4 work 25 clockrecovery_vhd_vec_tst 0 22 ?n9DS4j]^:dQN=^HRHoNg0
+32
+R31
+!i10b 1
+R32
+Z36 !s90 -work|work|clockRecovery_simulation.vwf.vht|
+Z37 !s107 clockRecovery_simulation.vwf.vht|
+!i113 1
+R18
+R19
+Aclockrecovery_arch
+R7
+R8
+Z38 DEx4 work 25 clockrecovery_vhd_vec_tst 0 22 ?n9DS4j]^:dQN=^HRHoNg0
 l49
 L34
-VXQ4@oIRGPKj90K]3YSjk91
-!s100 Tz:;I=`JK_^i664[M[5Qj1
-R19
-32
-R20
-!i10b 1
-R21
-R28
-R29
-!i113 1
-R5
-R24
-vclockRecovery_vlg_vec_tst
-R1
-!i10b 1
-!s100 ?h9mG0NiceSO]K8F]iDIa2
-I_kj>;>hAem:NA@;15SQbE1
-R2
-R0
-w1493676164
-8clockRecovery_simulation.vwf.vt
-FclockRecovery_simulation.vwf.vt
-L0 30
-R3
-r1
-!s85 0
-31
-R4
-!s107 clockRecovery_simulation.vwf.vt|
-!s90 -work|work|clockRecovery_simulation.vwf.vt|
-!i113 1
-R5
-R6
-nclock@recovery_vlg_vec_tst
-Eedgedetector
-Z30 w1493672646
-R8
-R9
-R10
-R11
-R12
+Z39 VoU=0]0I:>87jo_fiHzS4a3
+Z40 !s100 M_^H1GUMARoFY`L@OXSMH1
 R13
-R14
-R15
-R0
-R17
-R18
-l0
-L37
-V:H_[2>eWT14@6^45oPKfX0
-!s100 k5oWXnRSM^<IT2M?@Udea2
-R19
-32
-Z31 !s110 1493672647
-!i10b 1
-Z32 !s108 1493672647.000000
-R22
-R23
-!i113 1
-R5
-R24
-Astructure
-R8
-R9
-R10
-R11
-R12
-R13
-R14
-R15
-DEx4 work 12 edgedetector 0 22 :H_[2>eWT14@6^45oPKfX0
-l64
-L45
-VjfIczlk@_J5;L:hhn7cLi1
-!s100 5Tj>fe=P=NR0JjVoLThIk0
-R19
-32
-R31
-!i10b 1
-R32
-R22
-R23
-!i113 1
-R5
-R24
-Eedgedetector_vhd_vec_tst
-Z33 w1493672645
-R13
-R14
-R0
-Z34 8edgeDetector_simulation.vwf.vht
-Z35 FedgeDetector_simulation.vwf.vht
-l0
-L32
-VSlKD<3079<]?Vf>:fRRch0
-!s100 DDOoSD1b_UklkJIoU4Ydg1
-R19
-32
-R31
-!i10b 1
-R32
-Z36 !s90 -work|work|edgeDetector_simulation.vwf.vht|
-Z37 !s107 edgeDetector_simulation.vwf.vht|
-!i113 1
-R5
-R24
-Aedgedetector_arch
-R13
-R14
-DEx4 work 24 edgedetector_vhd_vec_tst 0 22 SlKD<3079<]?Vf>:fRRch0
-l47
-L34
-V=QIC3>Zm[ml1>hBFl1a?82
-!s100 lm>eb502A_hEOKgjSa7Li0
-R19
 32
 R31
 !i10b 1
@@ -230,95 +208,207 @@ R32
 R36
 R37
 !i113 1
+R18
+R19
+vclockRecovery_vlg_vec_tst
+R25
+!i10b 1
+!s100 ?h9mG0NiceSO]K8F]iDIa2
+I_kj>;>hAem:NA@;15SQbE1
+R26
+R0
+w1493676164
+8clockRecovery_simulation.vwf.vt
+FclockRecovery_simulation.vwf.vt
+L0 30
+R27
+r1
+!s85 0
+31
+R28
+!s107 clockRecovery_simulation.vwf.vt|
+!s90 -work|work|clockRecovery_simulation.vwf.vt|
+!i113 1
+R18
+R29
+nclock@recovery_vlg_vec_tst
+Eedgedetector
+Z41 w1493672646
+R2
+R3
+R4
 R5
-R24
-Eserialtoparallel
-Z38 w1493652245
+R6
+R7
 R8
 R9
-R10
+R0
 R11
 R12
+l0
+L37
+V:H_[2>eWT14@6^45oPKfX0
+!s100 k5oWXnRSM^<IT2M?@Udea2
 R13
-R14
-R15
-R0
+32
+Z42 !s110 1493672647
+!i10b 1
+Z43 !s108 1493672647.000000
+R16
 R17
+!i113 1
 R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 12 edgedetector 0 22 :H_[2>eWT14@6^45oPKfX0
+l64
+L45
+VjfIczlk@_J5;L:hhn7cLi1
+!s100 5Tj>fe=P=NR0JjVoLThIk0
+R13
+32
+R42
+!i10b 1
+R43
+R16
+R17
+!i113 1
+R18
+R19
+Eedgedetector_vhd_vec_tst
+Z44 w1493672645
+R7
+R8
+R0
+Z45 8edgeDetector_simulation.vwf.vht
+Z46 FedgeDetector_simulation.vwf.vht
+l0
+L32
+VSlKD<3079<]?Vf>:fRRch0
+!s100 DDOoSD1b_UklkJIoU4Ydg1
+R13
+32
+R42
+!i10b 1
+R43
+Z47 !s90 -work|work|edgeDetector_simulation.vwf.vht|
+Z48 !s107 edgeDetector_simulation.vwf.vht|
+!i113 1
+R18
+R19
+Aedgedetector_arch
+R7
+R8
+DEx4 work 24 edgedetector_vhd_vec_tst 0 22 SlKD<3079<]?Vf>:fRRch0
+l47
+L34
+V=QIC3>Zm[ml1>hBFl1a?82
+!s100 lm>eb502A_hEOKgjSa7Li0
+R13
+32
+R42
+!i10b 1
+R43
+R47
+R48
+!i113 1
+R18
+R19
+Eserialtoparallel
+Z49 w1493652245
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R0
+R11
+R12
 l0
 L37
 VMQ05^:X?_zJJ[YFMbM1=<1
 !s100 Q<oFc3h3_[]9GXBN0?@H;3
-R19
+R13
 32
-Z39 !s110 1493652246
+Z50 !s110 1493652246
 !i10b 1
-Z40 !s108 1493652246.000000
-R22
-R23
+Z51 !s108 1493652246.000000
+R16
+R17
 !i113 1
-R5
-R24
+R18
+R19
 Astructure
+R2
+R3
+R4
+R5
+R6
+R7
 R8
 R9
-R10
-R11
-R12
-R13
-R14
-R15
 DEx4 work 16 serialtoparallel 0 22 MQ05^:X?_zJJ[YFMbM1=<1
 l67
 L46
 Vzclek?E;;JOC@Sm4lY?c]3
 !s100 YY[oN6Ia08lefL]@WUaTJ2
-R19
-32
-R39
-!i10b 1
-R40
-R22
-R23
-!i113 1
-R5
-R24
-Eserialtoparallel_vhd_vec_tst
-Z41 w1493652244
 R13
-R14
+32
+R50
+!i10b 1
+R51
+R16
+R17
+!i113 1
+R18
+R19
+Eserialtoparallel_vhd_vec_tst
+Z52 w1493652244
+R7
+R8
 R0
-Z42 8Waveform3.vwf.vht
-Z43 FWaveform3.vwf.vht
+Z53 8Waveform3.vwf.vht
+Z54 FWaveform3.vwf.vht
 l0
 L32
 VT8cY=0QD18GnLf@4gM[FN2
 !s100 XKT>`?3dJo]z;0CWSgG2`2
-R19
-32
-R39
-!i10b 1
-R40
-Z44 !s90 -work|work|Waveform3.vwf.vht|
-Z45 !s107 Waveform3.vwf.vht|
-!i113 1
-R5
-R24
-Aserialtoparallel_arch
 R13
-R14
+32
+R50
+!i10b 1
+R51
+Z55 !s90 -work|work|Waveform3.vwf.vht|
+Z56 !s107 Waveform3.vwf.vht|
+!i113 1
+R18
+R19
+Aserialtoparallel_arch
+R7
+R8
 DEx4 work 28 serialtoparallel_vhd_vec_tst 0 22 T8cY=0QD18GnLf@4gM[FN2
 l49
 L34
 V2Rk@UEQzm6MPBoFAfJ2nB0
 !s100 Ol0b8egTA7NKd0B;<EI3h2
-R19
+R13
 32
-R39
+R50
 !i10b 1
-R40
-R44
-R45
+R51
+R55
+R56
 !i113 1
-R5
-R24
+R18
+R19

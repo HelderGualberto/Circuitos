@@ -8,29 +8,115 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/Orion/Downloads/source_aula12
-Eclockrecovery
-Z0 w1494797780
+Eclockdivider8
+Z0 w1494799275
 Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z5 dD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/modelsim
-Z6 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd
-Z7 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd
+Z6 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd
+Z7 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd
+l0
+L6
+VhfDON6:@F1HEon9AKoWio0
+!s100 dC0XEBg13=E`:ASXFTA9W1
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1495111941
+!i10b 1
+Z10 !s108 1495111941.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd|
+Z12 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 13 clockdivider8 0 22 hfDON6:@F1HEon9AKoWio0
+l19
+L14
+VLAe?58dNk9<b[JbmZ3B:U2
+!s100 lKE80>=84ZQ[TfF>cEE>72
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Eclockdivider8_tb
+Z15 w1495111816
+R1
+R2
+R3
+R4
+R5
+Z16 8D:\Documentos\Circuitos\Projeto Microprocessadores\serialToParallelConverter\clockDivider8_tb.vhd
+Z17 FD:\Documentos\Circuitos\Projeto Microprocessadores\serialToParallelConverter\clockDivider8_tb.vhd
+l0
+L7
+VcQEZ6G<T1G19`H7ef3ARA1
+!s100 ^3kichCTYU?[[M[6oURZ]1
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Documentos\Circuitos\Projeto Microprocessadores\serialToParallelConverter\clockDivider8_tb.vhd|
+Z19 !s107 D:\Documentos\Circuitos\Projeto Microprocessadores\serialToParallelConverter\clockDivider8_tb.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 16 clockdivider8_tb 0 22 cQEZ6G<T1G19`H7ef3ARA1
+l24
+L10
+V[[1KkU3dnlXiXWXP9ZAD?2
+!s100 DNek9B0=moKnaa=TIW_TI1
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Eclockrecovery
+Z20 w1494797780
+R1
+R2
+R3
+R4
+R5
+Z21 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd
+Z22 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd
 l0
 L8
 V]a]e7BkGa2kWNRKN@j[0?3
 !s100 4AJok`cdN<BT070TbCVSG0
-Z8 OV;C;10.5b;63
+R8
 32
-Z9 !s110 1494861668
+Z23 !s110 1494861668
 !i10b 1
-Z10 !s108 1494861668.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd|
-Z12 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd|
+Z24 !s108 1494861668.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd|
+Z26 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd|
 !i113 1
-Z13 o-work work -2002 -explicit
-Z14 tExplicit 1 CvgOpt 0
+R13
+R14
 Abehavior
 R1
 R2
@@ -43,43 +129,43 @@ V^H4Pbz;]U[jYkbj=8d=9=2
 !s100 VdAG`YEJVZ1YOhTZPlnSm0
 R8
 32
-R9
+R23
 !i10b 1
-R10
-R11
-R12
+R24
+R25
+R26
 !i113 1
 R13
 R14
 Eclockrecovery_tb
-Z15 w1494861666
-Z16 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z27 w1494861666
+Z28 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
-Z17 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z29 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R3
 R4
 R2
 R5
-Z18 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd
-Z19 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd
+Z30 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd
+Z31 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd
 l0
 L12
 V^n?oLNR]Jb5h9Nl4[ja?M0
 !s100 VNP2GUA5Y<AB:Cc>VVD<H1
 R8
 32
-R9
+R23
 !i10b 1
-R10
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd|
-Z21 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd|
+R24
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd|
+Z33 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd|
 !i113 1
 R13
 R14
 Aarq
-R16
+R28
 R1
-R17
+R29
 R3
 R4
 R2
@@ -90,32 +176,32 @@ VX2lPkhVzA^i7OWA_a3S^Z3
 !s100 GOCC?BjkG8nn1bgR^`^lb1
 R8
 32
-R9
+R23
 !i10b 1
-R10
-R20
-R21
+R24
+R32
+R33
 !i113 1
 R13
 R14
 Eedgedetector
-Z22 w1493672571
+Z34 w1493672571
 R3
 R4
 R5
-Z23 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd
-Z24 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd
+Z35 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd
+Z36 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd
 l0
 L25
 VQ=GD>l2PDm;zQekhYX5?d3
 !s100 Wm0><5D<:P]k1D0:B:YLZ1
 R8
 32
-R9
+R23
 !i10b 1
-R10
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd|
-Z26 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd|
+R24
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd|
+Z38 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd|
 !i113 1
 R13
 R14
@@ -129,25 +215,103 @@ Vo[lhOB8Y7iR2:^PmBNF6X3
 !s100 7cTMGLRh;R3J@VPSO8<]i1
 R8
 32
-R9
+R23
 !i10b 1
-R10
-R25
-R26
+R24
+R37
+R38
+!i113 1
+R13
+R14
+Epll
+Z39 w1494862776
+R3
+R4
+R5
+Z40 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll.vhd
+Z41 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll.vhd
+l0
+L43
+Vm4hO@7CV0L1W_?H2Nd;7C1
+!s100 zdBV`gR2I[0E?je5oaoe?2
+R8
+32
+Z42 !s110 1495113223
+!i10b 1
+Z43 !s108 1495113223.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll.vhd|
+Z45 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll.vhd|
+!i113 1
+R13
+R14
+Asyn
+R3
+R4
+Z46 DEx4 work 3 pll 0 22 m4hO@7CV0L1W_?H2Nd;7C1
+l130
+L53
+Z47 V81d>o;?^b0K7GlU0<CRL[1
+Z48 !s100 Hj6Sh?Z?UX>[SFiN7AV:C0
+R8
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 1
+R13
+R14
+Epll_tb
+Z49 w1495113198
+R3
+R4
+R5
+Z50 8D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll_tb.vhd
+Z51 FD:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll_tb.vhd
+l0
+L4
+V1K?29De7focKM7iYjV4SO3
+!s100 RAE5`Qhk]2:cS^2X8[hHS1
+R8
+32
+R42
+!i10b 1
+Z52 !s108 1495113222.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll_tb.vhd|
+Z54 !s107 D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll_tb.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 6 pll_tb 0 22 1K?29De7focKM7iYjV4SO3
+l24
+L8
+VC;`GE_;3]?1UmD=GjkdSR3
+!s100 kA`23AEf[B1RPiN8hgZkW3
+R8
+32
+R42
+!i10b 1
+R52
+R53
+R54
 !i113 1
 R13
 R14
 Etb_maq1
 w1494858505
-R16
+R28
 R2
 R1
 R4
 R3
-R17
+R29
 R5
-R18
-R19
+R30
+R31
 l0
 L11
 VB@OU0Ek^eK4AZj64Elje12
@@ -158,7 +322,7 @@ R8
 !i10b 1
 !s108 1494858751.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_tb.vhd|
-R21
+R33
 !i113 1
 R13
 R14

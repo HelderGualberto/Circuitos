@@ -15,6 +15,7 @@ END serialToParallel;
 
 ARCHITECTURE behavior OF serialToParallel IS 
 
+
 component fifo is
       port(
          data		: IN STD_LOGIC_VECTOR (0 DOWNTO 0);
@@ -28,6 +29,15 @@ component fifo is
       );
    end component;
 
+component pll is
+	PORT
+		(
+			inclk0 : IN STD_LOGIC  := '0';
+			c0	: OUT STD_LOGIC ;
+			locked : OUT STD_LOGIC 
+		);
+	end component;
+	
 component clockRecovery is
       port(
          clockPLL : IN STD_LOGIC;

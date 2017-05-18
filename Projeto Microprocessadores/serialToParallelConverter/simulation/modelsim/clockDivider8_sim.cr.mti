@@ -1,0 +1,23 @@
+{D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clockDivider8
+-- Compiling architecture behavior of clockDivider8
+
+} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8_tb.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:\Documentos\Circuitos\Projeto Microprocessadores\serialToParallelConverter\clockDivider8_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clockDivider8_tb
+-- Compiling architecture behavior of clockDivider8_tb
+** Warning: D:\Documentos\Circuitos\Projeto Microprocessadores\serialToParallelConverter\clockDivider8_tb.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:\Documentos\Circuitos\Projeto Microprocessadores\serialToParallelConverter\clockDivider8_tb.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}

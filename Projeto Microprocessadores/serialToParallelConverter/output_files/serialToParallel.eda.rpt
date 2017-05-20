@@ -1,5 +1,5 @@
 EDA Netlist Writer report for serialToParallel
-Mon May 15 11:57:17 2017
+Sat May 20 10:59:55 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon May 15 11:57:17 2017 ;
+; EDA Netlist Writer Status ; Successful - Sat May 20 10:59:55 2017 ;
 ; Revision Name             ; serialToParallel                      ;
-; Top-level Entity Name     ; clockRecovery                         ;
+; Top-level Entity Name     ; serialToParallel                      ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -95,14 +95,16 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon May 15 11:57:16 2017
+    Info: Processing started: Sat May 20 10:59:54 2017
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/" serialToParallel -c serialToParallel
 Info (119006): Selected device EP4CE115F29C7 for design "serialToParallel"
+Info (15535): Implemented PLL "pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/db/pll_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 16, clock division of 25, and phase shift of 0 degrees (0 ps) for pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] port File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/db/pll_altpll.v Line: 46
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file serialToParallel.vho in folder "D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 501 megabytes
-    Info: Processing ended: Mon May 15 11:57:17 2017
+    Info: Peak virtual memory: 506 megabytes
+    Info: Processing ended: Sat May 20 10:59:55 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

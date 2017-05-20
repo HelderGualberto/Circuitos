@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon May 15 10:39:18 2017
+Analysis & Synthesis Status : Successful - Sat May 20 10:55:56 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : serialToParallel
-Top-level Entity Name : clockRecovery
+Top-level Entity Name : serialToParallel
 Family : Cyclone IV E
-Total logic elements : 8
-    Total combinational functions : 7
-    Dedicated logic registers : 6
-Total registers : 6
-Total pins : 4
+Total logic elements : 71
+    Total combinational functions : 41
+    Dedicated logic registers : 54
+Total registers : 54
+Total pins : 10
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 64
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1

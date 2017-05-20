@@ -14,7 +14,7 @@ END clockDivider8;
 ARCHITECTURE behavior of clockDivider8 IS
 
 SIGNAL clk : STD_LOGIC := '0';
-SIGNAL clkC : STD_LOGIC_VECTOR (0 to 2) := "000";
+SIGNAL clkC : STD_LOGIC_VECTOR (0 to 1) := "00";
 
 begin
 
@@ -22,7 +22,7 @@ begin
    begin
    if rising_edge(clockIn) then
       clkC <= clkC + 1;
-      if clkC = "000" then
+      if clkC = "00" then
          clk <= (not clk);
       end if;	
    end if;

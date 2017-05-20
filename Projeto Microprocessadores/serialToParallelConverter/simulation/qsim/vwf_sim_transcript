@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off serialToParallel -c serialToParallel --vector_source="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_simulation.vwf" --testbench_file="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/clockRecovery_simulation.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off serialToParallel -c serialToParallel --vector_source="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/Waveform.vwf" --testbench_file="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,9 +26,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon May 15 11:57:15 2017
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off serialToParallel -c serialToParallel --vector_source="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_simulation.vwf" --testbench_file="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/clockRecovery_simulation.vwf.vht"
+    Info: Processing started: Sat May 20 10:59:53 2017
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off serialToParallel -c serialToParallel --vector_source="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/Waveform.vwf" --testbench_file="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/Waveform.vwf.vht"
 Info (119006): Selected device EP4CE115F29C7 for design "serialToParallel"
+Info (15535): Implemented PLL "pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/db/pll_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 16, clock division of 25, and phase shift of 0 degrees (0 ps) for pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] port File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/db/pll_altpll.v Line: 46
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -54,14 +56,16 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon May 15 11:57:16 2017
+    Info: Processing started: Sat May 20 10:59:54 2017
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/" serialToParallel -c serialToParallel
 Info (119006): Selected device EP4CE115F29C7 for design "serialToParallel"
+Info (15535): Implemented PLL "pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/db/pll_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 16, clock division of 25, and phase shift of 0 degrees (0 ps) for pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] port File: D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/db/pll_altpll.v Line: 46
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file serialToParallel.vho in folder "D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 501 megabytes
-    Info: Processing ended: Mon May 15 11:57:17 2017
+    Info: Peak virtual memory: 506 megabytes
+    Info: Processing ended: Sat May 20 10:59:55 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -83,70 +87,91 @@ Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
 
 
 # do serialToParallel.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:57:18 on May 15,2017
+# Start time: 10:59:57 on May 20,2017
 # vcom -work work serialToParallel.vho 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
+
 # -- Loading package cycloneive_atom_pack
 # -- Loading package cycloneive_components
-# -- Compiling entity clockRecovery
-# -- Compiling architecture structure of clockRecovery
-# End time: 11:57:18 on May 15,2017, Elapsed time: 0:00:00
+# -- Compiling entity serialToParallel
+# -- Compiling architecture structure of serialToParallel
+
+# End time: 10:59:57 on May 20,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:57:18 on May 15,2017
-# vcom -work work clockRecovery_simulation.vwf.vht 
+# Start time: 10:59:57 on May 20,2017
+# vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity clockRecovery_vhd_vec_tst
-# -- Compiling architecture clockRecovery_arch of clockRecovery_vhd_vec_tst
-# End time: 11:57:18 on May 15,2017, Elapsed time: 0:00:00
+# -- Compiling entity serialToParallel_vhd_vec_tst
+# -- Compiling architecture serialToParallel_arch of serialToParallel_vhd_vec_tst
+
+# End time: 10:59:58 on May 20,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.clockRecovery_vhd_vec_tst 
-# Start time: 11:57:18 on May 15,2017
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.serialToParallel_vhd_vec_tst 
+# Start time: 10:59:59 on May 20,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.clockrecovery_vhd_vec_tst(clockrecovery_arch)
+# Loading work.serialtoparallel_vhd_vec_tst(serialtoparallel_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading altera.dffeas_pack
 # Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.clockrecovery(structure)
+# Loading work.serialtoparallel(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_pllpack(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading cycloneive.cycloneive_pll(vital_pll)
+# Loading cycloneive.cycloneive_mn_cntr(behave)
+# Loading cycloneive.cycloneive_scale_cntr(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
+# Loading cycloneive.cycloneive_ram_block(block_arch)
+# Loading cycloneive.cycloneive_ram_register(reg_arch)
+# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
+# ** Warning: Design size of 21919 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
 # after#33
 
-# End time: 11:57:19 on May 15,2017, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# ** Note: Cycloneive PLL locked to incoming clock
+#    Time: 410 ns  Iteration: 3  Instance: /serialtoparallel_vhd_vec_tst/i1/\inst_Pll|altpll_component|auto_generated|pll1\
+# ** Note: Cycloneive PLL lost lock due to loss of input clock or the input clock is not detected within the allowed time frame.
+#    Time: 10110 ns  Iteration: 3  Instance: /serialtoparallel_vhd_vec_tst/i1/\inst_Pll|altpll_component|auto_generated|pll1\
+
+# End time: 11:00:01 on May 20,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_simulation.vwf...
+Reading D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/Waveform.vwf...
 
 Reading D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/serialToParallel.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/serialToParallel_20170515115719.sim.vwf
+Writing the resulting VWF to D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/serialToParallel_20170520110002.sim.vwf
 
 Finished VCD to VWF conversion.
 

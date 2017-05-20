@@ -1,0 +1,73 @@
+
+-- Libraries
+LIBRARY ieee;
+use IEEE.STD_LOGIC_ARITH.ALL;
+USE ieee.numeric_std.ALL;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+USE ieee.std_logic_textio.ALL;
+USE std.textio.ALL;
+
+ENTITY serialToParallel_tb IS
+END serialToParallel_tb;
+
+ARCHITECTURE behavior of serialToParallel_tb IS
+
+SIGNAL dataSerial : STD_LOGIC := '0';
+SIGNAL clock : STD_LOGIC := '0';
+SIGNAL dataParallel : STD_LOGIC_VECTOR (7 downto 0);
+SIGNAL dataClock : STD_LOGIC := '0';
+
+SIGNAL bitvector : STD_LOGIC_VECTOR (31 downto 0) := "01010000101101010000001111110101";
+
+COMPONENT serialToParallel
+     PORT
+   (
+      dataSerial :  IN  STD_LOGIC;
+		dataParallel : OUT STD_LOGIC_VECTOR (7 downto 0);
+		clock : IN STD_LOGIC
+		
+   );        
+end component; 
+
+begin
+
+inst_serialToParallel : serialToParallel PORT MAP
+(
+		dataSerial => dataSerial,
+		dataParallel => dataParallel,
+		clock => clock
+);
+
+ClockGenProc:
+ PROCESS
+  BEGIN
+   clock <= '0';
+   WAIT FOR 10ns;
+   clock <= '1';
+   WAIT FOR 10ns;
+ END PROCESS;
+ 
+ DataClockGEN:
+ PROCESS
+  BEGIN
+   dataClock <= '0';
+   WAIT FOR 62.5ns;
+   dataClock <= '1';
+   WAIT FOR 62.5ns;
+ END PROCESS;
+ 
+ 
+BitGenProc:
+ PROCESS
+  BEGIN
+    for i in 0 to bitvector'length-1 loop
+      dataSerial <= bitvector(i);
+      wait until rising_edge(dataClock); 
+    end loop;
+    wait;    
+ END PROCESS;
+
+
+
+END behavior;

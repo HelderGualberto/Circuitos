@@ -1,7 +1,7 @@
 # do serialToParallel.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:57:18 on May 15,2017
+# Start time: 10:59:57 on May 20,2017
 # vcom -work work serialToParallel.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -12,38 +12,52 @@
 # -- Loading package altera_primitives_components
 # -- Loading package cycloneive_atom_pack
 # -- Loading package cycloneive_components
-# -- Compiling entity clockRecovery
-# -- Compiling architecture structure of clockRecovery
-# End time: 11:57:18 on May 15,2017, Elapsed time: 0:00:00
+# -- Compiling entity serialToParallel
+# -- Compiling architecture structure of serialToParallel
+# End time: 10:59:57 on May 20,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:57:18 on May 15,2017
-# vcom -work work clockRecovery_simulation.vwf.vht 
+# Start time: 10:59:57 on May 20,2017
+# vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity clockRecovery_vhd_vec_tst
-# -- Compiling architecture clockRecovery_arch of clockRecovery_vhd_vec_tst
-# End time: 11:57:18 on May 15,2017, Elapsed time: 0:00:00
+# -- Compiling entity serialToParallel_vhd_vec_tst
+# -- Compiling architecture serialToParallel_arch of serialToParallel_vhd_vec_tst
+# End time: 10:59:58 on May 20,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.clockRecovery_vhd_vec_tst 
-# Start time: 11:57:18 on May 15,2017
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.serialToParallel_vhd_vec_tst 
+# Start time: 10:59:59 on May 20,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.clockrecovery_vhd_vec_tst(clockrecovery_arch)
+# Loading work.serialtoparallel_vhd_vec_tst(serialtoparallel_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading altera.dffeas_pack
 # Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.clockrecovery(structure)
+# Loading work.serialtoparallel(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_pllpack(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading cycloneive.cycloneive_pll(vital_pll)
+# Loading cycloneive.cycloneive_mn_cntr(behave)
+# Loading cycloneive.cycloneive_scale_cntr(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
+# Loading cycloneive.cycloneive_ram_block(block_arch)
+# Loading cycloneive.cycloneive_ram_register(reg_arch)
+# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
+# ** Warning: Design size of 21919 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
 # after#33
-# End time: 11:57:19 on May 15,2017, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# ** Note: Cycloneive PLL locked to incoming clock
+#    Time: 410 ns  Iteration: 3  Instance: /serialtoparallel_vhd_vec_tst/i1/\inst_Pll|altpll_component|auto_generated|pll1\
+# ** Note: Cycloneive PLL lost lock due to loss of input clock or the input clock is not detected within the allowed time frame.
+#    Time: 10110 ns  Iteration: 3  Instance: /serialtoparallel_vhd_vec_tst/i1/\inst_Pll|altpll_component|auto_generated|pll1\
+# End time: 11:00:01 on May 20,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1

@@ -1,5 +1,5 @@
 Flow report for serialToParallel
-Mon May 15 11:57:17 2017
+Sat May 20 10:59:55 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon May 15 11:57:17 2017       ;
+; Flow Status                        ; Successful - Sat May 20 10:59:55 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; serialToParallel                            ;
-; Top-level Entity Name              ; clockRecovery                               ;
+; Top-level Entity Name              ; serialToParallel                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 8                                           ;
-;     Total combinational functions  ; 7                                           ;
-;     Dedicated logic registers      ; 6                                           ;
-; Total registers                    ; 6                                           ;
-; Total pins                         ; 4                                           ;
+; Total logic elements               ; 71                                          ;
+;     Total combinational functions  ; 41                                          ;
+;     Dedicated logic registers      ; 54                                          ;
+; Total registers                    ; 54                                          ;
+; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
+; Total memory bits                  ; 64                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total PLLs                         ; 1                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,33 +65,34 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/15/2017 10:38:50 ;
+; Start date & time ; 05/20/2017 10:55:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; serialToParallel    ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                 ;
-+-------------------------------------+----------------------------------------+------------------+---------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name   ; Section Id     ;
-+-------------------------------------+----------------------------------------+------------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 172269393249805.149485552805492        ; --               ; --            ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --               ; --            ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>           ; --            ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --               ; --            ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --               ; --            ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --               ; --            ; --             ;
-; MISC_FILE                           ; fifo.cmp                               ; --               ; --            ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --               ; --            ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; clockRecovery ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; clockRecovery ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; clockRecovery ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --               ; --            ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --               ; --            ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --            ; --             ;
-; TOP_LEVEL_ENTITY                    ; clockRecovery                          ; serialToParallel ; --            ; --             ;
-+-------------------------------------+----------------------------------------+------------------+---------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 172269393249805.149528853706024        ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; fifo.cmp                               ; --            ; --          ; --             ;
+; MISC_FILE                           ; pll_inst.vhd                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; pll.cmp                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; pll.ppf                                ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -99,14 +100,10 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 644 MB              ; 00:00:35                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 498 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 501 MB              ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 664 MB              ; 00:00:36                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 498 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 501 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 498 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 501 MB              ; 00:00:01                           ;
-; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:41                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 506 MB              ; 00:00:01                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,10 +115,6 @@ agreement for further details.
 ; Analysis & Synthesis ; Orion-PC         ; Windows 7 ; 6.1        ; x86_64         ;
 ; EDA Netlist Writer   ; Orion-PC         ; Windows 7 ; 6.1        ; x86_64         ;
 ; EDA Netlist Writer   ; Orion-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer   ; Orion-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer   ; Orion-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer   ; Orion-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer   ; Orion-PC         ; Windows 7 ; 6.1        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -129,11 +122,7 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off serialToParallel -c serialToParallel
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off serialToParallel -c serialToParallel --vector_source="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_simulation.vwf" --testbench_file="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/clockRecovery_simulation.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/" serialToParallel -c serialToParallel
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off serialToParallel -c serialToParallel --vector_source="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_simulation.vwf" --testbench_file="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/clockRecovery_simulation.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/" serialToParallel -c serialToParallel
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off serialToParallel -c serialToParallel --vector_source="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery_simulation.vwf" --testbench_file="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/clockRecovery_simulation.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off serialToParallel -c serialToParallel --vector_source="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/Waveform.vwf" --testbench_file="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/Waveform.vwf.vht"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/simulation/qsim/" serialToParallel -c serialToParallel
 
 

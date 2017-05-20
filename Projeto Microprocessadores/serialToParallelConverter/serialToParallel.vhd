@@ -7,14 +7,24 @@ LIBRARY work;
 ENTITY serialToParallel IS 
 	PORT
 	(
-		dataIn :  IN  STD_LOGIC;
-		dataOut : OUT STD_LOGIC_VECTOR (0 to 7)
+		dataSerial :  IN  STD_LOGIC;
+		dataParallel : OUT STD_LOGIC_VECTOR (7 downto 0);
+		clock : IN STD_LOGIC
 	);
 END serialToParallel;
 
 
 ARCHITECTURE behavior OF serialToParallel IS 
 
+SIGNAL syncData : STD_LOGIC;
+SIGNAL syncClock : STD_LOGIC;
+SIGNAL clockPLL : STD_LOGIC;
+SIGNAL locked : STD_LOGIC;
+SIGNAL readClock : STD_LOGIC;
+SIGNAL rempty : STD_LOGIC := '0';
+SIGNAL wfull : STD_LOGIC := '0';
+SIGNAL notempty : STD_LOGIC := '1';
+SIGNAL notfull : STD_LOGIC := '1';
 
 component fifo is
       port(
@@ -32,7 +42,7 @@ component fifo is
 component pll is
 	PORT
 		(
-			inclk0 : IN STD_LOGIC  := '0';
+			inclk0 : IN STD_LOGIC := '0';
 			c0	: OUT STD_LOGIC ;
 			locked : OUT STD_LOGIC 
 		);
@@ -55,5 +65,27 @@ component clockDivider8 is
    end component;
 	
 begin
+
+inst_Pll : pll PORT
+	map(clock, clockPll, locked);
 	
+inst_clockDivider : clockDivider8 PORT
+	map(syncClock, readClock);
+
+inst_clockRecovery : clockRecovery PORT
+	map( clockPLL, dataSerial, syncData, syncClock);
+	
+inst_fifo : fifo PORT map(
+	data(0) => syncData, 
+	rdclk => readClock,
+	rdreq => notempty,
+	wrclk => syncClock,
+	wrreq => notfull,
+	q => dataParallel,
+	rdempty => rempty,
+	wrfull => wfull);
+
+notfull <= not wfull;
+notempty <= not rempty;
+
 END behavior;

@@ -1,4 +1,102 @@
-|clockRecovery
+|serialToParallel
+dataSerial => clockRecovery:inst_clockRecovery.dataIn
+dataParallel[0] <= fifo:inst_fifo.q[0]
+dataParallel[1] <= fifo:inst_fifo.q[1]
+dataParallel[2] <= fifo:inst_fifo.q[2]
+dataParallel[3] <= fifo:inst_fifo.q[3]
+dataParallel[4] <= fifo:inst_fifo.q[4]
+dataParallel[5] <= fifo:inst_fifo.q[5]
+dataParallel[6] <= fifo:inst_fifo.q[6]
+dataParallel[7] <= fifo:inst_fifo.q[7]
+clock => pll:inst_Pll.inclk0
+
+
+|serialToParallel|pll:inst_Pll
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+locked <= altpll:altpll_component.locked
+
+
+|serialToParallel|pll:inst_Pll|altpll:altpll_component
+inclk[0] => pll_altpll:auto_generated.inclk[0]
+inclk[1] => pll_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= pll_altpll:auto_generated.locked
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|serialToParallel|pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+locked <= pll1.LOCKED
+
+
+|serialToParallel|clockDivider8:inst_clockDivider
+clockIn => clk.CLK
+clockIn => clkC[2].CLK
+clockIn => clkC[1].CLK
+clockIn => clkC[0].CLK
+clockOut <= clk.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialToParallel|clockRecovery:inst_clockRecovery
 clockPLL => edgeDetector:edge1.dataClock
 clockPLL => clkOut.CLK
 clockPLL => clockOutCounter[1].CLK
@@ -8,14 +106,262 @@ clockPLL => counter[1].CLK
 clockPLL => counter[0].CLK
 dataIn => syncData.DATAB
 dataIn => edgeDetector:edge1.dataSignal
-syncData << syncData~reg0.DB_MAX_OUTPUT_PORT_TYPE
-syncClock << clkOut.DB_MAX_OUTPUT_PORT_TYPE
+syncData <= syncData~reg0.DB_MAX_OUTPUT_PORT_TYPE
+syncClock <= clkOut.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|clockRecovery|edgeDetector:edge1
+|serialToParallel|clockRecovery:inst_clockRecovery|edgeDetector:edge1
 dataClock => temp.CLK
 dataSignal => EDGES.IN1
 dataSignal => temp.DATAIN
 EDGES <= EDGES.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialToParallel|fifo:inst_fifo
+data[0] => dcfifo_mixed_widths:dcfifo_mixed_widths_component.data[0]
+rdclk => dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdclk
+rdreq => dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdreq
+wrclk => dcfifo_mixed_widths:dcfifo_mixed_widths_component.wrclk
+wrreq => dcfifo_mixed_widths:dcfifo_mixed_widths_component.wrreq
+q[0] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q[0]
+q[1] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q[1]
+q[2] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q[2]
+q[3] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q[3]
+q[4] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q[4]
+q[5] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q[5]
+q[6] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q[6]
+q[7] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q[7]
+rdempty <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdempty
+wrfull <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.wrfull
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component
+aclr => ~NO_FANOUT~
+data[0] => dcfifo_hgf1:auto_generated.data[0]
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+q[0] <= dcfifo_hgf1:auto_generated.q[0]
+q[1] <= dcfifo_hgf1:auto_generated.q[1]
+q[2] <= dcfifo_hgf1:auto_generated.q[2]
+q[3] <= dcfifo_hgf1:auto_generated.q[3]
+q[4] <= dcfifo_hgf1:auto_generated.q[4]
+q[5] <= dcfifo_hgf1:auto_generated.q[5]
+q[6] <= dcfifo_hgf1:auto_generated.q[6]
+q[7] <= dcfifo_hgf1:auto_generated.q[7]
+rdclk => dcfifo_hgf1:auto_generated.rdclk
+rdempty <= dcfifo_hgf1:auto_generated.rdempty
+rdfull <= <GND>
+rdreq => dcfifo_hgf1:auto_generated.rdreq
+rdusedw[0] <= <GND>
+rdusedw[1] <= <GND>
+rdusedw[2] <= <GND>
+wrclk => dcfifo_hgf1:auto_generated.wrclk
+wrempty <= <GND>
+wrfull <= dcfifo_hgf1:auto_generated.wrfull
+wrreq => dcfifo_hgf1:auto_generated.wrreq
+wrusedw[0] <= <GND>
+wrusedw[1] <= <GND>
+wrusedw[2] <= <GND>
+wrusedw[3] <= <GND>
+wrusedw[4] <= <GND>
+wrusedw[5] <= <GND>
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated
+data[0] => altsyncram_ss01:fifo_ram.data_a[0]
+q[0] <= altsyncram_ss01:fifo_ram.q_b[0]
+q[1] <= altsyncram_ss01:fifo_ram.q_b[1]
+q[2] <= altsyncram_ss01:fifo_ram.q_b[2]
+q[3] <= altsyncram_ss01:fifo_ram.q_b[3]
+q[4] <= altsyncram_ss01:fifo_ram.q_b[4]
+q[5] <= altsyncram_ss01:fifo_ram.q_b[5]
+q[6] <= altsyncram_ss01:fifo_ram.q_b[6]
+q[7] <= altsyncram_ss01:fifo_ram.q_b[7]
+rdclk => a_graycounter_mn6:rdptr_g1p.clock
+rdclk => altsyncram_ss01:fifo_ram.clock1
+rdclk => alt_synch_pipe_c9l:rs_dgwp.clock
+rdclk => rdptr_g[3].CLK
+rdclk => rdptr_g[2].CLK
+rdclk => rdptr_g[1].CLK
+rdclk => rdptr_g[0].CLK
+rdempty <= int_rdempty.DB_MAX_OUTPUT_PORT_TYPE
+rdreq => valid_rdreq.IN0
+wrclk => a_graycounter_h5c:wrptr_g1p.clock
+wrclk => altsyncram_ss01:fifo_ram.clock0
+wrclk => alt_synch_pipe_d9l:ws_dgrp.clock
+wrclk => cntr_qld:cntr_b.clock
+wrclk => delayed_wrptr_g[3].CLK
+wrclk => delayed_wrptr_g[2].CLK
+wrclk => delayed_wrptr_g[1].CLK
+wrclk => delayed_wrptr_g[0].CLK
+wrclk => wrptr_g[6].CLK
+wrclk => wrptr_g[5].CLK
+wrclk => wrptr_g[4].CLK
+wrclk => wrptr_g[3].CLK
+wrclk => wrptr_g[2].CLK
+wrclk => wrptr_g[1].CLK
+wrclk => wrptr_g[0].CLK
+wrfull <= int_wrfull.DB_MAX_OUTPUT_PORT_TYPE
+wrreq => valid_wrreq.IN0
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|a_graycounter_mn6:rdptr_g1p
+clock => counter5a0.CLK
+clock => counter5a1.CLK
+clock => counter5a2.CLK
+clock => counter5a3.CLK
+clock => parity6.CLK
+cnt_en => _.IN0
+cnt_en => _.IN0
+cnt_en => _.IN0
+cnt_en => _.IN0
+cnt_en => cntr_cout[0].IN0
+cnt_en => parity_cout.IN1
+q[0] <= counter5a0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter5a1.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= counter5a2.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= counter5a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|a_graycounter_h5c:wrptr_g1p
+clock => counter8a[3].CLK
+clock => counter8a[2].CLK
+clock => counter8a[1].CLK
+clock => counter8a[0].CLK
+clock => parity7.CLK
+cnt_en => _.IN0
+cnt_en => _.IN0
+cnt_en => _.IN0
+cnt_en => _.IN0
+cnt_en => cntr_cout[0].IN0
+cnt_en => parity_cout.IN1
+q[0] <= counter8a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter8a[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= counter8a[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= counter8a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|altsyncram_ss01:fifo_ram
+address_a[0] => ram_block9a0.PORTAADDR
+address_a[1] => ram_block9a0.PORTAADDR1
+address_a[2] => ram_block9a0.PORTAADDR2
+address_a[3] => ram_block9a0.PORTAADDR3
+address_a[4] => ram_block9a0.PORTAADDR4
+address_a[5] => ram_block9a0.PORTAADDR5
+address_b[0] => ram_block9a0.PORTBADDR
+address_b[1] => ram_block9a0.PORTBADDR1
+address_b[2] => ram_block9a0.PORTBADDR2
+addressstall_b => ram_block9a0.PORTBADDRSTALL
+clock0 => ram_block9a0.CLK0
+clock1 => ram_block9a0.CLK1
+clocken1 => ram_block9a0.ENA1
+data_a[0] => ram_block9a0.PORTADATAIN
+q_b[0] <= ram_block9a0.PORTBDATAOUT
+q_b[1] <= ram_block9a0.PORTBDATAOUT1
+q_b[2] <= ram_block9a0.PORTBDATAOUT2
+q_b[3] <= ram_block9a0.PORTBDATAOUT3
+q_b[4] <= ram_block9a0.PORTBDATAOUT4
+q_b[5] <= ram_block9a0.PORTBDATAOUT5
+q_b[6] <= ram_block9a0.PORTBDATAOUT6
+q_b[7] <= ram_block9a0.PORTBDATAOUT7
+wren_a => ram_block9a0.PORTAWE
+wren_a => ram_block9a0.ENA0
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_c9l:rs_dgwp
+clock => dffpipe_tu8:dffpipe10.clock
+d[0] => dffpipe_tu8:dffpipe10.d[0]
+d[1] => dffpipe_tu8:dffpipe10.d[1]
+d[2] => dffpipe_tu8:dffpipe10.d[2]
+d[3] => dffpipe_tu8:dffpipe10.d[3]
+q[0] <= dffpipe_tu8:dffpipe10.q[0]
+q[1] <= dffpipe_tu8:dffpipe10.q[1]
+q[2] <= dffpipe_tu8:dffpipe10.q[2]
+q[3] <= dffpipe_tu8:dffpipe10.q[3]
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_c9l:rs_dgwp|dffpipe_tu8:dffpipe10
+clock => dffe11a[3].CLK
+clock => dffe11a[2].CLK
+clock => dffe11a[1].CLK
+clock => dffe11a[0].CLK
+clock => dffe12a[3].CLK
+clock => dffe12a[2].CLK
+clock => dffe12a[1].CLK
+clock => dffe12a[0].CLK
+d[0] => dffe11a[0].IN0
+d[1] => dffe11a[1].IN0
+d[2] => dffe11a[2].IN0
+d[3] => dffe11a[3].IN0
+q[0] <= dffe12a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffe12a[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffe12a[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffe12a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_d9l:ws_dgrp
+clock => dffpipe_uu8:dffpipe13.clock
+d[0] => dffpipe_uu8:dffpipe13.d[0]
+d[1] => dffpipe_uu8:dffpipe13.d[1]
+d[2] => dffpipe_uu8:dffpipe13.d[2]
+d[3] => dffpipe_uu8:dffpipe13.d[3]
+q[0] <= dffpipe_uu8:dffpipe13.q[0]
+q[1] <= dffpipe_uu8:dffpipe13.q[1]
+q[2] <= dffpipe_uu8:dffpipe13.q[2]
+q[3] <= dffpipe_uu8:dffpipe13.q[3]
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_d9l:ws_dgrp|dffpipe_uu8:dffpipe13
+clock => dffe14a[3].CLK
+clock => dffe14a[2].CLK
+clock => dffe14a[1].CLK
+clock => dffe14a[0].CLK
+clock => dffe15a[3].CLK
+clock => dffe15a[2].CLK
+clock => dffe15a[1].CLK
+clock => dffe15a[0].CLK
+d[0] => dffe14a[0].IN0
+d[1] => dffe14a[1].IN0
+d[2] => dffe14a[2].IN0
+d[3] => dffe14a[3].IN0
+q[0] <= dffe15a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffe15a[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffe15a[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffe15a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cmpr_a66:rdempty_eq_comp
+aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+dataa[3] => data_wire[1].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+datab[3] => data_wire[1].IN1
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cmpr_a66:wrfull_eq_comp
+aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+dataa[3] => data_wire[1].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+datab[3] => data_wire[1].IN1
+
+
+|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cntr_qld:cntr_b
+clock => counter_reg_bit0.CLK
+clock => counter_reg_bit1.CLK
+clock => counter_reg_bit2.CLK
+cnt_en => _.IN1
+cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= counter_reg_bit0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter_reg_bit1.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= counter_reg_bit2.DB_MAX_OUTPUT_PORT_TYPE
 
 

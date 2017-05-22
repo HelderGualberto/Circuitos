@@ -1,22 +1,4 @@
-{D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity clockDivider8
--- Compiling architecture behavior of clockDivider8
-
-} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity edgeDetector
--- Compiling architecture behavior of edgeDetector
-
-} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd}
+{D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockRecovery.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -26,13 +8,31 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity clockRecovery
 -- Compiling architecture behavior of clockRecovery
 
-} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll.vhd}
+} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/edgeDetector.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity pll
--- Compiling architecture SYN of pll
+-- Compiling entity edgeDetector
+-- Compiling architecture behavior of edgeDetector
+
+} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/clockDivider8.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clockDivider8
+-- Compiling architecture behavior of clockDivider8
+
+} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/serialToParallel.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/serialToParallel.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity serialToParallel
+-- Compiling architecture behavior of serialToParallel
 
 } {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/fifo.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/fifo.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -42,13 +42,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity fifo
 -- Compiling architecture SYN of fifo
 
-} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/serialToParallel.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/serialToParallel.vhd}
+} {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/pll.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity serialToParallel
--- Compiling architecture behavior of serialToParallel
+-- Compiling entity pll
+-- Compiling architecture SYN of pll
 
 } {} {}} {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/serialToParallel_tb.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Documentos/Circuitos/Projeto Microprocessadores/serialToParallelConverter/serialToParallel_tb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

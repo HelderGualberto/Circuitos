@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : -3.529
+TNS   : -35.655
+
+Type  : Slow 1200mV 85C Model Setup 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : -2.212
+TNS   : -34.007
+
+Type  : Slow 1200mV 85C Model Setup 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.545
+TNS   : -0.545
+
+Type  : Slow 1200mV 85C Model Hold 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.155
+TNS   : -0.155
+
+Type  : Slow 1200mV 85C Model Hold 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 28.767
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.005
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : -2.693
+TNS   : -46.629
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : -2.693
+TNS   : -46.082
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK3_50'
+Slack : 9.818
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 15.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : -3.543
+TNS   : -30.697
+
+Type  : Slow 1200mV 0C Model Setup 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : -1.904
+TNS   : -28.819
+
+Type  : Slow 1200mV 0C Model Setup 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.355
+TNS   : -0.355
+
+Type  : Slow 1200mV 0C Model Hold 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.263
+TNS   : -0.263
+
+Type  : Slow 1200mV 0C Model Hold 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 28.981
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.817
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : -2.649
+TNS   : -46.497
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : -2.649
+TNS   : -45.686
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK3_50'
+Slack : 9.803
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 15.329
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : -1.685
+TNS   : -7.656
+
+Type  : Fast 1200mV 0C Model Setup 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : -0.348
+TNS   : -5.302
+
+Type  : Fast 1200mV 0C Model Setup 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.323
+TNS   : -0.323
+
+Type  : Fast 1200mV 0C Model Hold 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.013
+TNS   : -0.013
+
+Type  : Fast 1200mV 0C Model Hold 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 30.007
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.928
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|clkOut'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider|clk'
+Slack : -1.000
+TNS   : -26.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK3_50'
+Slack : 9.405
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst_serialToParallel|inst_Pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 15.399
+TNS   : 0.000
+
+------------------------------------------------------------

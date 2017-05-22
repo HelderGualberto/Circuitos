@@ -4,39 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "dataParallel[0]",
+					"name" : "LEDR[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dataParallel[1]",
+					"name" : "LEDR[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dataParallel[2]",
+					"name" : "LEDR[2]",
 					"strict" : false
 				},
 				{
-					"name" : "dataParallel[3]",
+					"name" : "LEDR[3]",
 					"strict" : false
 				},
 				{
-					"name" : "dataParallel[4]",
+					"name" : "LEDR[4]",
 					"strict" : false
 				},
 				{
-					"name" : "dataParallel[5]",
+					"name" : "LEDR[5]",
 					"strict" : false
 				},
 				{
-					"name" : "dataParallel[6]",
+					"name" : "LEDR[6]",
 					"strict" : false
 				},
 				{
-					"name" : "dataParallel[7]",
+					"name" : "LEDR[7]",
 					"strict" : false
 				},
 				{
-					"name" : "dataSerial",
+					"name" : "SW[0]",
 					"strict" : false
 				}
 			]

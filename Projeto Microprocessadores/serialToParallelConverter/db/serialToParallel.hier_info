@@ -1,4 +1,17 @@
-|serialToParallel
+|pinPlanner
+SW[0] => serialToParallel:inst_serialToParallel.dataSerial
+LEDR[0] <= serialToParallel:inst_serialToParallel.dataParallel[0]
+LEDR[1] <= serialToParallel:inst_serialToParallel.dataParallel[1]
+LEDR[2] <= serialToParallel:inst_serialToParallel.dataParallel[2]
+LEDR[3] <= serialToParallel:inst_serialToParallel.dataParallel[3]
+LEDR[4] <= serialToParallel:inst_serialToParallel.dataParallel[4]
+LEDR[5] <= serialToParallel:inst_serialToParallel.dataParallel[5]
+LEDR[6] <= serialToParallel:inst_serialToParallel.dataParallel[6]
+LEDR[7] <= serialToParallel:inst_serialToParallel.dataParallel[7]
+CLOCK3_50 => serialToParallel:inst_serialToParallel.clock
+
+
+|pinPlanner|serialToParallel:inst_serialToParallel
 dataSerial => clockRecovery:inst_clockRecovery.dataIn
 dataParallel[0] <= fifo:inst_fifo.q[0]
 dataParallel[1] <= fifo:inst_fifo.q[1]
@@ -11,13 +24,13 @@ dataParallel[7] <= fifo:inst_fifo.q[7]
 clock => pll:inst_Pll.inclk0
 
 
-|serialToParallel|pll:inst_Pll
+|pinPlanner|serialToParallel:inst_serialToParallel|pll:inst_Pll
 inclk0 => altpll:altpll_component.inclk[0]
 c0 <= altpll:altpll_component.clk[0]
 locked <= altpll:altpll_component.locked
 
 
-|serialToParallel|pll:inst_Pll|altpll:altpll_component
+|pinPlanner|serialToParallel:inst_serialToParallel|pll:inst_Pll|altpll:altpll_component
 inclk[0] => pll_altpll:auto_generated.inclk[0]
 inclk[1] => pll_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -77,7 +90,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|serialToParallel|pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated
+|pinPlanner|serialToParallel:inst_serialToParallel|pll:inst_Pll|altpll:altpll_component|pll_altpll:auto_generated
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
 clk[2] <= pll1.CLK2
@@ -88,15 +101,14 @@ inclk[1] => pll1.CLK1
 locked <= pll1.LOCKED
 
 
-|serialToParallel|clockDivider8:inst_clockDivider
+|pinPlanner|serialToParallel:inst_serialToParallel|clockDivider8:inst_clockDivider
 clockIn => clk.CLK
-clockIn => clkC[2].CLK
 clockIn => clkC[1].CLK
 clockIn => clkC[0].CLK
 clockOut <= clk.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|serialToParallel|clockRecovery:inst_clockRecovery
+|pinPlanner|serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery
 clockPLL => edgeDetector:edge1.dataClock
 clockPLL => clkOut.CLK
 clockPLL => clockOutCounter[1].CLK
@@ -110,14 +122,14 @@ syncData <= syncData~reg0.DB_MAX_OUTPUT_PORT_TYPE
 syncClock <= clkOut.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|serialToParallel|clockRecovery:inst_clockRecovery|edgeDetector:edge1
+|pinPlanner|serialToParallel:inst_serialToParallel|clockRecovery:inst_clockRecovery|edgeDetector:edge1
 dataClock => temp.CLK
 dataSignal => EDGES.IN1
 dataSignal => temp.DATAIN
 EDGES <= EDGES.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|serialToParallel|fifo:inst_fifo
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo
 data[0] => dcfifo_mixed_widths:dcfifo_mixed_widths_component.data[0]
 rdclk => dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdclk
 rdreq => dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdreq
@@ -135,7 +147,7 @@ rdempty <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdempty
 wrfull <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.wrfull
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component
 aclr => ~NO_FANOUT~
 data[0] => dcfifo_hgf1:auto_generated.data[0]
 eccstatus[0] <= <GND>
@@ -167,7 +179,7 @@ wrusedw[4] <= <GND>
 wrusedw[5] <= <GND>
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated
 data[0] => altsyncram_ss01:fifo_ram.data_a[0]
 q[0] <= altsyncram_ss01:fifo_ram.q_b[0]
 q[1] <= altsyncram_ss01:fifo_ram.q_b[1]
@@ -205,7 +217,7 @@ wrfull <= int_wrfull.DB_MAX_OUTPUT_PORT_TYPE
 wrreq => valid_wrreq.IN0
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|a_graycounter_mn6:rdptr_g1p
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|a_graycounter_mn6:rdptr_g1p
 clock => counter5a0.CLK
 clock => counter5a1.CLK
 clock => counter5a2.CLK
@@ -223,7 +235,7 @@ q[2] <= counter5a2.DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= counter5a3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|a_graycounter_h5c:wrptr_g1p
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|a_graycounter_h5c:wrptr_g1p
 clock => counter8a[3].CLK
 clock => counter8a[2].CLK
 clock => counter8a[1].CLK
@@ -241,7 +253,7 @@ q[2] <= counter8a[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= counter8a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|altsyncram_ss01:fifo_ram
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|altsyncram_ss01:fifo_ram
 address_a[0] => ram_block9a0.PORTAADDR
 address_a[1] => ram_block9a0.PORTAADDR1
 address_a[2] => ram_block9a0.PORTAADDR2
@@ -268,7 +280,7 @@ wren_a => ram_block9a0.PORTAWE
 wren_a => ram_block9a0.ENA0
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_c9l:rs_dgwp
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_c9l:rs_dgwp
 clock => dffpipe_tu8:dffpipe10.clock
 d[0] => dffpipe_tu8:dffpipe10.d[0]
 d[1] => dffpipe_tu8:dffpipe10.d[1]
@@ -280,7 +292,7 @@ q[2] <= dffpipe_tu8:dffpipe10.q[2]
 q[3] <= dffpipe_tu8:dffpipe10.q[3]
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_c9l:rs_dgwp|dffpipe_tu8:dffpipe10
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_c9l:rs_dgwp|dffpipe_tu8:dffpipe10
 clock => dffe11a[3].CLK
 clock => dffe11a[2].CLK
 clock => dffe11a[1].CLK
@@ -299,7 +311,7 @@ q[2] <= dffe12a[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffe12a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_d9l:ws_dgrp
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_d9l:ws_dgrp
 clock => dffpipe_uu8:dffpipe13.clock
 d[0] => dffpipe_uu8:dffpipe13.d[0]
 d[1] => dffpipe_uu8:dffpipe13.d[1]
@@ -311,7 +323,7 @@ q[2] <= dffpipe_uu8:dffpipe13.q[2]
 q[3] <= dffpipe_uu8:dffpipe13.q[3]
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_d9l:ws_dgrp|dffpipe_uu8:dffpipe13
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|alt_synch_pipe_d9l:ws_dgrp|dffpipe_uu8:dffpipe13
 clock => dffe14a[3].CLK
 clock => dffe14a[2].CLK
 clock => dffe14a[1].CLK
@@ -330,7 +342,7 @@ q[2] <= dffe15a[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffe15a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cmpr_a66:rdempty_eq_comp
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cmpr_a66:rdempty_eq_comp
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -342,7 +354,7 @@ datab[2] => data_wire[1].IN1
 datab[3] => data_wire[1].IN1
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cmpr_a66:wrfull_eq_comp
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cmpr_a66:wrfull_eq_comp
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -354,7 +366,7 @@ datab[2] => data_wire[1].IN1
 datab[3] => data_wire[1].IN1
 
 
-|serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cntr_qld:cntr_b
+|pinPlanner|serialToParallel:inst_serialToParallel|fifo:inst_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hgf1:auto_generated|cntr_qld:cntr_b
 clock => counter_reg_bit0.CLK
 clock => counter_reg_bit1.CLK
 clock => counter_reg_bit2.CLK

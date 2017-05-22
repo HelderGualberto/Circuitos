@@ -1,0 +1,19 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY pinPlanner IS 
+   PORT
+   (
+      SW :  IN  STD_LOGIC_VECTOR(0 downto 0);
+		LEDR : OUT STD_LOGIC_VECTOR (7 downto 0);
+		CLOCK2_50 : IN STD_LOGIC	
+   );
+END pinPlanner;
+
+ARCHITECTURE behavior of pinPlanner IS
+
+
+
+END behavior;
